@@ -1,0 +1,49 @@
+11:45:06 - INFO - ============================================================
+11:45:06 - INFO - ECU Interface Initialized
+11:45:06 - INFO - Port: COM43, Baudrate: 1000000
+11:45:06 - INFO - Console Output: Enabled
+11:45:06 - INFO - ============================================================
+11:45:06 - INFO - Console output: Disabled
+11:45:06 - INFO - Connecting to COM43... (Attempt 1/5)
+11:45:06 - WARNING - Connection failed: could not open port 'COM43': PermissionError(13, 'Access is denied.', None, 5)
+11:45:06 - WARNING - Retrying in 2 seconds...
+11:45:08 - INFO - Connecting to COM43... (Attempt 2/5)
+11:45:08 - WARNING - Connection failed: could not open port 'COM43': PermissionError(13, 'Access is denied.', None, 5)
+11:45:08 - WARNING - Retrying in 2 seconds...
+11:45:10 - INFO - Connecting to COM43... (Attempt 3/5)
+11:45:10 - WARNING - Connection failed: could not open port 'COM43': PermissionError(13, 'Access is denied.', None, 5)
+11:45:10 - WARNING - Retrying in 2 seconds...
+11:45:12 - INFO - Connecting to COM43... (Attempt 4/5)
+11:45:12 - WARNING - Connection failed: could not open port 'COM43': PermissionError(13, 'Access is denied.', None, 5)
+11:45:12 - WARNING - Retrying in 2 seconds...
+11:45:14 - INFO - Connecting to COM43... (Attempt 5/5)
+11:45:14 - WARNING - Connection failed: could not open port 'COM43': PermissionError(13, 'Access is denied.', None, 5)
+11:45:14 - ERROR - Failed to connect after 5 attempts
+11:45:14 - INFO - Closing ECU connection...
+11:45:14 - INFO - [OK] ECU connection closed
+11:45:14 - INFO - ============================================================
+11:45:35 - INFO - ============================================================
+11:45:35 - INFO - ECU Interface Initialized
+11:45:35 - INFO - Port: COM43, Baudrate: 1000000
+11:45:35 - INFO - Console Output: Enabled
+11:45:35 - INFO - ============================================================
+11:45:35 - INFO - Console output: Disabled
+11:45:35 - INFO - Connecting to COM43... (Attempt 1/5)
+11:45:35 - INFO - [OK] ECU Connected Successfully
+11:45:35 - INFO - Monitor thread started
+11:45:36 - INFO - 
+Current region: CN
+11:45:39 - INFO - ls -l /var/data/telematics/provisioningd/provisioning-eng/:
+cd /var/data/telematics/pr
+ovisioningd/provisioning-eng/ && ls -l
+-rw-r--r--    1 root     root           124 May 29  2025 config.ini
+-rw-r--r--    1 root     root         31426 May 14 00:06 provisioning-CN.xml
+-rw-r--r--    1 root     root         62672 May 14 00:07 provisioning.xml
+/var/data/telematics/provisioningd/provisioning-eng #
+11:45:44 - INFO - Region changed to EU
+11:45:47 - INFO - 
+Task completed successfully
+11:45:47 - INFO - Closing ECU connection...
+11:45:47 - INFO - Monitor thread stopped
+11:45:47 - INFO - [OK] ECU connection closed
+11:45:47 - INFO - ============================================================

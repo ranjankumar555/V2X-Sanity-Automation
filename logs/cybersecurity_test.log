@@ -1,0 +1,1670 @@
+[2026-07-24 11:21:35] === Starting ADB Shell ===
+[2026-07-24 11:21:35] [2026-07-24 11:21:35]
+[2026-07-24 11:21:38] 
+============================================================
+[2026-07-24 11:21:38] Test: Cybersecurity Test
+[2026-07-24 11:21:38] Log File: ../logs/cybersecurity_test.log
+[2026-07-24 11:21:38] ============================================================
+
+[2026-07-24 11:21:38] ICON_NAD.v040.042.051.icon25.eu-1664350-2_260702151255.411642355
+[2026-07-24 11:21:38] cat /etc/version 
+ICON_NAD.v040.042.051.icon25.eu-1664350-2_260702151255.411642355
+[2026-07-24 11:21:38] Mode: MASTER (native binary)
+[2026-07-24 11:21:38] [SOP Mount] Done Mount remount permission...
+[2026-07-24 11:21:38] 
+=== Initial Setup: Pushing Files ===
+
+[2026-07-24 11:21:38] [OK] Pushed D:\Cybersecurity\pushfile_data_v2xmgr_etc\. → /data/v2xmgr/etc/
+[2026-07-24 11:21:38] [OK] Pushed D:\Cybersecurity\Snake oil EU\signer_1_EU\. → /data/v2xmgr/etc/MBD/
+[2026-07-24 11:21:38] total 96
+[2026-07-24 11:21:38] -rwxr-xr-x 1 root root  1025 Apr 28  2022 ItsVersion
+[2026-07-24 11:21:38] drwxrwxrwx 2 root root  4016 Jul  8 13:32 MBD
+[2026-07-24 11:21:38] -rwxr-xr-x 1 root root    18 Apr 28  2022 PkiVersion
+[2026-07-24 11:21:38] -rw-r--r-- 1 root root     2 Jul  8 13:31 antenna.conf
+[2026-07-24 11:21:38] -rwxr-xr-x 1 root root   710 Jul  8 13:27 bmw_pki.json
+[2026-07-24 11:21:38] drwxr-xr-x 5 root root   368 Dec  4  2025 certs
+[2026-07-24 11:21:38] -rw-rw-rw- 1 root root   860 Jul  8 13:27 cff.json
+[2026-07-24 11:21:38] -rwxr-xr-x 1 root root  1025 Dec  4  2025 enable-its.conf
+[2026-07-24 11:21:38] -rw------- 1 root root   308 Jul  8 12:40 hdif_storage_not_secured.txt
+[2026-07-24 11:21:38] -rw-r--r-- 1 root root     2 Jul  8 13:31 hw_revision
+[2026-07-24 11:21:38] -rw-rw-rw- 1 root root   178 May 29  2024 invalid_signature_cam.bin
+[2026-07-24 11:21:38] -rw-rw-rw- 1 root root   352 Jun 11  2024 invalid_signature_cn_bsm.bin
+[2026-07-24 11:21:38] -rw-rw-rw- 1 root root  1417 Jul 24  2026 its.json
+[2026-07-24 11:21:38] drwxr-xr-x 4 root root   288 Dec  4  2025 pki_client_cn
+[2026-07-24 11:21:38] drwxr-xr-x 4 root root   288 Dec  4  2025 pki_client_eu
+[2026-07-24 11:21:38] drwxr-xr-x 4 root root   288 Dec  4  2025 radio
+[2026-07-24 11:21:38] -rwxrwxrwx 1 root root 19112 Mar  1  2024 rio_inject
+[2026-07-24 11:21:38] -rwxr-xr-x 1 root root  3221 Jul  8 13:27 saf.json
+[2026-07-24 11:21:38] -rw-r--r-- 1 root root     5 Jul  8 12:40 secton-chip-revision
+[2026-07-24 11:21:38] -rw-r--r-- 1 root root   129 Apr 28  2022 secton-config
+[2026-07-24 11:21:38] -rw-r--r-- 1 root root    65 Jul  8 12:40 secton-otp-hash
+[2026-07-24 11:21:38] -rw-r--r-- 1 root root    65 Apr 28  2022 secton-uid
+[2026-07-24 11:21:38] drwxr-xr-x 4 root root   304 Dec  4  2025 test_certs
+[2026-07-24 11:21:38] -rwxr-xr-x 1 root root    60 Dec  4  2025 test_interface.json
+[2026-07-24 11:21:38] -rw-rw-rw- 1 root root   178 May 29  2024 valid_cam.bin
+[2026-07-24 11:21:38] -rw-rw-rw- 1 root root   352 Jun 11  2024 valid_cn_bsm.bin
+[2026-07-24 11:21:38] 
+=== Files and permissions verified ===
+
+[2026-07-24 11:21:51] [INFO] Pulling /etc/its.json → D:\Help\automation\its.json
+[2026-07-24 11:21:51] [OK] Pulled /etc/its.json → D:\Help\automation\its.json
+[2026-07-24 11:21:51] Region detected: CN
+[2026-07-24 11:21:51] [INFO] Creating backup on device: /etc/its.json.bak
+[2026-07-24 11:21:51] cp: cannot create regular file `/etc/its.json.bak': Read-only file system
+[2026-07-24 11:21:51] [INFO] Pulling /etc/its.json → D:\Help\automation\its.json
+[2026-07-24 11:21:51] [OK] Pulled /etc/its.json → D:\Help\automation\its.json
+[2026-07-24 11:21:51] [INFO] Local file modified successfully → D:\Help\automation\its.json
+[2026-07-24 11:21:51] [OK] Pushed D:\Help\automation\its.json → /etc/its.json
+[2026-07-24 11:21:51] [OK] Modified its.json pushed → /etc/its.json
+[2026-07-24 11:21:51] [INFO] Backup retained at /etc/its.json.bak
+[2026-07-24 11:21:52] setDataPrivacy sldd test start
+[2026-07-24 11:21:52] Data Privacy argv 0 : 1
+[2026-07-24 11:21:52] v2x activate success
+[2026-07-24 11:22:00] [INFO] ICON SF25 not detected from version output: 'ICON_NAD.v040.042.051.icon25.eu-1664350-2_260702151255.411642355'
+[2026-07-24 11:22:00] [Stack Check] Attempt 1...
+[2026-07-24 11:22:00] {
+[2026-07-24 11:22:00] "deviceStatus": {
+[2026-07-24 11:22:00] "deviceData": {
+[2026-07-24 11:22:00] "versionInfo": "y20.96.2-b376640",
+[2026-07-24 11:22:00] "uniqueId": "TRIAL_VERSION",
+[2026-07-24 11:22:00] "macAddress1": "00:00:00:74:24:73",
+[2026-07-24 11:22:00] "channelId1": 183,
+[2026-07-24 11:22:00] "stationId": {
+[2026-07-24 11:22:00] "stationId": "FFF43536BD31D2CD0000000000000000",
+[2026-07-24 11:22:00] "stationIdShort": "FFF43536"
+[2026-07-24 11:22:00] }
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "miscData": {
+[2026-07-24 11:22:00] "timeStampMs": 1783517549050,
+[2026-07-24 11:22:00] "systemUptimeMs": 80550,
+[2026-07-24 11:22:00] "stackUptimeMs": 47606
+[2026-07-24 11:22:00] }
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "navigation": {
+[2026-07-24 11:22:00] "isValid": false,
+[2026-07-24 11:22:00] "source": "manual",
+[2026-07-24 11:22:00] "timestampMs": 315964883300,
+[2026-07-24 11:22:00] "leapSeconds": 0,
+[2026-07-24 11:22:00] "latitude": 0,
+[2026-07-24 11:22:00] "longitude": 0,
+[2026-07-24 11:22:00] "altitude": -2147483648,
+[2026-07-24 11:22:00] "altitudeConfidence": -2147483648,
+[2026-07-24 11:22:00] "pceLatitudeAngle": 4294967296,
+[2026-07-24 11:22:00] "pceLongitudeAngle": 4294967296,
+[2026-07-24 11:22:00] "pceOrientation": 0,
+[2026-07-24 11:22:00] "heading": 0,
+[2026-07-24 11:22:00] "headingConfidence": 0,
+[2026-07-24 11:22:00] "speed": 0,
+[2026-07-24 11:22:00] "speedConfidence": 20000,
+[2026-07-24 11:22:00] "satellitesInUse": 0,
+[2026-07-24 11:22:00] "isDriveDirectionForward": false
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "statistics": {
+[2026-07-24 11:22:00] "radio": {
+[2026-07-24 11:22:00] "if1": {
+[2026-07-24 11:22:00] "txPacket": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxUnknownPacket": 0,
+[2026-07-24 11:22:00] "rxInvalidMacPhyHeaderPacket": 0,
+[2026-07-24 11:22:00] "rxRssiLastPacket": 0,
+[2026-07-24 11:22:00] "txTssiLastPacket": 0,
+[2026-07-24 11:22:00] "rxRssiLastPacketAuxAnt": 0,
+[2026-07-24 11:22:00] "txTssiLastPacketAuxAnt": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "if2": {
+[2026-07-24 11:22:00] "txPacket": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxUnknownPacket": 0,
+[2026-07-24 11:22:00] "rxInvalidMacPhyHeaderPacket": 0,
+[2026-07-24 11:22:00] "rxRssiLastPacket": 0,
+[2026-07-24 11:22:00] "txTssiLastPacket": 0,
+[2026-07-24 11:22:00] "rxRssiLastPacketAuxAnt": 0,
+[2026-07-24 11:22:00] "txTssiLastPacketAuxAnt": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "if3": {
+[2026-07-24 11:22:00] "txPacket": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxUnknownPacket": 0,
+[2026-07-24 11:22:00] "rxInvalidMacPhyHeaderPacket": 0,
+[2026-07-24 11:22:00] "rxRssiLastPacket": 0,
+[2026-07-24 11:22:00] "txTssiLastPacket": 0,
+[2026-07-24 11:22:00] "rxRssiLastPacketAuxAnt": 0,
+[2026-07-24 11:22:00] "txTssiLastPacketAuxAnt": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "if4": {
+[2026-07-24 11:22:00] "txPacket": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxUnknownPacket": 0,
+[2026-07-24 11:22:00] "rxInvalidMacPhyHeaderPacket": 0,
+[2026-07-24 11:22:00] "rxRssiLastPacket": 0,
+[2026-07-24 11:22:00] "txTssiLastPacket": 0,
+[2026-07-24 11:22:00] "rxRssiLastPacketAuxAnt": 0,
+[2026-07-24 11:22:00] "txTssiLastPacketAuxAnt": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "if5": {
+[2026-07-24 11:22:00] "txPacket": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxUnknownPacket": 0,
+[2026-07-24 11:22:00] "rxInvalidMacPhyHeaderPacket": 0,
+[2026-07-24 11:22:00] "rxRssiLastPacket": 0,
+[2026-07-24 11:22:00] "txTssiLastPacket": 0,
+[2026-07-24 11:22:00] "rxRssiLastPacketAuxAnt": 0,
+[2026-07-24 11:22:00] "txTssiLastPacketAuxAnt": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "blacklist": {
+[2026-07-24 11:22:00] "blockedMacAddresses": 0,
+[2026-07-24 11:22:00] "droppedPacketsByBlacklist": 0
+[2026-07-24 11:22:00] }
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "wsmp": {
+[2026-07-24 11:22:00] "txPacket": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedInvalidHeaderPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "dsmp": {
+[2026-07-24 11:22:00] "txPacket": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "geoNet": {
+[2026-07-24 11:22:00] "txShbPacket": 0,
+[2026-07-24 11:22:00] "txTsbPacket": 0,
+[2026-07-24 11:22:00] "txGacPacket": 0,
+[2026-07-24 11:22:00] "txGbcPacket": 0,
+[2026-07-24 11:22:00] "txGucPacket": 0,
+[2026-07-24 11:22:00] "txLsReqPacket": 0,
+[2026-07-24 11:22:00] "txLsRepPacket": 0,
+[2026-07-24 11:22:00] "rxShbPacket": 0,
+[2026-07-24 11:22:00] "rxTsbPacket": 0,
+[2026-07-24 11:22:00] "rxGacPacket": 0,
+[2026-07-24 11:22:00] "rxGbcPacket": 0,
+[2026-07-24 11:22:00] "rxGucPacket": 0,
+[2026-07-24 11:22:00] "rxLsReqPacket": 0,
+[2026-07-24 11:22:00] "rxLsRepPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedInvalidBtpHeaderPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedInvalidGnHeaderPacket": 0,
+[2026-07-24 11:22:00] "rxForwardedPacket": 0,
+[2026-07-24 11:22:00] "rxLocTblEntryIf1": 0,
+[2026-07-24 11:22:00] "rxLocTblEntryIf2": 0,
+[2026-07-24 11:22:00] "rxLocTblEntryIf3": 0,
+[2026-07-24 11:22:00] "rxLocTblEntryIf4": 0,
+[2026-07-24 11:22:00] "rxOutOfDestinationArea": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "security": {
+[2026-07-24 11:22:00] "signerCertificate": {
+[2026-07-24 11:22:00] "eu": 0,
+[2026-07-24 11:22:00] "us": 0,
+[2026-07-24 11:22:00] "cn": 21
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "1609.2": {
+[2026-07-24 11:22:00] "eu": {
+[2026-07-24 11:22:00] "txSignedPacket": 0,
+[2026-07-24 11:22:00] "txSigningErrorPacket": 0,
+[2026-07-24 11:22:00] "rxVerifiedPacket": 0,
+[2026-07-24 11:22:00] "rxMalformedPacket": 0,
+[2026-07-24 11:22:00] "rxVerificationFailedPacket": 0,
+[2026-07-24 11:22:00] "rxUnsecuredPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "us": {
+[2026-07-24 11:22:00] "txSignedPacket": 0,
+[2026-07-24 11:22:00] "txSigningErrorPacket": 0,
+[2026-07-24 11:22:00] "rxVerifiedPacket": 0,
+[2026-07-24 11:22:00] "rxMalformedPacket": 0,
+[2026-07-24 11:22:00] "rxVerificationFailedPacket": 0,
+[2026-07-24 11:22:00] "rxUnsecuredPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "cn": {
+[2026-07-24 11:22:00] "txSignedPacket": 0,
+[2026-07-24 11:22:00] "txSigningErrorPacket": 0,
+[2026-07-24 11:22:00] "rxVerifiedPacket": 0,
+[2026-07-24 11:22:00] "rxMalformedPacket": 0,
+[2026-07-24 11:22:00] "rxVerificationFailedPacket": 0,
+[2026-07-24 11:22:00] "rxUnsecuredPacket": 0
+[2026-07-24 11:22:00] }
+[2026-07-24 11:22:00] }
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "facility": {
+[2026-07-24 11:22:00] "rx": {
+[2026-07-24 11:22:00] "unknownMessage": 0,
+[2026-07-24 11:22:00] "cnBsm": {
+[2026-07-24 11:22:00] "hasSubscribers": 1,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usBsm": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "euCam": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "euCpm": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "euDenm": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "euIvi": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "cnMap": {
+[2026-07-24 11:22:00] "hasSubscribers": 1,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "euMap": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usMap": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usPdm": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usPsm": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usPvd": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usRsa": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "cnRsi": {
+[2026-07-24 11:22:00] "hasSubscribers": 1,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "euRtcm": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usRtcm": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "cnSpat": {
+[2026-07-24 11:22:00] "hasSubscribers": 1,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "euSpat": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usSpat": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "euSrm": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usSrm": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "euSsm": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usSsm": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usTim": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usWsa": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "cnRsm": {
+[2026-07-24 11:22:00] "hasSubscribers": 1,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usSdsm": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "euVam": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usCsr": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usIca": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usNmea": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usRsm": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usRwm": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usPdc": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usPdr": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usTam": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usTum": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usTumAck": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usCcm": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usMscm": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usRga": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usPsm2": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usTspat": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usScpr": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usScps": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usRuccm": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usRucrm": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usTlsm": {
+[2026-07-24 11:22:00] "hasSubscribers": 0,
+[2026-07-24 11:22:00] "rxPacket": 0,
+[2026-07-24 11:22:00] "rxDroppedPacket": 0
+[2026-07-24 11:22:00] }
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "tx": {
+[2026-07-24 11:22:00] "cnBsm": {
+[2026-07-24 11:22:00] "txPacket": 1
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usBsm": {
+[2026-07-24 11:22:00] "txPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "euCam": {
+[2026-07-24 11:22:00] "txPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "euCpm": {
+[2026-07-24 11:22:00] "txPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "euDenm": {
+[2026-07-24 11:22:00] "txPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usPvd": {
+[2026-07-24 11:22:00] "txPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usSrm": {
+[2026-07-24 11:22:00] "txPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "cnRsm": {
+[2026-07-24 11:22:00] "txPacket": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "usSdsm": {
+[2026-07-24 11:22:00] "txPacket": 0,
+[2026-07-24 11:22:00] "objectsInStorage": 0,
+[2026-07-24 11:22:00] "objectsLastSent": 0
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "euVam": {
+[2026-07-24 11:22:00] "txPacket": 0
+[2026-07-24 11:22:00] }
+[2026-07-24 11:22:00] }
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "externalApiServer": {
+[2026-07-24 11:22:00] "apiConnections": 3
+[2026-07-24 11:22:00] },
+[2026-07-24 11:22:00] "geofencing": {
+[2026-07-24 11:22:00] "loadedRegions": 0,
+[2026-07-24 11:22:00] "currentlyInRegions": 0
+[2026-07-24 11:22:00] }
+[2026-07-24 11:22:00] }
+[2026-07-24 11:22:00] Lines in output: 448
+[2026-07-24 11:22:00] [Stack Check] Stack is ON
+[2026-07-24 11:22:00] 
+=== Starting Cybersecurity_CN Test ===
+
+[2026-07-24 11:22:00] Inject was successful
+[2026-07-24 11:22:02] Inject was successful
+[2026-07-24 11:22:05] Inject was successful
+[2026-07-24 11:22:07] 
+=== Cybersecurity_CN Test Completed ===
+
+[2026-07-24 11:26:05] === ADB Shell Closed ===
+[2026-07-24 11:26:05] [2026-07-24 11:26:05]
+[2026-07-24 11:26:05] === ADB Shell Closed ===
+[2026-07-24 11:26:05] [2026-07-24 11:26:05]
+[2026-07-24 13:14:28] === Starting ADB Shell ===
+[2026-07-24 13:14:28] [2026-07-24 13:14:28]
+[2026-07-24 13:14:29] 
+============================================================
+[2026-07-24 13:14:29] Test: Cybersecurity Test
+[2026-07-24 13:14:29] Log File: ../logs/cybersecurity_test.log
+[2026-07-24 13:14:29] ============================================================
+
+[2026-07-24 13:14:29] ICON_NAD.v040.042.255.iconsf25mtk-perf-nithin14.v_260722
+[2026-07-24 13:14:29] cat /etc/version 
+ICON_NAD.v040.042.255.iconsf25mtk-perf-nithin14.v_260722
+[2026-07-24 13:14:29] Mode: MASTER (native binary)
+[2026-07-24 13:14:29] sh-3.2# mount -o remount,exec /data/
+[2026-07-24 13:14:29] [SOP Mount] Done Mount remount permission...
+[2026-07-24 13:14:29] 
+=== Initial Setup: Pushing Files ===
+
+[2026-07-24 13:14:30] [OK] Pushed D:\Cybersecurity\pushfile_data_v2xmgr_etc\. → /data/v2xmgr/etc/
+[2026-07-24 13:14:30] sh-3.2# mkdir -p /data/v2xmgr/etc/MBD
+[2026-07-24 13:14:30] [OK] Pushed D:\Cybersecurity\Snake oil EU\signer_1_EU\. → /data/v2xmgr/etc/MBD/
+[2026-07-24 13:14:30] sh-3.2# chmod 777 /data/v2xmgr/etc/rio_inject
+[2026-07-24 13:14:30] sh-3.2# ls -l /data/v2xmgr/etc/
+[2026-07-24 13:14:30] total 368
+[2026-07-24 13:14:30] -rwxr-xr-x 1 root root   1025 Apr 28  2022 ItsVersion
+[2026-07-24 13:14:30] drwxrwxrwx 2 root root   4016 Jul 24 07:44 MBD
+[2026-07-24 13:14:30] -rwxr-xr-x 1 root root     18 Apr 28  2022 PkiVersion
+[2026-07-24 13:14:30] -rw-r--r-- 1 root root      2 Jul 24 06:14 antenna.conf
+[2026-07-24 13:14:30] -rwxr-xr-x 1 root root    734 Jul 23 13:08 bmw_pki.json
+[2026-07-24 13:14:30] drwxr-xr-x 5 root root    368 Jul 22 09:03 certs
+[2026-07-24 13:14:30] -rwxr-xr-x 1 root root    860 Jul 23 13:08 cff.json
+[2026-07-24 13:14:30] -rwxr-xr-x 1 root root   1025 Jul 22 09:03 enable-its.conf
+[2026-07-24 13:14:30] -rw------- 1 root root    308 Jul 23 07:39 hdif_storage_not_secured.txt
+[2026-07-24 13:14:30] -rw-r----- 1 root root 276320 Jul 23 11:51 hsm-blob.dat
+[2026-07-24 13:14:30] -rw-r--r-- 1 root root      1 Jul 24 06:14 hw_revision
+[2026-07-24 13:14:30] -rw-rw-rw- 1 root root    178 May 29  2024 invalid_signature_cam.bin
+[2026-07-24 13:14:30] -rw-rw-rw- 1 root root    352 Jun 11  2024 invalid_signature_cn_bsm.bin
+[2026-07-24 13:14:30] -rw-rw-rw- 1 root root   2508 Jul 23 13:19 its.json
+[2026-07-24 13:14:30] drwxr-xr-x 4 root root    288 Jul 22 09:03 pki_client_cn
+[2026-07-24 13:14:30] drwxr-xr-x 4 root root    288 Jul 22 09:03 pki_client_eu
+[2026-07-24 13:14:30] drwxr-xr-x 4 root root    288 Apr  5  2011 radio
+[2026-07-24 13:14:30] -rwxrwxrwx 1 root root  19112 Mar  1  2024 rio_inject
+[2026-07-24 13:14:30] -rwxr-xr-x 1 root root   3221 Jul 23 13:08 saf.json
+[2026-07-24 13:14:30] -rw-r--r-- 1 root root      5 Jul 23 07:39 secton-chip-revision
+[2026-07-24 13:14:30] -rw-r--r-- 1 root root    129 Apr 28  2022 secton-config
+[2026-07-24 13:14:30] -rw-r--r-- 1 root root     65 Jul 23 07:39 secton-otp-hash
+[2026-07-24 13:14:30] -rw-r--r-- 1 root root     65 Apr 28  2022 secton-uid
+[2026-07-24 13:14:30] drwxr-xr-x 4 root root    304 Jul 22 09:03 test_certs
+[2026-07-24 13:14:30] -rwxr-xr-x 1 root root     60 Jul 22 09:03 test_interface.json
+[2026-07-24 13:14:30] -rw-rw-rw- 1 root root    178 May 29  2024 valid_cam.bin
+[2026-07-24 13:14:30] -rw-rw-rw- 1 root root    352 Jun 11  2024 valid_cn_bsm.bin
+[2026-07-24 13:14:30] 
+=== Files and permissions verified ===
+
+[2026-07-24 13:14:34] [INFO] Pulling /etc/its.json → D:\Help\automation\its.json
+[2026-07-24 13:14:34] [OK] Pulled /etc/its.json → D:\Help\automation\its.json
+[2026-07-24 13:14:34] Region detected: EU
+[2026-07-24 13:14:34] [INFO] Creating backup on device: /etc/its.json.bak
+[2026-07-24 13:14:34] sh-3.2# cp /etc/its.json /etc/its.json.bak
+[2026-07-24 13:14:34] cp: cannot create regular file `/etc/its.json.bak': Read-only file system
+[2026-07-24 13:14:34] [INFO] Pulling /etc/its.json → D:\Help\automation\its.json
+[2026-07-24 13:14:34] [OK] Pulled /etc/its.json → D:\Help\automation\its.json
+[2026-07-24 13:14:34] [INFO] Local file modified successfully → D:\Help\automation\its.json
+[2026-07-24 13:14:34] [OK] Pushed D:\Help\automation\its.json → /etc/its.json
+[2026-07-24 13:14:34] [OK] Modified its.json pushed → /etc/its.json
+[2026-07-24 13:14:34] [INFO] Backup retained at /etc/its.json.bak
+[2026-07-24 13:14:34] sh-3.2# sldd v2xmgr setdataprivacy 1
+[2026-07-24 13:14:34] setDataPrivacy sldd test start
+[2026-07-24 13:14:34] Data Privacy argv 0 : 1
+[2026-07-24 13:14:34] v2x activate success
+[2026-07-24 13:14:42] [INFO] ICON SF25 detected, starting ITS service
+[2026-07-24 13:14:42] [Ash-3.2# systemctl start its
+[2026-07-24 13:14:45] [Stack Check] Attempt 1...
+[2026-07-24 13:14:45] sh-3.2# unplugged-rt-status-gen
+[2026-07-24 13:14:46] [2026-07-24 07:44:44.477] [E] [REM] eac_api_client:1796 - Unable to connect to 127.0.0.1
+[2026-07-24 13:14:46] Lines in output: 2
+[2026-07-24 13:14:46] Stack still OFF. Waiting 8s before retry...
+[2026-07-24 13:14:54] [Stack Check] Attempt 2...
+[2026-07-24 13:14:54] sh-3.2# unplugged-rt-status-gen
+[2026-07-24 13:14:54] [2026-07-24 07:44:52.846] [E] [REM] eac_api_client:1796 - Unable to connect to 127.0.0.1
+[2026-07-24 13:14:54] Lines in output: 2
+[2026-07-24 13:14:54] Stack still OFF. Waiting 8s before retry...
+[2026-07-24 13:15:02] [Stack Check] Attempt 3...
+[2026-07-24 13:15:02] sh-3.2# unplugged-rt-status-gen
+[2026-07-24 13:15:02] [2026-07-24 07:45:01.139] [E] [REM] eac_api_client:1796 - Unable to connect to 127.0.0.1
+[2026-07-24 13:15:02] Lines in output: 2
+[2026-07-24 13:15:02] Stack still OFF. Waiting 8s before retry...
+[2026-07-24 13:15:10] [Stack Check] Attempt 4...
+[2026-07-24 13:15:10] sh-3.2# unplugged-rt-status-gen
+[2026-07-24 13:15:11] [2026-07-24 07:45:10.248] [E] [API] api_routing_link:184 - Unable to perform blocking call over API
+[2026-07-24 13:15:11] [2026-07-24 07:45:10.248] [E] [SRV] ServiceRouter:321 - Unable to performRequest, res: -6, last failed group: 2, code: 100 (0 time(s) since last log)
+[2026-07-24 13:15:11] [2026-07-24 07:45:10.248] [E] [API] cms_v2x_stat:37 - Unable to get statistics counter(s)
+[2026-07-24 13:15:11] Lines in output: 4
+[2026-07-24 13:15:11] Stack still OFF. Waiting 8s before retry...
+[2026-07-24 13:15:19] [Stack Check] Attempt 5...
+[2026-07-24 13:15:19] sh-3.2# unplugged-rt-status-gen
+[2026-07-24 13:15:20] [2026-07-24 07:45:19.360] [E] [API] api_routing_link:184 - Unable to perform blocking call over API
+[2026-07-24 13:15:20] [2026-07-24 07:45:19.360] [E] [SRV] ServiceRouter:321 - Unable to performRequest, res: -6, last failed group: 2, code: 100 (0 time(s) since last log)
+[2026-07-24 13:15:20] [2026-07-24 07:45:19.360] [E] [API] cms_v2x_stat:37 - Unable to get statistics counter(s)
+[2026-07-24 13:15:20] Lines in output: 4
+[2026-07-24 13:15:20] ERROR: [Stack Check] Stack not ON after maximum attempts. Exiting...
+[2026-07-24 13:15:20] === ADB Shell Closed ===
+[2026-07-24 13:15:20] [2026-07-24 13:15:20]
+[2026-07-24 13:15:20] === ADB Shell Closed ===
+[2026-07-24 13:15:20] [2026-07-24 13:15:20]
+[2026-07-24 13:22:07] === Starting ADB Shell ===
+[2026-07-24 13:22:07] [2026-07-24 13:22:07]
+[2026-07-24 13:22:08] 
+============================================================
+[2026-07-24 13:22:08] Test: Cybersecurity Test
+[2026-07-24 13:22:08] Log File: ../logs/cybersecurity_test.log
+[2026-07-24 13:22:08] ============================================================
+
+[2026-07-24 13:22:08] ICON_NAD.v040.042.255.iconsf25mtk-perf-nithin14.v_260722
+[2026-07-24 13:22:08] cat /etc/version 
+ICON_NAD.v040.042.255.iconsf25mtk-perf-nithin14.v_260722
+[2026-07-24 13:22:08] Mode: MASTER (native binary)
+[2026-07-24 13:22:08] sh-3.2# mount -o remount,exec /data/
+[2026-07-24 13:22:08] [SOP Mount] Done Mount remount permission...
+[2026-07-24 13:22:08] 
+=== Initial Setup: Pushing Files ===
+
+[2026-07-24 13:22:09] [OK] Pushed D:\Cybersecurity\pushfile_data_v2xmgr_etc\. → /data/v2xmgr/etc/
+[2026-07-24 13:22:09] sh-3.2# mkdir -p /data/v2xmgr/etc/MBD
+[2026-07-24 13:22:09] [OK] Pushed D:\Cybersecurity\Snake oil EU\signer_1_EU\. → /data/v2xmgr/etc/MBD/
+[2026-07-24 13:22:09] sh-3.2# chmod 777 /data/v2xmgr/etc/rio_inject
+[2026-07-24 13:22:09] sh-3.2# ls -l /data/v2xmgr/etc/
+[2026-07-24 13:22:09] total 96
+[2026-07-24 13:22:09] -rwxr-xr-x 1 root root  1025 Apr 28  2022 ItsVersion
+[2026-07-24 13:22:09] drwxrwxrwx 2 root root  4016 Jul 24 07:51 MBD
+[2026-07-24 13:22:09] -rwxr-xr-x 1 root root    18 Apr 28  2022 PkiVersion
+[2026-07-24 13:22:09] -rw-r--r-- 1 root root     2 Jul 24 07:49 antenna.conf
+[2026-07-24 13:22:09] -rwxr-xr-x 1 root root   734 Jul 24 07:49 bmw_pki.json
+[2026-07-24 13:22:09] drwxr-xr-x 5 root root   368 Jul 22 09:03 certs
+[2026-07-24 13:22:09] -rwxr-xr-x 1 root root   860 Jul 24 07:49 cff.json
+[2026-07-24 13:22:09] -rwxr-xr-x 1 root root  1025 Jul 22 09:03 enable-its.conf
+[2026-07-24 13:22:09] -rw------- 1 root root   308 Jul 24 07:51 hdif_storage_not_secured.txt
+[2026-07-24 13:22:09] -rw-r--r-- 1 root root     1 Jul 24 07:49 hw_revision
+[2026-07-24 13:22:09] -rw-rw-rw- 1 root root   178 May 29  2024 invalid_signature_cam.bin
+[2026-07-24 13:22:09] -rw-rw-rw- 1 root root   352 Jun 11  2024 invalid_signature_cn_bsm.bin
+[2026-07-24 13:22:09] -rwxr-xr-x 1 root root  2389 Jul 24 07:51 its.json
+[2026-07-24 13:22:09] drwxr-xr-x 4 root root   288 Jul 22 09:03 pki_client_cn
+[2026-07-24 13:22:09] drwxr-xr-x 4 root root   288 Jul 22 09:03 pki_client_eu
+[2026-07-24 13:22:09] drwxr-xr-x 4 root root   288 Apr  5  2011 radio
+[2026-07-24 13:22:09] -rwxrwxrwx 1 root root 19112 Mar  1  2024 rio_inject
+[2026-07-24 13:22:09] -rwxr-xr-x 1 root root  3221 Jul 24 07:49 saf.json
+[2026-07-24 13:22:09] -rw-r--r-- 1 root root     5 Jul 24 07:51 secton-chip-revision
+[2026-07-24 13:22:09] -rw-r--r-- 1 root root   129 Jul 24 07:51 secton-config
+[2026-07-24 13:22:09] -rw-r--r-- 1 root root    65 Jul 24 07:51 secton-otp-hash
+[2026-07-24 13:22:09] -rw-r--r-- 1 root root    65 Jul 24 07:51 secton-uid
+[2026-07-24 13:22:09] drwxr-xr-x 4 root root   304 Jul 22 09:03 test_certs
+[2026-07-24 13:22:09] -rwxr-xr-x 1 root root    60 Jul 22 09:03 test_interface.json
+[2026-07-24 13:22:09] -rw-rw-rw- 1 root root   178 May 29  2024 valid_cam.bin
+[2026-07-24 13:22:09] -rw-rw-rw- 1 root root   352 Jun 11  2024 valid_cn_bsm.bin
+[2026-07-24 13:22:09] 
+=== Files and permissions verified ===
+
+[2026-07-24 13:22:12] [INFO] Pulling /etc/its.json → D:\Help\automation\its.json
+[2026-07-24 13:22:12] [OK] Pulled /etc/its.json → D:\Help\automation\its.json
+[2026-07-24 13:22:12] Region detected: EU
+[2026-07-24 13:22:12] [INFO] Creating backup on device: /etc/its.json.bak
+[2026-07-24 13:22:12] sh-3.2# cp /etc/its.json /etc/its.json.bak
+[2026-07-24 13:22:12] cp: cannot create regular file `/etc/its.json.bak': Read-only file system
+[2026-07-24 13:22:12] [INFO] Pulling /etc/its.json → D:\Help\automation\its.json
+[2026-07-24 13:22:13] [OK] Pulled /etc/its.json → D:\Help\automation\its.json
+[2026-07-24 13:22:13] [INFO] Local file modified successfully → D:\Help\automation\its.json
+[2026-07-24 13:22:13] [OK] Pushed D:\Help\automation\its.json → /etc/its.json
+[2026-07-24 13:22:13] [OK] Modified its.json pushed → /etc/its.json
+[2026-07-24 13:22:13] [INFO] Backup retained at /etc/its.json.bak
+[2026-07-24 13:22:13] sh-3.2# sldd v2xmgr setdataprivacy 1
+[2026-07-24 13:22:13] setDataPrivacy sldd test start
+[2026-07-24 13:22:13] Data Privacy argv 0 : 1
+[2026-07-24 13:22:13] v2x activate success
+[2026-07-24 13:22:21] [INFO] ICON SF25 detected, starting ITS service
+[2026-07-24 13:22:21] [Ash-3.2# systemctl start its
+[2026-07-24 13:22:24] [Stack Check] Attempt 1...
+[2026-07-24 13:22:24] sh-3.2# unplugged-rt-status-gen
+[2026-07-24 13:22:24] {
+[2026-07-24 13:22:24] "deviceStatus": {
+[2026-07-24 13:22:24] "deviceData": {
+[2026-07-24 13:22:24] "versionInfo": "y20.96.2-b376640",
+[2026-07-24 13:22:24] "uniqueId": "TRIAL_VERSION",
+[2026-07-24 13:22:24] "macAddress1": "3A:87:83:CF:8C:C4",
+[2026-07-24 13:22:24] "channelId1": 180,
+[2026-07-24 13:22:24] "stationId": {
+[2026-07-24 13:22:24] "stationId": "0279E7E65CE9D8940000000000000000",
+[2026-07-24 13:22:24] "stationIdShort": "0279E7E6"
+[2026-07-24 13:22:24] }
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "miscData": {
+[2026-07-24 13:22:24] "timeStampMs": 1784879506708,
+[2026-07-24 13:22:24] "systemUptimeMs": 163150,
+[2026-07-24 13:22:24] "stackUptimeMs": 5344
+[2026-07-24 13:22:24] }
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "navigation": {
+[2026-07-24 13:22:24] "isValid": false,
+[2026-07-24 13:22:24] "source": "manual",
+[2026-07-24 13:22:24] "timestampMs": 315964968200,
+[2026-07-24 13:22:24] "leapSeconds": 0,
+[2026-07-24 13:22:24] "latitude": 0,
+[2026-07-24 13:22:24] "longitude": 0,
+[2026-07-24 13:22:24] "altitude": -2147483648,
+[2026-07-24 13:22:24] "altitudeConfidence": -2147483648,
+[2026-07-24 13:22:24] "pceLatitudeAngle": 4294967296,
+[2026-07-24 13:22:24] "pceLongitudeAngle": 4294967296,
+[2026-07-24 13:22:24] "pceOrientation": 0,
+[2026-07-24 13:22:24] "heading": 0,
+[2026-07-24 13:22:24] "headingConfidence": 0,
+[2026-07-24 13:22:24] "speed": 0,
+[2026-07-24 13:22:24] "speedConfidence": 20000,
+[2026-07-24 13:22:24] "satellitesInUse": 0,
+[2026-07-24 13:22:24] "isDriveDirectionForward": false
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "statistics": {
+[2026-07-24 13:22:24] "radio": {
+[2026-07-24 13:22:24] "if1": {
+[2026-07-24 13:22:24] "txPacket": 1,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxUnknownPacket": 0,
+[2026-07-24 13:22:24] "rxInvalidMacPhyHeaderPacket": 0,
+[2026-07-24 13:22:24] "rxRssiLastPacket": 0,
+[2026-07-24 13:22:24] "txTssiLastPacket": 20,
+[2026-07-24 13:22:24] "rxRssiLastPacketAuxAnt": 0,
+[2026-07-24 13:22:24] "txTssiLastPacketAuxAnt": 20
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "if2": {
+[2026-07-24 13:22:24] "txPacket": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxUnknownPacket": 0,
+[2026-07-24 13:22:24] "rxInvalidMacPhyHeaderPacket": 0,
+[2026-07-24 13:22:24] "rxRssiLastPacket": 0,
+[2026-07-24 13:22:24] "txTssiLastPacket": 0,
+[2026-07-24 13:22:24] "rxRssiLastPacketAuxAnt": 0,
+[2026-07-24 13:22:24] "txTssiLastPacketAuxAnt": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "if3": {
+[2026-07-24 13:22:24] "txPacket": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxUnknownPacket": 0,
+[2026-07-24 13:22:24] "rxInvalidMacPhyHeaderPacket": 0,
+[2026-07-24 13:22:24] "rxRssiLastPacket": 0,
+[2026-07-24 13:22:24] "txTssiLastPacket": 0,
+[2026-07-24 13:22:24] "rxRssiLastPacketAuxAnt": 0,
+[2026-07-24 13:22:24] "txTssiLastPacketAuxAnt": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "if4": {
+[2026-07-24 13:22:24] "txPacket": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxUnknownPacket": 0,
+[2026-07-24 13:22:24] "rxInvalidMacPhyHeaderPacket": 0,
+[2026-07-24 13:22:24] "rxRssiLastPacket": 0,
+[2026-07-24 13:22:24] "txTssiLastPacket": 0,
+[2026-07-24 13:22:24] "rxRssiLastPacketAuxAnt": 0,
+[2026-07-24 13:22:24] "txTssiLastPacketAuxAnt": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "if5": {
+[2026-07-24 13:22:24] "txPacket": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxUnknownPacket": 0,
+[2026-07-24 13:22:24] "rxInvalidMacPhyHeaderPacket": 0,
+[2026-07-24 13:22:24] "rxRssiLastPacket": 0,
+[2026-07-24 13:22:24] "txTssiLastPacket": 0,
+[2026-07-24 13:22:24] "rxRssiLastPacketAuxAnt": 0,
+[2026-07-24 13:22:24] "txTssiLastPacketAuxAnt": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "blacklist": {
+[2026-07-24 13:22:24] "blockedMacAddresses": 0,
+[2026-07-24 13:22:24] "droppedPacketsByBlacklist": 0
+[2026-07-24 13:22:24] }
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "wsmp": {
+[2026-07-24 13:22:24] "txPacket": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedInvalidHeaderPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "dsmp": {
+[2026-07-24 13:22:24] "txPacket": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "geoNet": {
+[2026-07-24 13:22:24] "txShbPacket": 0,
+[2026-07-24 13:22:24] "txTsbPacket": 0,
+[2026-07-24 13:22:24] "txGacPacket": 0,
+[2026-07-24 13:22:24] "txGbcPacket": 0,
+[2026-07-24 13:22:24] "txGucPacket": 0,
+[2026-07-24 13:22:24] "txLsReqPacket": 0,
+[2026-07-24 13:22:24] "txLsRepPacket": 0,
+[2026-07-24 13:22:24] "rxShbPacket": 0,
+[2026-07-24 13:22:24] "rxTsbPacket": 0,
+[2026-07-24 13:22:24] "rxGacPacket": 0,
+[2026-07-24 13:22:24] "rxGbcPacket": 0,
+[2026-07-24 13:22:24] "rxGucPacket": 0,
+[2026-07-24 13:22:24] "rxLsReqPacket": 0,
+[2026-07-24 13:22:24] "rxLsRepPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedInvalidBtpHeaderPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedInvalidGnHeaderPacket": 0,
+[2026-07-24 13:22:24] "rxForwardedPacket": 0,
+[2026-07-24 13:22:24] "rxLocTblEntryIf1": 0,
+[2026-07-24 13:22:24] "rxLocTblEntryIf2": 0,
+[2026-07-24 13:22:24] "rxLocTblEntryIf3": 0,
+[2026-07-24 13:22:24] "rxLocTblEntryIf4": 0,
+[2026-07-24 13:22:24] "rxOutOfDestinationArea": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "security": {
+[2026-07-24 13:22:24] "signerCertificate": {
+[2026-07-24 13:22:24] "eu": 21,
+[2026-07-24 13:22:24] "us": 0,
+[2026-07-24 13:22:24] "cn": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "1609.2": {
+[2026-07-24 13:22:24] "eu": {
+[2026-07-24 13:22:24] "txSignedPacket": 1,
+[2026-07-24 13:22:24] "txSigningErrorPacket": 2,
+[2026-07-24 13:22:24] "rxVerifiedPacket": 0,
+[2026-07-24 13:22:24] "rxMalformedPacket": 0,
+[2026-07-24 13:22:24] "rxVerificationFailedPacket": 0,
+[2026-07-24 13:22:24] "rxUnsecuredPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "us": {
+[2026-07-24 13:22:24] "txSignedPacket": 0,
+[2026-07-24 13:22:24] "txSigningErrorPacket": 0,
+[2026-07-24 13:22:24] "rxVerifiedPacket": 0,
+[2026-07-24 13:22:24] "rxMalformedPacket": 0,
+[2026-07-24 13:22:24] "rxVerificationFailedPacket": 0,
+[2026-07-24 13:22:24] "rxUnsecuredPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "cn": {
+[2026-07-24 13:22:24] "txSignedPacket": 0,
+[2026-07-24 13:22:24] "txSigningErrorPacket": 0,
+[2026-07-24 13:22:24] "rxVerifiedPacket": 0,
+[2026-07-24 13:22:24] "rxMalformedPacket": 0,
+[2026-07-24 13:22:24] "rxVerificationFailedPacket": 0,
+[2026-07-24 13:22:24] "rxUnsecuredPacket": 0
+[2026-07-24 13:22:24] }
+[2026-07-24 13:22:24] }
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "facility": {
+[2026-07-24 13:22:24] "rx": {
+[2026-07-24 13:22:24] "unknownMessage": 0,
+[2026-07-24 13:22:24] "cnBsm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usBsm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "euCam": {
+[2026-07-24 13:22:24] "hasSubscribers": 1,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "euCpm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "euDenm": {
+[2026-07-24 13:22:24] "hasSubscribers": 1,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "euIvi": {
+[2026-07-24 13:22:24] "hasSubscribers": 1,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "cnMap": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "euMap": {
+[2026-07-24 13:22:24] "hasSubscribers": 1,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usMap": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usPdm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usPsm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usPvd": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usRsa": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "cnRsi": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "euRtcm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usRtcm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "cnSpat": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "euSpat": {
+[2026-07-24 13:22:24] "hasSubscribers": 1,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usSpat": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "euSrm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usSrm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "euSsm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usSsm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usTim": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usWsa": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "cnRsm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usSdsm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "euVam": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usCsr": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usIca": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usNmea": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usRsm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usRwm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usPdc": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usPdr": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usTam": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usTum": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usTumAck": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usCcm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usMscm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usRga": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usPsm2": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usTspat": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usScpr": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usScps": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usRuccm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usRucrm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usTlsm": {
+[2026-07-24 13:22:24] "hasSubscribers": 0,
+[2026-07-24 13:22:24] "rxPacket": 0,
+[2026-07-24 13:22:24] "rxDroppedPacket": 0
+[2026-07-24 13:22:24] }
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "tx": {
+[2026-07-24 13:22:24] "cnBsm": {
+[2026-07-24 13:22:24] "txPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usBsm": {
+[2026-07-24 13:22:24] "txPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "euCam": {
+[2026-07-24 13:22:24] "txPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "euCpm": {
+[2026-07-24 13:22:24] "txPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "euDenm": {
+[2026-07-24 13:22:24] "txPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usPvd": {
+[2026-07-24 13:22:24] "txPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usSrm": {
+[2026-07-24 13:22:24] "txPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "cnRsm": {
+[2026-07-24 13:22:24] "txPacket": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "usSdsm": {
+[2026-07-24 13:22:24] "txPacket": 0,
+[2026-07-24 13:22:24] "objectsInStorage": 0,
+[2026-07-24 13:22:24] "objectsLastSent": 0
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "euVam": {
+[2026-07-24 13:22:24] "txPacket": 0
+[2026-07-24 13:22:24] }
+[2026-07-24 13:22:24] }
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "externalApiServer": {
+[2026-07-24 13:22:24] "apiConnections": 2
+[2026-07-24 13:22:24] },
+[2026-07-24 13:22:24] "geofencing": {
+[2026-07-24 13:22:24] "loadedRegions": 0,
+[2026-07-24 13:22:24] "currentlyInRegions": 0
+[2026-07-24 13:22:24] }
+[2026-07-24 13:22:24] }
+[2026-07-24 13:22:24] Lines in output: 449
+[2026-07-24 13:22:24] [Stack Check] Stack is ON
+[2026-07-24 13:22:24] 
+=== Starting Cybersecurity_EU Test ===
+
+[2026-07-24 13:22:24] sh-3.2# /data/v2xmgr/etc/rio_inject 1 127.0.0.1 /data/v2xmgr/etc/invalid_signatu
+[2026-07-24 13:22:24] Inject was successful
+[2026-07-24 13:22:26] sh-3.2# /data/v2xmgr/etc/rio_inject 1 127.0.0.1 /data/v2xmgr/etc/valid_cam.bin ;
+[2026-07-24 13:22:26] Inject was successful
+[2026-07-24 13:22:29] sh-3.2# /data/v2xmgr/etc/rio_inject 1 127.0.0.1 /data/v2xmgr/etc/valid_cam.bin ;
+[2026-07-24 13:22:29] Inject was successful
+[2026-07-24 13:22:31] 
+=== Cybersecurity_EU Test Completed ===
+
+[2026-07-24 13:23:28] sh-3.2# sldd v2xmgr setdataprivacy 0
+[2026-07-24 13:23:28] setDataPrivacy sldd test start
+[2026-07-24 13:23:28] Data Privacy argv 0 : 0
+[2026-07-24 13:23:28] v2x de-activate success
+[2026-07-24 13:23:30] sh-3.2# sldd v2xmgr changeregion cn
+[2026-07-24 13:23:30] sldd v2xmgr changeRegion start
+[2026-07-24 13:23:30] changeRegion argc : 1
+[2026-07-24 13:23:30] changeRegion argv 0 : cn
+[2026-07-24 13:23:31] PASS: changeRegion
+[2026-07-24 13:23:31] [INFO] Creating backup on device: /etc/its.json.bak
+[2026-07-24 13:23:31] sh-3.2# cp /etc/its.json /etc/its.json.bak
+[2026-07-24 13:23:31] cp: cannot create regular file `/etc/its.json.bak': Read-only file system
+[2026-07-24 13:23:31] [INFO] Pulling /etc/its.json → D:\Help\automation\its.json
+[2026-07-24 13:23:31] [OK] Pulled /etc/its.json → D:\Help\automation\its.json
+[2026-07-24 13:23:31] [INFO] Local file modified successfully → D:\Help\automation\its.json
+[2026-07-24 13:23:31] [OK] Pushed D:\Help\automation\its.json → /etc/its.json
+[2026-07-24 13:23:31] [OK] Modified its.json pushed → /etc/its.json
+[2026-07-24 13:23:31] [INFO] Backup retained at /etc/its.json.bak
+[2026-07-24 13:23:44] [INFO] Pulling /etc/its.json → D:\Help\automation\its.json
+[2026-07-24 13:23:45] [OK] Pulled /etc/its.json → D:\Help\automation\its.json
+[2026-07-24 13:23:45] Region detected: CN
+[2026-07-24 13:23:45] sh-3.2# sldd v2xmgr setdataprivacy 1
+[2026-07-24 13:23:45] setDataPrivacy sldd test start
+[2026-07-24 13:23:45] Data Privacy argv 0 : 1
+[2026-07-24 13:23:45] v2x activate success
+[2026-07-24 13:23:53] [INFO] ICON SF25 detected, starting ITS service
+[2026-07-24 13:23:53] [Ash-3.2# systemctl start its
+[2026-07-24 13:23:56] [Stack Check] Attempt 1...
+[2026-07-24 13:23:56] sh-3.2# unplugged-rt-status-gen
+[2026-07-24 13:23:56] {
+[2026-07-24 13:23:56] "deviceStatus": {
+[2026-07-24 13:23:56] "deviceData": {
+[2026-07-24 13:23:56] "versionInfo": "y20.96.2-b376640",
+[2026-07-24 13:23:56] "uniqueId": "TRIAL_VERSION",
+[2026-07-24 13:23:56] "macAddress1": "00:00:00:31:C1:6A",
+[2026-07-24 13:23:56] "channelId1": 183,
+[2026-07-24 13:23:56] "stationId": {
+[2026-07-24 13:23:56] "stationId": "58A028EEF665D3880000000000000000",
+[2026-07-24 13:23:56] "stationIdShort": "58A028EE"
+[2026-07-24 13:23:56] }
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "miscData": {
+[2026-07-24 13:23:56] "timeStampMs": 1784879598594,
+[2026-07-24 13:23:56] "systemUptimeMs": 255040,
+[2026-07-24 13:23:56] "stackUptimeMs": 5326
+[2026-07-24 13:23:56] }
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "navigation": {
+[2026-07-24 13:23:56] "isValid": false,
+[2026-07-24 13:23:56] "source": "manual",
+[2026-07-24 13:23:56] "timestampMs": 315965060100,
+[2026-07-24 13:23:56] "leapSeconds": 0,
+[2026-07-24 13:23:56] "latitude": 0,
+[2026-07-24 13:23:56] "longitude": 0,
+[2026-07-24 13:23:56] "altitude": -2147483648,
+[2026-07-24 13:23:56] "altitudeConfidence": -2147483648,
+[2026-07-24 13:23:56] "pceLatitudeAngle": 4294967296,
+[2026-07-24 13:23:56] "pceLongitudeAngle": 4294967296,
+[2026-07-24 13:23:56] "pceOrientation": 0,
+[2026-07-24 13:23:56] "heading": 0,
+[2026-07-24 13:23:56] "headingConfidence": 0,
+[2026-07-24 13:23:56] "speed": 0,
+[2026-07-24 13:23:56] "speedConfidence": 20000,
+[2026-07-24 13:23:56] "satellitesInUse": 0,
+[2026-07-24 13:23:56] "isDriveDirectionForward": false
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "statistics": {
+[2026-07-24 13:23:56] "radio": {
+[2026-07-24 13:23:56] "if1": {
+[2026-07-24 13:23:56] "txPacket": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxUnknownPacket": 0,
+[2026-07-24 13:23:56] "rxInvalidMacPhyHeaderPacket": 0,
+[2026-07-24 13:23:56] "rxRssiLastPacket": 0,
+[2026-07-24 13:23:56] "txTssiLastPacket": 0,
+[2026-07-24 13:23:56] "rxRssiLastPacketAuxAnt": 0,
+[2026-07-24 13:23:56] "txTssiLastPacketAuxAnt": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "if2": {
+[2026-07-24 13:23:56] "txPacket": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxUnknownPacket": 0,
+[2026-07-24 13:23:56] "rxInvalidMacPhyHeaderPacket": 0,
+[2026-07-24 13:23:56] "rxRssiLastPacket": 0,
+[2026-07-24 13:23:56] "txTssiLastPacket": 0,
+[2026-07-24 13:23:56] "rxRssiLastPacketAuxAnt": 0,
+[2026-07-24 13:23:56] "txTssiLastPacketAuxAnt": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "if3": {
+[2026-07-24 13:23:56] "txPacket": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxUnknownPacket": 0,
+[2026-07-24 13:23:56] "rxInvalidMacPhyHeaderPacket": 0,
+[2026-07-24 13:23:56] "rxRssiLastPacket": 0,
+[2026-07-24 13:23:56] "txTssiLastPacket": 0,
+[2026-07-24 13:23:56] "rxRssiLastPacketAuxAnt": 0,
+[2026-07-24 13:23:56] "txTssiLastPacketAuxAnt": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "if4": {
+[2026-07-24 13:23:56] "txPacket": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxUnknownPacket": 0,
+[2026-07-24 13:23:56] "rxInvalidMacPhyHeaderPacket": 0,
+[2026-07-24 13:23:56] "rxRssiLastPacket": 0,
+[2026-07-24 13:23:56] "txTssiLastPacket": 0,
+[2026-07-24 13:23:56] "rxRssiLastPacketAuxAnt": 0,
+[2026-07-24 13:23:56] "txTssiLastPacketAuxAnt": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "if5": {
+[2026-07-24 13:23:56] "txPacket": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxUnknownPacket": 0,
+[2026-07-24 13:23:56] "rxInvalidMacPhyHeaderPacket": 0,
+[2026-07-24 13:23:56] "rxRssiLastPacket": 0,
+[2026-07-24 13:23:56] "txTssiLastPacket": 0,
+[2026-07-24 13:23:56] "rxRssiLastPacketAuxAnt": 0,
+[2026-07-24 13:23:56] "txTssiLastPacketAuxAnt": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "blacklist": {
+[2026-07-24 13:23:56] "blockedMacAddresses": 0,
+[2026-07-24 13:23:56] "droppedPacketsByBlacklist": 0
+[2026-07-24 13:23:56] }
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "wsmp": {
+[2026-07-24 13:23:56] "txPacket": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedInvalidHeaderPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "dsmp": {
+[2026-07-24 13:23:56] "txPacket": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "geoNet": {
+[2026-07-24 13:23:56] "txShbPacket": 0,
+[2026-07-24 13:23:56] "txTsbPacket": 0,
+[2026-07-24 13:23:56] "txGacPacket": 0,
+[2026-07-24 13:23:56] "txGbcPacket": 0,
+[2026-07-24 13:23:56] "txGucPacket": 0,
+[2026-07-24 13:23:56] "txLsReqPacket": 0,
+[2026-07-24 13:23:56] "txLsRepPacket": 0,
+[2026-07-24 13:23:56] "rxShbPacket": 0,
+[2026-07-24 13:23:56] "rxTsbPacket": 0,
+[2026-07-24 13:23:56] "rxGacPacket": 0,
+[2026-07-24 13:23:56] "rxGbcPacket": 0,
+[2026-07-24 13:23:56] "rxGucPacket": 0,
+[2026-07-24 13:23:56] "rxLsReqPacket": 0,
+[2026-07-24 13:23:56] "rxLsRepPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedInvalidBtpHeaderPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedInvalidGnHeaderPacket": 0,
+[2026-07-24 13:23:56] "rxForwardedPacket": 0,
+[2026-07-24 13:23:56] "rxLocTblEntryIf1": 0,
+[2026-07-24 13:23:56] "rxLocTblEntryIf2": 0,
+[2026-07-24 13:23:56] "rxLocTblEntryIf3": 0,
+[2026-07-24 13:23:56] "rxLocTblEntryIf4": 0,
+[2026-07-24 13:23:56] "rxOutOfDestinationArea": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "security": {
+[2026-07-24 13:23:56] "signerCertificate": {
+[2026-07-24 13:23:56] "eu": 0,
+[2026-07-24 13:23:56] "us": 0,
+[2026-07-24 13:23:56] "cn": 21
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "1609.2": {
+[2026-07-24 13:23:56] "eu": {
+[2026-07-24 13:23:56] "txSignedPacket": 0,
+[2026-07-24 13:23:56] "txSigningErrorPacket": 0,
+[2026-07-24 13:23:56] "rxVerifiedPacket": 0,
+[2026-07-24 13:23:56] "rxMalformedPacket": 0,
+[2026-07-24 13:23:56] "rxVerificationFailedPacket": 0,
+[2026-07-24 13:23:56] "rxUnsecuredPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "us": {
+[2026-07-24 13:23:56] "txSignedPacket": 0,
+[2026-07-24 13:23:56] "txSigningErrorPacket": 0,
+[2026-07-24 13:23:56] "rxVerifiedPacket": 0,
+[2026-07-24 13:23:56] "rxMalformedPacket": 0,
+[2026-07-24 13:23:56] "rxVerificationFailedPacket": 0,
+[2026-07-24 13:23:56] "rxUnsecuredPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "cn": {
+[2026-07-24 13:23:56] "txSignedPacket": 0,
+[2026-07-24 13:23:56] "txSigningErrorPacket": 0,
+[2026-07-24 13:23:56] "rxVerifiedPacket": 0,
+[2026-07-24 13:23:56] "rxMalformedPacket": 0,
+[2026-07-24 13:23:56] "rxVerificationFailedPacket": 0,
+[2026-07-24 13:23:56] "rxUnsecuredPacket": 0
+[2026-07-24 13:23:56] }
+[2026-07-24 13:23:56] }
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "facility": {
+[2026-07-24 13:23:56] "rx": {
+[2026-07-24 13:23:56] "unknownMessage": 0,
+[2026-07-24 13:23:56] "cnBsm": {
+[2026-07-24 13:23:56] "hasSubscribers": 1,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usBsm": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "euCam": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "euCpm": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "euDenm": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "euIvi": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "cnMap": {
+[2026-07-24 13:23:56] "hasSubscribers": 1,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "euMap": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usMap": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usPdm": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usPsm": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usPvd": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usRsa": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "cnRsi": {
+[2026-07-24 13:23:56] "hasSubscribers": 1,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "euRtcm": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usRtcm": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "cnSpat": {
+[2026-07-24 13:23:56] "hasSubscribers": 1,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "euSpat": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usSpat": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "euSrm": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usSrm": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "euSsm": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usSsm": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usTim": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usWsa": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "cnRsm": {
+[2026-07-24 13:23:56] "hasSubscribers": 1,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usSdsm": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "euVam": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usCsr": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usIca": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usNmea": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usRsm": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usRwm": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usPdc": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usPdr": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usTam": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usTum": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usTumAck": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usCcm": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usMscm": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usRga": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usPsm2": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usTspat": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usScpr": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usScps": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usRuccm": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usRucrm": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usTlsm": {
+[2026-07-24 13:23:56] "hasSubscribers": 0,
+[2026-07-24 13:23:56] "rxPacket": 0,
+[2026-07-24 13:23:56] "rxDroppedPacket": 0
+[2026-07-24 13:23:56] }
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "tx": {
+[2026-07-24 13:23:56] "cnBsm": {
+[2026-07-24 13:23:56] "txPacket": 4
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usBsm": {
+[2026-07-24 13:23:56] "txPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "euCam": {
+[2026-07-24 13:23:56] "txPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "euCpm": {
+[2026-07-24 13:23:56] "txPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "euDenm": {
+[2026-07-24 13:23:56] "txPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usPvd": {
+[2026-07-24 13:23:56] "txPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usSrm": {
+[2026-07-24 13:23:56] "txPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "cnRsm": {
+[2026-07-24 13:23:56] "txPacket": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "usSdsm": {
+[2026-07-24 13:23:56] "txPacket": 0,
+[2026-07-24 13:23:56] "objectsInStorage": 0,
+[2026-07-24 13:23:56] "objectsLastSent": 0
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "euVam": {
+[2026-07-24 13:23:56] "txPacket": 0
+[2026-07-24 13:23:56] }
+[2026-07-24 13:23:56] }
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "externalApiServer": {
+[2026-07-24 13:23:56] "apiConnections": 2
+[2026-07-24 13:23:56] },
+[2026-07-24 13:23:56] "geofencing": {
+[2026-07-24 13:23:56] "loadedRegions": 0,
+[2026-07-24 13:23:56] "currentlyInRegions": 0
+[2026-07-24 13:23:56] }
+[2026-07-24 13:23:56] }
+[2026-07-24 13:23:56] Lines in output: 449
+[2026-07-24 13:23:56] [Stack Check] Stack is ON
+[2026-07-24 13:23:56] 
+=== Starting Cybersecurity_CN Test ===
+
+[2026-07-24 13:23:56] sh-3.2# /data/v2xmgr/etc/rio_inject 4 127.0.0.1 /data/v2xmgr/etc/invalid_signatu
+[2026-07-24 13:23:58] Inject was successful
+[2026-07-24 13:23:58] sh-3.2# /data/v2xmgr/etc/rio_inject 4 127.0.0.1 /data/v2xmgr/etc/valid_cn_bsm.bi
+[2026-07-24 13:24:00] Inject was successful
+[2026-07-24 13:24:00] sh-3.2# /data/v2xmgr/etc/rio_inject 4 127.0.0.1 /data/v2xmgr/etc/valid_cn_bsm.bi
+[2026-07-24 13:24:02] 
+=== Cybersecurity_CN Test Completed ===
+
+[2026-07-24 13:24:24] Inject was successful
+[2026-07-24 13:24:24] sh-3.2# sldd v2xmgr setdataprivacy 0
+[2026-07-24 13:24:25] setDataPrivacy sldd test start
+[2026-07-24 13:24:25] Data Privacy argv 0 : 0
+[2026-07-24 13:24:25] v2x de-activate success
+[2026-07-24 13:24:27] 
+============================================================
+[2026-07-24 13:24:27] [OK] Test 'Cybersecurity Test' COMPLETED SUCCESSFULLY
+[2026-07-24 13:24:27] Logs saved in '../logs/cybersecurity_test.log'
+[2026-07-24 13:24:27] ============================================================
+
+[2026-07-24 13:24:27] === ADB Shell Closed ===
+[2026-07-24 13:24:27] [2026-07-24 13:24:27]
+[2026-07-24 13:24:27] === ADB Shell Closed ===
+[2026-07-24 13:24:27] [2026-07-24 13:24:27]

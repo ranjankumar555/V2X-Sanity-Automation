@@ -1,0 +1,2848 @@
+[2026-05-16 13:52:19] === Starting ADB Shell ===
+[2026-05-16 13:52:19] [2026-05-16 13:52:19]
+[2026-05-16 13:52:20] 
+============================================================
+[2026-05-16 13:52:20] Test: Certificate Download Test
+[2026-05-16 13:52:20] Log File: ../logs/certificate_download.log
+[2026-05-16 13:52:20] ============================================================
+
+[2026-05-16 13:52:20] sh-3.2# cat /etc/version
+[2026-05-16 13:52:20] cat /etc/version ; echo __CMD_DONE_7802ad69df334470b38f2695ffaa03d5__
+[2026-05-16 13:52:20] 
+[2026-05-16 13:52:20] sh-3.2# cat /etc/version ; echo __CMD_DONE_7802ad69df334470b38f2695ffaa03d5__
+[2026-05-16 13:52:20] 
+[2026-05-16 13:52:20] ICON_NAD.v030.049.007.iconsf25.sop_260512
+[2026-05-16 13:52:20] 
+[2026-05-16 13:52:20] __CMD_DONE_7802ad69df334470b38f2695ffaa03d5__
+[2026-05-16 13:52:20] 
+[2026-05-16 13:52:20] Mode: SOP (binary running from /log/)
+[2026-05-16 13:52:20] Preparing SOP mode...
+[2026-05-16 13:52:20] Remounting /log/ with exec permission...
+[2026-05-16 13:52:20] sh-3.2# mount -o remount,exec /log/
+[2026-05-16 13:52:20] sh-3.2# mount -o remount,exec /log/ ; echo __CMD_DONE_ddd778088e7241ef936a4e2de4 
+[2026-05-16 13:52:20] fd76b8__
+[2026-05-16 13:52:20] 
+[2026-05-16 13:52:20] __CMD_DONE_ddd778088e7241ef936a4e2de4fd76b8__
+[2026-05-16 13:52:20] 
+[2026-05-16 13:52:21] Setting permissions on /log/sldd and /log/sldd_v2xmgr...
+[2026-05-16 13:52:21] sh-3.2# chmod 777 /log/sldd /log/sldd_v2xmgr
+[2026-05-16 13:52:21] sh-3.2# chmod 777 /log/sldd /log/sldd_v2xmgr ; echo __CMD_DONE_f44dd16b652c4ae58 
+[2026-05-16 13:52:21] 941ab231436554e__
+[2026-05-16 13:52:21] 
+[2026-05-16 13:52:21] __CMD_DONE_f44dd16b652c4ae58941ab231436554e__
+[2026-05-16 13:52:21] 
+[2026-05-16 13:52:22] ERROR: Test failed with error: 'ADBLogger' object has no attribute 'info'
+[2026-05-16 13:52:22] === ADB Shell Closed ===
+[2026-05-16 13:52:22] [2026-05-16 13:52:22]
+[2026-05-16 13:52:22] === ADB Shell Closed ===
+[2026-05-16 13:52:22] [2026-05-16 13:52:22]
+[2026-05-16 13:53:08] === Starting ADB Shell ===
+[2026-05-16 13:53:08] [2026-05-16 13:53:08]
+[2026-05-16 13:53:09] 
+============================================================
+[2026-05-16 13:53:09] Test: Certificate Download Test
+[2026-05-16 13:53:09] Log File: ../logs/certificate_download.log
+[2026-05-16 13:53:09] ============================================================
+
+[2026-05-16 13:53:09] sh-3.2# cat /etc/version
+[2026-05-16 13:53:09] cat /etc/version ; echo __CMD_DONE_c7ba16sh-3.2# cat /etc/version ; echo __CMD_DONE_c7ba162241f84ac0a0900b639ef93376__
+[2026-05-16 13:53:09] 
+[2026-05-16 13:53:09] ICON_NAD.v030.049.007.iconsf25.sop_260512
+[2026-05-16 13:53:09] 
+[2026-05-16 13:53:09] __CMD_DONE_c7ba162241f84ac0a0900b639ef93376__
+[2026-05-16 13:53:09] 
+[2026-05-16 13:53:09] Mode: SOP (binary running from /log/)
+[2026-05-16 13:53:09] Preparing SOP mode...
+[2026-05-16 13:53:09] Remounting /log/ with exec permission...
+[2026-05-16 13:53:09] sh-3.2# mount -o remount,exec /log/
+[2026-05-16 13:53:09] sh-3.2# mount -o remount,exec /log/ ; echo __CMD_DONE_9b22549b9a9c4a61878a20e557 
+[2026-05-16 13:53:09] e86d50__
+[2026-05-16 13:53:09] 
+[2026-05-16 13:53:09] __CMD_DONE_9b22549b9a9c4a61878a20e557e86d50__
+[2026-05-16 13:53:09] 
+[2026-05-16 13:53:10] Setting permissions on /log/sldd and /log/sldd_v2xmgr...
+[2026-05-16 13:53:10] sh-3.2# chmod 777 /log/sldd /log/sldd_v2xmgr
+[2026-05-16 13:53:10] sh-3.2# chmod 777 /log/sldd /log/sldd_v2xmgr ; echo __CMD_DONE_16ba6efbd46c422cb 
+[2026-05-16 13:53:10] 9b250515fd53ccc__
+[2026-05-16 13:53:10] 
+[2026-05-16 13:53:10] __CMD_DONE_16ba6efbd46c422cb9b250515fd53ccc__
+[2026-05-16 13:53:10] 
+[2026-05-16 13:53:10] Certificate Download Test Setup
+[2026-05-16 13:53:10] [SOP Mount] Starting SOP-specific mount operations...
+[2026-05-16 13:53:10] [SOP Mount] Remounting /log/sldd with exec permissions...
+[2026-05-16 13:53:10] sh-3.2# mount -o remount,exec /log/
+[2026-05-16 13:53:10] sh-3.2# mount -o remount,exec /log/ ; echo __CMD_DONE_57a7210666a44250a37e5e020b 
+[2026-05-16 13:53:10] 19bae8__
+[2026-05-16 13:53:10] 
+[2026-05-16 13:53:10] __CMD_DONE_57a7210666a44250a37e5e020b19bae8__
+[2026-05-16 13:53:10] 
+[2026-05-16 13:53:10] [SOP Mount] Done Mount remount permission...
+[2026-05-16 13:53:10] sh-3.2# /log/sldd telephony factorysetimei 354028100010134
+[2026-05-16 13:53:10] sh-3.2# /log/sldd telephony factorysetimei 354028100010134 ; echo __CMD_DONE_b5a 
+[2026-05-16 13:53:10] a789c58f64d25ae7397f0d716ca31__
+[2026-05-16 13:53:10] 
+[2026-05-16 13:53:11] -----------------------------------------------------------
+[2026-05-16 13:53:11] 
+[2026-05-16 13:53:11]     Set IMEI
+[2026-05-16 13:53:11] 
+[2026-05-16 13:53:11] -----------------------------------------------------------
+[2026-05-16 13:53:11] 
+[2026-05-16 13:53:11]  -> Result : true
+[2026-05-16 13:53:11] 
+[2026-05-16 13:53:11] __CMD_DONE_b5aa789c58f64d25ae7397f0d716ca31__
+[2026-05-16 13:53:11] 
+[2026-05-16 13:53:21] sh-3.2# devcoding write PROVISIONING/DAS_INDEX 1
+[2026-05-16 13:53:21] sh-3.2# devcoding write PROVISIONING/DAS_INDEX 1 ; echo __CMD_DONE_6057ec765b5b4 
+[2026-05-16 13:53:21] d849fdc5c0801b302d5__
+[2026-05-16 13:53:21] 
+[2026-05-16 13:53:21] sh: devcoding: command not found
+[2026-05-16 13:53:21] 
+[2026-05-16 13:53:21] __CMD_DONE_6057ec765b5b4d849fdc5c0801b302d5__
+[2026-05-16 13:53:21] 
+[2026-05-16 13:53:23] sh-3.2# devcoding write ECALL/SIM_CARD 1
+[2026-05-16 13:53:23] sh-3.2# devcoding write ECALL/SIM_CARD 1 ; echo __CMD_DONE_5e282f3d04b34c7885001 
+[2026-05-16 13:53:23] faf9d2789cd__
+[2026-05-16 13:53:23] 
+[2026-05-16 13:53:23] sh: devcoding: command not found
+[2026-05-16 13:53:23] 
+[2026-05-16 13:53:23] __CMD_DONE_5e282f3d04b34c7885001faf9d2789cd__
+[2026-05-16 13:53:23] 
+[2026-05-16 13:53:25] sh-3.2# devcoding write ECALL/TELEMATIC 1
+[2026-05-16 13:53:25] sh-3.2# devcoding write ECALL/TELEMATIC 1 ; echo __CMD_DONE_dcbacaebf3b8406194f1 
+[2026-05-16 13:53:25] e1d9c67a1624__
+[2026-05-16 13:53:25] 
+[2026-05-16 13:53:25] sh: devcoding: command not found
+[2026-05-16 13:53:25] 
+[2026-05-16 13:53:25] __CMD_DONE_dcbacaebf3b8406194f1e1d9c67a1624__
+[2026-05-16 13:53:25] 
+[2026-05-16 13:53:27] sh-3.2# ps | grep provisioningd
+[2026-05-16 13:53:27] sh-3.2# ps | grep provisioningd ; echo __CMD_DONE_36d1ccb3dfad4211a35675ab67ad13 
+[2026-05-16 13:53:27] a9__
+[2026-05-16 13:53:27] 
+[2026-05-16 13:53:27] __CMD_DONE_36d1ccb3dfad4211a35675ab67ad13a9__
+[2026-05-16 13:53:27] 
+[2026-05-16 13:53:29] sh-3.2# /log/sldd telephony getimei
+[2026-05-16 13:53:29] sh-3.2# /log/sldd telephony getimei ; echo __CMD_DONE_3776c5578410425ca95b258ddf 
+[2026-05-16 13:53:29] ebd54d__
+[2026-05-16 13:53:29] 
+[2026-05-16 13:53:29] -----------------------------------------------------------
+[2026-05-16 13:53:29] 
+[2026-05-16 13:53:29]     Get IMEI
+[2026-05-16 13:53:29] 
+[2026-05-16 13:53:29] -----------------------------------------------------------
+[2026-05-16 13:53:29] 
+[2026-05-16 13:53:29]  -> IMEI : 354028100010134
+[2026-05-16 13:53:29] 
+[2026-05-16 13:53:29] __CMD_DONE_3776c5578410425ca95b258ddfebd54d__
+[2026-05-16 13:53:29] 
+[2026-05-16 13:56:05] === Starting ADB Shell ===
+[2026-05-16 13:56:05] [2026-05-16 13:56:05]
+[2026-05-16 13:56:06] 
+============================================================
+[2026-05-16 13:56:06] Test: Certificate Download Test
+[2026-05-16 13:56:06] Log File: ../logs/certificate_download.log
+[2026-05-16 13:56:06] ============================================================
+
+[2026-05-16 13:56:06] sh-3.2# cat /etc/version
+[2026-05-16 13:56:06] cat /etc/versionsh-3.2# cat /etc/version ; echo __CMD_DONE_376ebd82f6c94595ab49da69e6dd480f__
+[2026-05-16 13:56:06] 
+[2026-05-16 13:56:06] ICON_NAD.v030.049.007.iconsf25.sop_260512
+[2026-05-16 13:56:06] 
+[2026-05-16 13:56:06] __CMD_DONE_376ebd82f6c94595ab49da69e6dd480f__
+[2026-05-16 13:56:06] 
+[2026-05-16 13:56:06] Mode: SOP (binary running from /log/)
+[2026-05-16 13:56:06] Preparing SOP mode...
+[2026-05-16 13:56:06] Remounting /log/ with exec permission...
+[2026-05-16 13:56:06] sh-3.2# mount -o remount,exec /log/
+[2026-05-16 13:56:07] sh-3.2# mount -o remount,exec /log/ ; echo __CMD_DONE_7ce4e5d3cb20447faa50c44d51 
+[2026-05-16 13:56:07] ef0c4a__
+[2026-05-16 13:56:07] 
+[2026-05-16 13:56:07] __CMD_DONE_7ce4e5d3cb20447faa50c44d51ef0c4a__
+[2026-05-16 13:56:07] 
+[2026-05-16 13:56:08] Setting permissions on /log/sldd and /log/sldd_v2xmgr...
+[2026-05-16 13:56:08] sh-3.2# chmod 777 /log/sldd /log/sldd_v2xmgr
+[2026-05-16 13:56:08] sh-3.2# chmod 777 /log/sldd /log/sldd_v2xmgr ; echo __CMD_DONE_c100696d058d4767a 
+[2026-05-16 13:56:08] aca8c9d2dd0b207__
+[2026-05-16 13:56:08] 
+[2026-05-16 13:56:08] __CMD_DONE_c100696d058d4767aaca8c9d2dd0b207__
+[2026-05-16 13:56:08] 
+[2026-05-16 13:56:08] Certificate Download Test Setup
+[2026-05-16 13:56:08] [SOP Mount] Starting SOP-specific mount operations...
+[2026-05-16 13:56:08] [SOP Mount] Remounting /log/sldd with exec permissions...
+[2026-05-16 13:56:08] sh-3.2# mount -o remount,exec /log/
+[2026-05-16 13:56:08] sh-3.2# mount -o remount,exec /log/ ; echo __CMD_DONE_558dc4dfee22433c883f421a7a 
+[2026-05-16 13:56:08] 5ec958__
+[2026-05-16 13:56:08] 
+[2026-05-16 13:56:08] __CMD_DONE_558dc4dfee22433c883f421a7a5ec958__
+[2026-05-16 13:56:08] 
+[2026-05-16 13:56:08] [SOP Mount] Done Mount remount permission...
+[2026-05-16 13:56:08] sh-3.2# /log/sldd telephony factorysetimei 354028100010134
+[2026-05-16 13:56:08] sh-3.2# /log/sldd telephony factorysetimei 354028100010134 ; echo __CMD_DONE_627 
+[2026-05-16 13:56:08] 55681785247f09b3f1de099506553__
+[2026-05-16 13:56:08] 
+[2026-05-16 13:56:08] -----------------------------------------------------------
+[2026-05-16 13:56:08] 
+[2026-05-16 13:56:08]     Set IMEI
+[2026-05-16 13:56:08] 
+[2026-05-16 13:56:08] -----------------------------------------------------------
+[2026-05-16 13:56:08] 
+[2026-05-16 13:56:08]  -> Result : true
+[2026-05-16 13:56:08] 
+[2026-05-16 13:56:08] __CMD_DONE_62755681785247f09b3f1de099506553__
+[2026-05-16 13:56:08] 
+[2026-05-16 13:56:18] sh-3.2# devcoding write PROVISIONING/DAS_INDEX 1
+[2026-05-16 13:56:19] sh-3.2# devcoding write PROVISIONING/DAS_INDEX 1 ; echo __CMD_DONE_0b590f4d394e4 
+[2026-05-16 13:56:19] 01db43ed113ef6ab18e__
+[2026-05-16 13:56:19] 
+[2026-05-16 13:56:19] sh: devcoding: command not found
+[2026-05-16 13:56:19] 
+[2026-05-16 13:56:19] __CMD_DONE_0b590f4d394e401db43ed113ef6ab18e__
+[2026-05-16 13:56:19] 
+[2026-05-16 13:56:21] sh-3.2# devcoding write ECALL/SIM_CARD 1
+[2026-05-16 13:56:21] sh-3.2# devcoding write ECALL/SIM_CARD 1 ; echo __CMD_DONE_239237d012654fd7993db 
+[2026-05-16 13:56:21] 8268c1844e1__
+[2026-05-16 13:56:21] 
+[2026-05-16 13:56:21] sh: devcoding: command not found
+[2026-05-16 13:56:21] 
+[2026-05-16 13:56:21] __CMD_DONE_239237d012654fd7993db8268c1844e1__
+[2026-05-16 13:56:21] 
+[2026-05-16 13:56:23] sh-3.2# devcoding write ECALL/TELEMATIC 1
+[2026-05-16 13:56:23] sh-3.2# devcoding write ECALL/TELEMATIC 1 ; echo __CMD_DONE_30764f3e682f46a7b17a 
+[2026-05-16 13:56:23] ecbe8ce9ceef__
+[2026-05-16 13:56:23] 
+[2026-05-16 13:56:23] sh: devcoding: command not found
+[2026-05-16 13:56:23] 
+[2026-05-16 13:56:23] __CMD_DONE_30764f3e682f46a7b17aecbe8ce9ceef__
+[2026-05-16 13:56:23] 
+[2026-05-16 13:56:25] sh-3.2# ps | grep provisioningd
+[2026-05-16 13:56:25] sh-3.2# ps | grep provisioningd ; echo __CMD_DONE_bfead7563ddf41ffb5204d68a26203 
+[2026-05-16 13:56:25] 50__
+[2026-05-16 13:56:25] 
+[2026-05-16 13:56:25] __CMD_DONE_bfead7563ddf41ffb5204d68a2620350__
+[2026-05-16 13:56:25] 
+[2026-05-16 13:56:27] sh-3.2# /log/sldd telephony getimei
+[2026-05-16 13:56:27] sh-3.2# /log/sldd telephony getimei ; echo __CMD_DONE_b21ac009a079485d922de04b47 
+[2026-05-16 13:56:27] c517da__
+[2026-05-16 13:56:27] 
+[2026-05-16 13:56:27] -----------------------------------------------------------
+[2026-05-16 13:56:27] 
+[2026-05-16 13:56:27]     Get IMEI
+[2026-05-16 13:56:27] 
+[2026-05-16 13:56:27] -----------------------------------------------------------
+[2026-05-16 13:56:27] 
+[2026-05-16 13:56:27]  -> IMEI : 354028100010134
+[2026-05-16 13:56:27] 
+[2026-05-16 13:56:27] __CMD_DONE_b21ac009a079485d922de04b47c517da__
+[2026-05-16 13:56:27] 
+[2026-05-16 13:56:29] sh-3.2# /log/sldd telephony getprefnettype
+[2026-05-16 13:56:29] sh-3.2# /log/sldd telephony getprefnettype ; echo __CMD_DONE_ec2f093176924a0a9fd 
+[2026-05-16 13:56:29] bbe4eb69a71a0__
+[2026-05-16 13:56:29] 
+[2026-05-16 13:56:29] -----------------------------------------------------------
+[2026-05-16 13:56:29] 
+[2026-05-16 13:56:29]     Get preferred network type
+[2026-05-16 13:56:29] 
+[2026-05-16 13:56:29] -----------------------------------------------------------
+[2026-05-16 13:56:29] 
+[2026-05-16 13:56:29]  -> Preferred network type : 26 (NR 5G, LTE, GSM and WCDMA)
+[2026-05-16 13:56:29] 
+[2026-05-16 13:56:29] __CMD_DONE_ec2f093176924a0a9fdbbe4eb69a71a0__
+[2026-05-16 13:56:29] 
+[2026-05-16 13:56:31] sh-3.2# /log/sldd telephony getsignalstrength
+[2026-05-16 13:56:31] sh-3.2# /log/sldd telephony getsignalstrength ; echo __CMD_DONE_f43a535f94f94ee8 
+[2026-05-16 13:56:31] 8b00f8d16fd22e64__
+[2026-05-16 13:56:31] 
+[2026-05-16 13:56:31] -----------------------------------------------------------
+[2026-05-16 13:56:31] 
+[2026-05-16 13:56:31]     Get the signal strength as dBm
+[2026-05-16 13:56:31] 
+[2026-05-16 13:56:31] -----------------------------------------------------------
+[2026-05-16 13:56:31] 
+[2026-05-16 13:56:31]  -> Signal Strength (dBm) : -110 dBm [RAT: 4G]
+[2026-05-16 13:56:31] 
+[2026-05-16 13:56:31] __CMD_DONE_f43a535f94f94ee88b00f8d16fd22e64__
+[2026-05-16 13:56:31] 
+[2026-05-16 13:56:33] sh-3.2# /log/sldd telephony getdatastate
+[2026-05-16 13:56:34] sh-3.2# /log/sldd telephony getdatastate ; echo __CMD_DONE_e7aed473fca94aafbcb84 
+[2026-05-16 13:56:34] c4354663b9d__
+[2026-05-16 13:56:34] 
+[2026-05-16 13:56:34] -----------------------------------------------------------
+[2026-05-16 13:56:34] 
+[2026-05-16 13:56:34]     Get Data connection state
+[2026-05-16 13:56:34] 
+[2026-05-16 13:56:34] -----------------------------------------------------------
+[2026-05-16 13:56:34] 
+[2026-05-16 13:56:34]  -> Data connection state : 2 (Connected)
+[2026-05-16 13:56:34] 
+[2026-05-16 13:56:34] __CMD_DONE_e7aed473fca94aafbcb84c4354663b9d__
+[2026-05-16 13:56:34] 
+[2026-05-16 13:56:36] sh-3.2# /log/sldd telephony getnetregstate
+[2026-05-16 13:56:36] sh-3.2# /log/sldd telephony getnetregstate ; echo __CMD_DONE_ccba10e3398349ac896 
+[2026-05-16 13:56:36] 34a01c2671bdf__
+[2026-05-16 13:56:36] 
+[2026-05-16 13:56:36] -----------------------------------------------------------
+[2026-05-16 13:56:36] 
+[2026-05-16 13:56:36]     Get network registration state
+[2026-05-16 13:56:36] 
+[2026-05-16 13:56:36] -----------------------------------------------------------
+[2026-05-16 13:56:36] 
+[2026-05-16 13:56:36]  -> Network registration state (Voice network) : 5 (Registered, Roaming)
+[2026-05-16 13:56:36] 
+[2026-05-16 13:56:36]  -> Network registration state (Data network) : 5 (Registered, Roaming)
+[2026-05-16 13:56:36] 
+[2026-05-16 13:56:36] __CMD_DONE_ccba10e3398349ac89634a01c2671bdf__
+[2026-05-16 13:56:36] 
+[2026-05-16 13:56:38] sh-3.2# /log/sldd telephony getnetoper
+[2026-05-16 13:56:38] sh-3.2# /log/sldd telephony getnetoper ; echo __CMD_DONE_c2bbe593fe17445fa30db72 
+[2026-05-16 13:56:38] eef5f5c1a__
+[2026-05-16 13:56:38] 
+[2026-05-16 13:56:38] -----------------------------------------------------------
+[2026-05-16 13:56:38] 
+[2026-05-16 13:56:38]     Get network operator
+[2026-05-16 13:56:38] 
+[2026-05-16 13:56:38] -----------------------------------------------------------
+[2026-05-16 13:56:38] 
+[2026-05-16 13:56:38]  -> Network operator : 405861
+[2026-05-16 13:56:38] 
+[2026-05-16 13:56:38] __CMD_DONE_c2bbe593fe17445fa30db72eef5f5c1a__
+[2026-05-16 13:56:38] 
+[2026-05-16 13:56:40] sh-3.2# /log/sldd telephony getservicestate
+[2026-05-16 13:56:40] sh-3.2# /log/sldd telephony getservicestate ; echo __CMD_DONE_e38075f6e9ef45dd9c 
+[2026-05-16 13:56:40] 8c047466b4007c__
+[2026-05-16 13:56:40] 
+[2026-05-16 13:56:40] -----------------------------------------------------------
+[2026-05-16 13:56:40] 
+[2026-05-16 13:56:40]     Get service state
+[2026-05-16 13:56:40] 
+[2026-05-16 13:56:40] -----------------------------------------------------------
+[2026-05-16 13:56:40] 
+[2026-05-16 13:56:40]  -> Service state (Voice network) : 0 (In service)
+[2026-05-16 13:56:40] 
+[2026-05-16 13:56:40]  -> Service state (Data network) : 0 (In service)
+[2026-05-16 13:56:40] 
+[2026-05-16 13:56:40] __CMD_DONE_e38075f6e9ef45dd9c8c047466b4007c__
+[2026-05-16 13:56:40] 
+[2026-05-16 13:56:42] sh-3.2# nslookup www.google.com
+[2026-05-16 13:56:42] sh-3.2# nslookup www.google.com ; echo __CMD_DONE_93d9d4ec5e444b97aaab57faf8fa6b 
+[2026-05-16 13:56:42] 79__
+[2026-05-16 13:56:42] 
+[2026-05-16 13:56:42] Server:    127.0.0.1
+[2026-05-16 13:56:42] 
+[2026-05-16 13:56:42] Address 1: 127.0.0.1 localhost.localdomain
+[2026-05-16 13:56:42] 
+[2026-05-16 13:56:42] 
+[2026-05-16 13:56:42] 
+[2026-05-16 13:56:42] Name:      www.google.com
+[2026-05-16 13:56:42] 
+[2026-05-16 13:56:42] Address 1: 142.251.153.119
+[2026-05-16 13:56:42] 
+[2026-05-16 13:56:42] Address 2: 142.251.151.119
+[2026-05-16 13:56:42] 
+[2026-05-16 13:56:42] Address 3: 142.251.154.119
+[2026-05-16 13:56:42] 
+[2026-05-16 13:56:43] Address 4: 142.251.152.119
+[2026-05-16 13:56:43] 
+[2026-05-16 13:56:43] Address 5: 142.251.150.119
+[2026-05-16 13:56:43] 
+[2026-05-16 13:56:43] Address 6: 142.251.155.119
+[2026-05-16 13:56:43] 
+[2026-05-16 13:56:43] Address 7: 142.251.156.119
+[2026-05-16 13:56:43] 
+[2026-05-16 13:56:43] Address 8: 142.251.157.119
+[2026-05-16 13:56:43] 
+[2026-05-16 13:56:44] Address 9: 2001:4860:4827:7700::
+[2026-05-16 13:56:44] 
+[2026-05-16 13:56:44] Address 10: 2001:4860:4828:7700::
+[2026-05-16 13:56:44] 
+[2026-05-16 13:56:44] Address 11: 2001:4860:482d:7700::
+[2026-05-16 13:56:44] 
+[2026-05-16 13:56:44] Address 12: 2001:4860:482c:7700::
+[2026-05-16 13:56:44] 
+[2026-05-16 13:56:44] Address 13: 2001:4860:482a:7700::
+[2026-05-16 13:56:44] 
+[2026-05-16 13:56:44] Address 14: 2001:4860:4826:7700::
+[2026-05-16 13:56:44] 
+[2026-05-16 13:56:44] Address 15: 2001:4860:482b:7700::
+[2026-05-16 13:56:44] 
+[2026-05-16 13:56:44] Address 16: 2001:4860:4829:7700::
+[2026-05-16 13:56:44] 
+[2026-05-16 13:56:44] __CMD_DONE_93d9d4ec5e444b97aaab57faf8fa6b79__
+[2026-05-16 13:56:44] 
+[2026-05-16 13:56:46] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-05-16 13:56:46] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud ; echo __CMD_DONE_df169658969a4 
+[2026-05-16 13:56:46] df0a8bd5a84dc64ed68__
+[2026-05-16 13:56:46] 
+[2026-05-16 13:56:46] Server:    127.0.0.1
+[2026-05-16 13:56:46] 
+[2026-05-16 13:56:46] Address 1: 127.0.0.1 localhost.localdomain
+[2026-05-16 13:56:46] 
+[2026-05-16 13:56:46] 
+[2026-05-16 13:56:46] 
+[2026-05-16 13:56:47] Name:      asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-05-16 13:56:47] 
+[2026-05-16 13:56:47] Address 1: 35.156.4.45 ec2-35-156-4-45.eu-central-1.compute.amazonaws.com
+[2026-05-16 13:56:47] 
+[2026-05-16 13:56:47] Address 2: 2a05:d014:46a:4c06:8431:68ba:ed2:2e1f
+[2026-05-16 13:56:47] 
+[2026-05-16 13:56:47] __CMD_DONE_df169658969a4df0a8bd5a84dc64ed68__
+[2026-05-16 13:56:47] 
+[2026-05-16 13:56:49] sh-3.2# /log/sldd v2xmgr setdataprivacy 1
+[2026-05-16 13:56:49] sh-3.2# /log/sldd v2xmgr setdataprivacy 1 ; echo __CMD_DONE_f82bb18b6126471288d8 
+[2026-05-16 13:56:49] 50895386b73d__
+[2026-05-16 13:56:49] 
+[2026-05-16 13:56:49] setDataPrivacy sldd test start 
+[2026-05-16 13:56:49] 
+[2026-05-16 13:56:49] Data Privacy argv 0 : 1 
+[2026-05-16 13:56:49] 
+[2026-05-16 13:56:49] v2x activate success
+[2026-05-16 13:56:49] 
+[2026-05-16 13:56:49] __CMD_DONE_f82bb18b6126471288d850895386b73d__
+[2026-05-16 13:56:49] 
+[2026-05-16 13:56:54] sh-3.2# ls /etc/certs/
+[2026-05-16 13:56:54] sh-3.2# ls /etc/certs/ ; echo __CMD_DONE_3b48e7d6386f4517b1fb9aba3428bfad__
+[2026-05-16 13:56:54] 
+[2026-05-16 13:56:54] security_cn  security_eu  trusted
+[2026-05-16 13:56:54] 
+[2026-05-16 13:56:54] __CMD_DONE_3b48e7d6386f4517b1fb9aba3428bfad__
+[2026-05-16 13:56:54] 
+[2026-05-16 13:56:56] sh-3.2# /log/sldd v2xmgr setdataprivacy 0
+[2026-05-16 13:56:56] sh-3.2# /log/sldd v2xmgr setdataprivacy 0 ; echo __CMD_DONE_049f1b52bd654feb90ac 
+[2026-05-16 13:56:56] d4a0249be811__
+[2026-05-16 13:56:56] 
+[2026-05-16 13:56:56] setDataPrivacy sldd test start 
+[2026-05-16 13:56:56] 
+[2026-05-16 13:56:56] Data Privacy argv 0 : 0 
+[2026-05-16 13:56:56] 
+[2026-05-16 13:56:56] v2x de-activate success
+[2026-05-16 13:56:56] 
+[2026-05-16 13:56:56] __CMD_DONE_049f1b52bd654feb90acd4a0249be811__
+[2026-05-16 13:56:56] 
+[2026-05-16 13:57:01] Certificate Download Test Cleanup
+[2026-05-16 13:57:01] sh-3.2# sldd v2xmgr setdataprivacy 0
+[2026-05-16 13:57:01] sh-3.2# sldd v2xmgr setdataprivacy 0 ; echo __CMD_DONE_175a71cc32294c6d816b79cb3 
+[2026-05-16 13:57:01] e46665d__
+[2026-05-16 13:57:01] 
+[2026-05-16 13:57:01] sh: sldd: command not found
+[2026-05-16 13:57:01] 
+[2026-05-16 13:57:01] __CMD_DONE_175a71cc32294c6d816b79cb3e46665d__
+[2026-05-16 13:57:01] 
+[2026-05-16 13:57:01] 
+============================================================
+[2026-05-16 13:57:01] ✓ Test 'Certificate Download Test' COMPLETED SUCCESSFULLY
+[2026-05-16 13:57:01] Logs saved in '../logs/certificate_download.log'
+[2026-05-16 13:57:01] ============================================================
+
+[2026-05-16 13:57:01] === ADB Shell Closed ===
+[2026-05-16 13:57:01] [2026-05-16 13:57:01]
+[2026-05-16 13:57:01] === ADB Shell Closed ===
+[2026-05-16 13:57:01] [2026-05-16 13:57:01]
+14:01:58 - INFO - ============================================================
+14:01:58 - INFO - ECU Interface Initialized
+14:01:58 - INFO - Port: COM43, Baudrate: 1000000
+14:01:58 - INFO - Console Output: Enabled
+14:01:58 - INFO - ============================================================
+14:01:58 - INFO - Connecting to COM43... (Attempt 1/5)
+14:01:58 - INFO - [OK] ECU Connected Successfully
+14:01:58 - INFO - Monitor thread started
+14:01:58 - INFO - 
+======================================================================
+14:01:58 - INFO - CERTIFICATE DOWNLOAD TEST - EXECUTING COMMANDS
+14:01:58 - INFO - ======================================================================
+
+14:01:58 - INFO - 
+>>> Executing: sldd telephony factorysetimei 354028100010134
+14:01:59 - INFO - [OK] Response received
+14:01:59 - WARNING -     Waiting 10 seconds...
+14:02:09 - INFO - 
+>>> Executing: devcoding write PROVISIONING/DAS_INDEX 1
+14:02:11 - INFO - [OK] Response received
+14:02:12 - INFO - 
+>>> Executing: devcoding write ECALL/SIM_CARD 1
+14:02:13 - INFO - [OK] Response received
+14:02:14 - INFO - 
+>>> Executing: devcoding write ECALL/TELEMATIC 1
+14:02:16 - INFO - [OK] Response received
+14:02:16 - INFO - 
+>>> Executing: ps | grep provisioningd
+14:02:18 - INFO - [OK] Response received
+14:02:18 - INFO - 
+>>> Executing: sldd telephony getimei
+14:02:19 - INFO - [OK] Response received
+14:02:20 - INFO - 
+>>> Executing: sldd telephony getprefnettype
+14:02:21 - INFO - [OK] Response received
+14:02:22 - INFO - 
+>>> Executing: sldd telephony getsignalstrength
+14:02:23 - INFO - [OK] Response received
+14:02:24 - INFO - 
+>>> Executing: sldd telephony getdatastate
+14:02:25 - INFO - [OK] Response received
+14:02:25 - INFO - 
+>>> Executing: sldd telephony getnetregstate
+14:02:27 - INFO - [OK] Response received
+14:02:27 - INFO - 
+>>> Executing: sldd telephony getnetoper
+14:02:28 - INFO - [OK] Response received
+14:02:29 - INFO - 
+>>> Executing: sldd telephony getservicestate
+14:02:30 - INFO - [OK] Response received
+14:02:31 - INFO - 
+>>> Executing: nslookup www.google.com
+14:02:34 - INFO - [OK] Response received
+14:02:35 - INFO - 
+>>> Executing: nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+14:02:36 - INFO - [OK] Response received
+14:02:37 - INFO - 
+>>> Executing: sldd v2xmgr setdataprivacy 1
+14:02:38 - INFO - [OK] Response received
+14:02:38 - WARNING -     Waiting 5 seconds...
+14:02:43 - INFO - 
+>>> Executing: ls /etc/certs/
+14:02:44 - INFO - [OK] Response received
+14:02:45 - INFO - 
+>>> Executing: sldd v2xmgr setdataprivacy 0
+14:02:46 - INFO - [OK] Response received
+14:02:46 - WARNING -     Waiting 5 seconds...
+14:02:51 - INFO - 
+======================================================================
+14:02:51 - INFO - CERTIFICATE DOWNLOAD TEST - COMPLETED SUCCESSFULLY
+14:02:51 - INFO - ======================================================================
+
+14:02:51 - INFO - Closing ECU connection...
+14:02:51 - INFO - Monitor thread stopped
+14:02:51 - INFO - [OK] ECU connection closed
+14:02:51 - INFO - ============================================================
+14:27:48 - INFO - ============================================================
+14:27:48 - INFO - ECU Interface Initialized
+14:27:48 - INFO - Port: COM43, Baudrate: 1000000
+14:27:48 - INFO - Console Output: Disabled
+14:27:48 - INFO - ============================================================
+[2026-05-16 14:27:48] === Starting ADB Shell ===
+[2026-05-16 14:27:48] [2026-05-16 14:27:48]
+[2026-05-16 14:27:49] 
+============================================================
+[2026-05-16 14:27:49] Test: Certificate Download Test
+[2026-05-16 14:27:50] Log File: ../logs/certificate_download.log
+[2026-05-16 14:27:50] ============================================================
+
+[2026-05-16 14:27:50] 
+======================================================================
+[2026-05-16 14:27:50] CERTIFICATE DOWNLOAD - SETUP PHASE
+[2026-05-16 14:27:50] ======================================================================
+[2026-05-16 14:27:50] 
+[STEP 2] Devcoding Setup (via Serial Interface)
+14:27:50 - INFO - Connecting to COM43... (Attempt 1/5)
+14:27:50 - INFO - [OK] ECU Connected Successfully
+14:27:50 - INFO - Monitor thread started
+[2026-05-16 14:27:50]   Executing (serial): devcoding write PROVISIONING/DAS_INDEX 1
+[2026-05-16 14:27:52] [ERROR] Setup failed: 'charmap' codec can't encode character '\u2717' in position 24: character maps to <undefined>
+[2026-05-16 14:27:52] 
+[CRITICAL ERROR] Test failed: 'charmap' codec can't encode character '\u2717' in position 24: character maps to <undefined>
+[2026-05-16 14:27:52] === ADB Shell Closed ===
+[2026-05-16 14:27:52] [2026-05-16 14:27:52]
+14:28:22 - INFO - ============================================================
+14:28:22 - INFO - ECU Interface Initialized
+14:28:22 - INFO - Port: COM43, Baudrate: 1000000
+14:28:22 - INFO - Console Output: Disabled
+14:28:22 - INFO - ============================================================
+[2026-05-16 14:28:22] === Starting ADB Shell ===
+[2026-05-16 14:28:22] [2026-05-16 14:28:22]
+[2026-05-16 14:28:23] 
+============================================================
+[2026-05-16 14:28:23] Test: Certificate Download Test
+[2026-05-16 14:28:23] Log File: ../logs/certificate_download.log
+[2026-05-16 14:28:23] ============================================================
+
+[2026-05-16 14:28:23] 
+======================================================================
+[2026-05-16 14:28:23] CERTIFICATE DOWNLOAD - SETUP PHASE
+[2026-05-16 14:28:23] ======================================================================
+[2026-05-16 14:28:23] 
+[STEP 2] Devcoding Setup (via Serial Interface)
+14:28:23 - INFO - Connecting to COM43... (Attempt 1/5)
+14:28:23 - INFO - [OK] ECU Connected Successfully
+14:28:23 - INFO - Monitor thread started
+[2026-05-16 14:28:24]   Executing (serial): devcoding write PROVISIONING/DAS_INDEX 1
+[2026-05-16 14:28:25]   [OK] Response received
+[2026-05-16 14:28:26]   Executing (serial): devcoding write ECALL/SIM_CARD 1
+[2026-05-16 14:28:28]   [OK] Response received
+[2026-05-16 14:28:28]   Executing (serial): devcoding write ECALL/TELEMATIC 1
+[2026-05-16 14:28:30]   [OK] Response received
+[2026-05-16 14:28:30]   Checking provisioning daemon...
+[2026-05-16 14:28:32]   [OK] Provisioning daemon check done
+[2026-05-16 14:28:34] 
+======================================================================
+[2026-05-16 14:28:34] CERTIFICATE DOWNLOAD - MAIN TEST COMMANDS
+[2026-05-16 14:28:34] ======================================================================
+[2026-05-16 14:28:34] 
+>>> sldd telephony factorysetimei 354028100010134
+[2026-05-16 14:28:34] sh-3.2# sldd telephony factorysetimei 354028100010134
+[2026-05-16 14:28:34] sh-3.2# sldd telephony factorysetimei 354028100010134 ; echo __CMD_DONE_832ce06b 
+[2026-05-16 14:28:34] ce504181a78b4935f0355317__
+[2026-05-16 14:28:34] 
+[2026-05-16 14:28:34] sh: sldd: command not found
+[2026-05-16 14:28:34] 
+[2026-05-16 14:28:34] __CMD_DONE_832ce06bce504181a78b4935f0355317__
+[2026-05-16 14:28:34] 
+[2026-05-16 14:28:34] [OK] Command executed
+[2026-05-16 14:28:34]     Waiting 10 seconds...
+14:28:41 - INFO - ============================================================
+14:28:41 - INFO - ECU Interface Initialized
+14:28:41 - INFO - Port: COM43, Baudrate: 1000000
+14:28:41 - INFO - Console Output: Disabled
+14:28:41 - INFO - ============================================================
+[2026-05-16 14:28:41] === Starting ADB Shell ===
+[2026-05-16 14:28:41] [2026-05-16 14:28:41]
+[2026-05-16 14:28:42] 
+============================================================
+[2026-05-16 14:28:42] Test: Certificate Download Test
+[2026-05-16 14:28:42] Log File: ../logs/certificate_download.log
+[2026-05-16 14:28:42] ============================================================
+
+[2026-05-16 14:28:42] 
+======================================================================
+[2026-05-16 14:28:42] CERTIFICATE DOWNLOAD - SETUP PHASE
+[2026-05-16 14:28:42] ======================================================================
+[2026-05-16 14:28:42] 
+[STEP 2] Devcoding Setup (via Serial Interface)
+14:28:42 - INFO - Connecting to COM43... (Attempt 1/5)
+14:28:42 - INFO - [OK] ECU Connected Successfully
+14:28:42 - INFO - Monitor thread started
+[2026-05-16 14:28:43]   Executing (serial): devcoding write PROVISIONING/DAS_INDEX 1
+[2026-05-16 14:28:45]   [OK] Response received
+[2026-05-16 14:28:45]   Executing (serial): devcoding write ECALL/SIM_CARD 1
+[2026-05-16 14:28:47]   [OK] Response received
+[2026-05-16 14:28:47]   Executing (serial): devcoding write ECALL/TELEMATIC 1
+[2026-05-16 14:28:49]   [OK] Response received
+[2026-05-16 14:28:50]   Checking provisioning daemon...
+[2026-05-16 14:28:51]   [OK] Provisioning daemon check done
+[2026-05-16 14:28:53] 
+======================================================================
+[2026-05-16 14:28:53] CERTIFICATE DOWNLOAD - MAIN TEST COMMANDS
+[2026-05-16 14:28:53] ======================================================================
+[2026-05-16 14:28:53] 
+>>> sldd telephony factorysetimei 354028100010134
+[2026-05-16 14:28:53] sh-3.2# sldd telephony factorysetimei 354028100010134
+[2026-05-16 14:28:53] sh-3.2# sldd telephony factorysetimei 354028100010134 ; echo __CMD_DONE_f73f624f 
+[2026-05-16 14:28:53] b4754103a13645e63b5ed409__
+[2026-05-16 14:28:53] 
+[2026-05-16 14:28:53] sh: sldd: command not found
+[2026-05-16 14:28:53] 
+[2026-05-16 14:28:53] __CMD_DONE_f73f624fb4754103a13645e63b5ed409__
+[2026-05-16 14:28:53] 
+[2026-05-16 14:28:53] [OK] Command executed
+[2026-05-16 14:28:53]     Waiting 10 seconds...
+[2026-05-16 14:29:03] 
+>>> sldd telephony getimei
+[2026-05-16 14:29:03] sh-3.2# sldd telephony getimei
+[2026-05-16 14:29:03] sh-3.2# sldd telephony getimei ; echo __CMD_DONE_23507745e2c94739a16b970c450d029 
+[2026-05-16 14:29:03] b__
+[2026-05-16 14:29:03] 
+[2026-05-16 14:29:03] sh: sldd: command not found
+[2026-05-16 14:29:03] 
+[2026-05-16 14:29:03] __CMD_DONE_23507745e2c94739a16b970c450d029b__
+[2026-05-16 14:29:03] 
+[2026-05-16 14:29:03] [OK] Command executed
+[2026-05-16 14:29:04] 
+>>> sldd telephony getprefnettype
+[2026-05-16 14:29:04] sh-3.2# sldd telephony getprefnettype
+[2026-05-16 14:29:04] sh-3.2# sldd telephony getprefnettype ; echo __CMD_DONE_20170922fab849258fad1d06 
+[2026-05-16 14:29:04] 95b9ecb0__
+[2026-05-16 14:29:04] 
+[2026-05-16 14:29:04] sh: sldd: command not found
+[2026-05-16 14:29:04] 
+[2026-05-16 14:29:04] __CMD_DONE_20170922fab849258fad1d0695b9ecb0__
+[2026-05-16 14:29:04] 
+[2026-05-16 14:29:04] [OK] Command executed
+[2026-05-16 14:29:04] 
+>>> sldd telephony getsignalstrength
+[2026-05-16 14:29:04] sh-3.2# sldd telephony getsignalstrength
+[2026-05-16 14:29:04] sh-3.2# sldd telephony getsignalstrength ; echo __CMD_DONE_b861c76f44ee4005bba67 
+[2026-05-16 14:29:04] 1d5119e3873__
+[2026-05-16 14:29:04] 
+[2026-05-16 14:29:04] sh: sldd: command not found
+[2026-05-16 14:29:04] 
+[2026-05-16 14:29:04] __CMD_DONE_b861c76f44ee4005bba671d5119e3873__
+[2026-05-16 14:29:04] 
+[2026-05-16 14:29:04] [OK] Command executed
+[2026-05-16 14:29:05] 
+>>> sldd telephony getdatastate
+[2026-05-16 14:29:05] sh-3.2# sldd telephony getdatastate
+[2026-05-16 14:29:05] sh-3.2# sldd telephony getdatastate ; echo __CMD_DONE_767f155108dd434aa26d24e32c 
+[2026-05-16 14:29:05] 4fd9bd__
+[2026-05-16 14:29:05] 
+[2026-05-16 14:29:05] sh: sldd: command not found
+[2026-05-16 14:29:05] 
+[2026-05-16 14:29:05] __CMD_DONE_767f155108dd434aa26d24e32c4fd9bd__
+[2026-05-16 14:29:05] 
+[2026-05-16 14:29:05] [OK] Command executed
+[2026-05-16 14:29:05] 
+>>> sldd telephony getnetregstate
+[2026-05-16 14:29:05] sh-3.2# sldd telephony getnetregstate
+[2026-05-16 14:29:05] sh-3.2# sldd telephony getnetregstate ; echo __CMD_DONE_38e0b4a751ae4611ab469b79 
+[2026-05-16 14:29:05] b306a6c2__
+[2026-05-16 14:29:05] 
+[2026-05-16 14:29:05] sh: sldd: command not found
+[2026-05-16 14:29:05] 
+[2026-05-16 14:29:05] __CMD_DONE_38e0b4a751ae4611ab469b79b306a6c2__
+[2026-05-16 14:29:05] 
+[2026-05-16 14:29:05] [OK] Command executed
+[2026-05-16 14:29:06] 
+>>> sldd telephony getnetoper
+[2026-05-16 14:29:06] sh-3.2# sldd telephony getnetoper
+[2026-05-16 14:29:06] sh-3.2# sldd telephony getnetoper ; echo __CMD_DONE_51887f5e51d44e8282d99c044083 
+[2026-05-16 14:29:06] 97c6__
+[2026-05-16 14:29:06] 
+[2026-05-16 14:29:06] sh: sldd: command not found
+[2026-05-16 14:29:06] 
+[2026-05-16 14:29:06] __CMD_DONE_51887f5e51d44e8282d99c04408397c6__
+[2026-05-16 14:29:06] 
+[2026-05-16 14:29:06] [OK] Command executed
+[2026-05-16 14:29:06] 
+>>> sldd telephony getservicestate
+[2026-05-16 14:29:06] sh-3.2# sldd telephony getservicestate
+[2026-05-16 14:29:06] sh-3.2# sldd telephony getservicestate ; echo __CMD_DONE_20620394db124e6082856f6 
+[2026-05-16 14:29:06] ce59288ed__
+[2026-05-16 14:29:06] 
+[2026-05-16 14:29:06] sh: sldd: command not found
+[2026-05-16 14:29:06] 
+[2026-05-16 14:29:06] __CMD_DONE_20620394db124e6082856f6ce59288ed__
+[2026-05-16 14:29:06] 
+[2026-05-16 14:29:06] [OK] Command executed
+[2026-05-16 14:29:07] 
+>>> sldd v2xmgr setdataprivacy 1
+[2026-05-16 14:29:07] sh-3.2# sldd v2xmgr setdataprivacy 1
+[2026-05-16 14:29:07] sh-3.2# sldd v2xmgr setdataprivacy 1 ; echo __CMD_DONE_585a57e4c87549e3a30e6b467 
+[2026-05-16 14:29:07] 2e3e338__
+[2026-05-16 14:29:07] 
+[2026-05-16 14:29:07] sh: sldd: command not found
+[2026-05-16 14:29:07] 
+[2026-05-16 14:29:07] __CMD_DONE_585a57e4c87549e3a30e6b4672e3e338__
+[2026-05-16 14:29:07] 
+[2026-05-16 14:29:07] [OK] Command executed
+[2026-05-16 14:29:07]     Waiting 5 seconds...
+[2026-05-16 14:29:12] 
+>>> ls /etc/certs/
+[2026-05-16 14:29:12] sh-3.2# ls /etc/certs/
+[2026-05-16 14:29:12] sh-3.2# ls /etc/certs/ ; echo __CMD_DONE_f7e45df869794c8db7106bc4746a5434__
+[2026-05-16 14:29:12] 
+[2026-05-16 14:29:12] security_cn  security_eu  trusted
+[2026-05-16 14:29:12] 
+[2026-05-16 14:29:12] __CMD_DONE_f7e45df869794c8db7106bc4746a5434__
+[2026-05-16 14:29:12] 
+[2026-05-16 14:29:12] [OK] Command executed
+[2026-05-16 14:29:13] 
+======================================================================
+[2026-05-16 14:29:13] CERTIFICATE DOWNLOAD - DNS VERIFICATION (with Retry)
+[2026-05-16 14:29:13] ======================================================================
+[2026-05-16 14:29:13] 
+[DNS VERIFICATION - ATTEMPT 1/5]
+[2026-05-16 14:29:13] [DNS CHECK 1] Testing www.google.com...
+[2026-05-16 14:29:13] sh-3.2# nslookup www.google.com
+[2026-05-16 14:29:13] sh-3.2# nslookup www.google.com ; echo __CMD_DONE_bdd9b99d7dce4223a2abe7d299e827 
+[2026-05-16 14:29:13] 52__
+[2026-05-16 14:29:13] 
+[2026-05-16 14:29:13] Server:    127.0.0.1
+[2026-05-16 14:29:13] 
+[2026-05-16 14:29:13] Address 1: 127.0.0.1 localhost.localdomain
+[2026-05-16 14:29:13] 
+[2026-05-16 14:29:13] 
+[2026-05-16 14:29:13] 
+[2026-05-16 14:29:13] Name:      www.google.com
+[2026-05-16 14:29:13] 
+[2026-05-16 14:29:13] Address 1: 142.251.150.119
+[2026-05-16 14:29:13] 
+[2026-05-16 14:29:13] Address 2: 142.251.152.119
+[2026-05-16 14:29:13] 
+[2026-05-16 14:29:13] Address 3: 142.251.151.119
+[2026-05-16 14:29:13] 
+[2026-05-16 14:29:13] Address 4: 142.251.155.119
+[2026-05-16 14:29:13] 
+[2026-05-16 14:29:13] Address 5: 142.251.153.119
+[2026-05-16 14:29:13] 
+[2026-05-16 14:29:13] Address 6: 142.251.156.119
+[2026-05-16 14:29:13] 
+[2026-05-16 14:29:14] Address 7: 142.251.154.119
+[2026-05-16 14:29:14] 
+[2026-05-16 14:29:14] Address 8: 142.251.157.119
+[2026-05-16 14:29:14] 
+[2026-05-16 14:29:15] Address 9: 2001:4860:482b:7700::
+[2026-05-16 14:29:15] 
+[2026-05-16 14:29:15] Address 10: 2001:4860:4828:7700::
+[2026-05-16 14:29:15] 
+[2026-05-16 14:29:15] Address 11: 2001:4860:482d:7700::
+[2026-05-16 14:29:15] 
+[2026-05-16 14:29:15] Address 12: 2001:4860:4826:7700::
+[2026-05-16 14:29:15] 
+[2026-05-16 14:29:15] Address 13: 2001:4860:482a:7700::
+[2026-05-16 14:29:15] 
+[2026-05-16 14:29:15] Address 14: 2001:4860:4827:7700::
+[2026-05-16 14:29:15] 
+[2026-05-16 14:29:15] Address 15: 2001:4860:482c:7700::
+[2026-05-16 14:29:15] 
+[2026-05-16 14:29:15] Address 16: 2001:4860:4829:7700::
+[2026-05-16 14:29:15] 
+[2026-05-16 14:29:15] __CMD_DONE_bdd9b99d7dce4223a2abe7d299e82752__
+[2026-05-16 14:29:15] 
+[2026-05-16 14:29:15]   DNS 'www.google.com': Found 17 addresses (expected ~10)
+[2026-05-16 14:29:15]   [OK] Address count verified
+[2026-05-16 14:29:16] [DNS CHECK 2] Testing asbc-v2x.e2e.cvs-emea.bmw.cloud...
+[2026-05-16 14:29:16] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-05-16 14:29:16] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud ; echo __CMD_DONE_80894001c1384 
+[2026-05-16 14:29:16] 968b8175d0421b0cd38__
+[2026-05-16 14:29:16] 
+[2026-05-16 14:29:16] Server:    127.0.0.1
+[2026-05-16 14:29:16] 
+[2026-05-16 14:29:16] Address 1: 127.0.0.1 localhost.localdomain
+[2026-05-16 14:29:16] 
+[2026-05-16 14:29:16] 
+[2026-05-16 14:29:16] 
+[2026-05-16 14:29:17] Name:      asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-05-16 14:29:17] 
+[2026-05-16 14:29:17] Address 1: 3.78.69.101 ec2-3-78-69-101.eu-central-1.compute.amazonaws.com
+[2026-05-16 14:29:17] 
+[2026-05-16 14:29:17] Address 2: 2a05:d014:46a:4c07:1e0:a477:3012:12b2
+[2026-05-16 14:29:17] 
+[2026-05-16 14:29:17] __CMD_DONE_80894001c1384968b8175d0421b0cd38__
+[2026-05-16 14:29:17] 
+[2026-05-16 14:29:17]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud': Found 3 addresses (expected ~2)
+[2026-05-16 14:29:17]   [OK] Address count verified
+[2026-05-16 14:29:18] 
+[OK] DNS verification PASSED
+[2026-05-16 14:29:18] 
+======================================================================
+[2026-05-16 14:29:18] CERTIFICATE DOWNLOAD - CLEANUP PHASE
+[2026-05-16 14:29:18] ======================================================================
+[2026-05-16 14:29:18] [CLEANUP] Disabling data privacy...
+[2026-05-16 14:29:18] sh-3.2# sldd v2xmgr setdataprivacy 0
+[2026-05-16 14:29:18] sh-3.2# sldd v2xmgr setdataprivacy 0 ; echo __CMD_DONE_9793dbe723dc4acaa04e94363 
+[2026-05-16 14:29:18] 411f44f__
+[2026-05-16 14:29:18] 
+[2026-05-16 14:29:18] sh: sldd: command not found
+[2026-05-16 14:29:18] 
+[2026-05-16 14:29:18] __CMD_DONE_9793dbe723dc4acaa04e94363411f44f__
+[2026-05-16 14:29:18] 
+[2026-05-16 14:29:20] [CLEANUP] Rebooting device...
+[2026-05-16 14:29:20] sh-3.2# reboot
+[2026-05-16 14:29:20] sh-3.2# reboot ; echo __CMD_DONE_529c91be0b8e4441b5dd28e342b075a3__
+[2026-05-16 14:29:20] 
+14:29:20 - INFO - Closing ECU connection...
+14:29:20 - INFO - Monitor thread stopped
+14:29:20 - INFO - [OK] ECU connection closed
+14:29:20 - INFO - ============================================================
+[2026-05-16 14:29:20] === ADB Shell Closed ===
+[2026-05-16 14:29:20] [2026-05-16 14:29:20]
+16:30:21 - INFO - ============================================================
+16:30:21 - INFO - ECU Interface Initialized
+16:30:21 - INFO - Port: COM43, Baudrate: 1000000
+16:30:21 - INFO - Console Output: Disabled
+16:30:21 - INFO - ============================================================
+[2026-05-16 16:30:21] === Starting ADB Shell ===
+[2026-05-16 16:30:21] [2026-05-16 16:30:21]
+[2026-05-16 16:30:22] 
+============================================================
+[2026-05-16 16:30:22] Test: Certificate Download Test
+[2026-05-16 16:30:22] Log File: ../logs/certificate_download.log
+[2026-05-16 16:30:22] ============================================================
+
+[2026-05-16 16:30:22] 
+======================================================================
+[2026-05-16 16:30:22] CERTIFICATE DOWNLOAD - SETUP PHASE
+[2026-05-16 16:30:22] ======================================================================
+[2026-05-16 16:30:22] sh-3.2# sldd telephony factorysetimei 354028100010134
+[2026-05-16 16:30:22] sldd telephony factorysetimei 354028100010134 ; echo __CMD_DONE_f999a5f4f689446db62aa510f846009c__
+[2026-05-16 16:30:22] 
+[2026-05-16 16:30:22] sh-3.2# sldd telephony factorysetimei 354028100010134 ; echo __CMD_DONE_f999a5f4 
+[2026-05-16 16:30:22] f689446db62aa510f846009c__
+[2026-05-16 16:30:22] 
+[2026-05-16 16:30:22] sh: sldd: command not found
+[2026-05-16 16:30:22] 
+[2026-05-16 16:30:22] __CMD_DONE_f999a5f4f689446db62aa510f846009c__
+[2026-05-16 16:30:22] 
+[2026-05-16 16:30:23] 
+[STEP 2.1] Set UTC Time on BAM side (via Serial Interface)
+16:30:23 - INFO - Connecting to COM43... (Attempt 1/5)
+16:30:23 - INFO - [OK] ECU Connected Successfully
+16:30:23 - INFO - Monitor thread started
+[2026-05-16 16:30:23]   Setting UTC date: 2026-05-16 11:00:23
+[2026-05-16 16:30:25]   [OK] UTC date set
+[2026-05-16 16:30:27]   [OK] Current date verified
+[2026-05-16 16:30:27] 
+[STEP 2.2] Devcoding Setup (via Serial Interface)
+[2026-05-16 16:30:27]   Executing (serial): devcoding write PROVISIONING/DAS_INDEX 1
+[2026-05-16 16:30:29]   [OK] Response received
+devcoding write PROVISIONING/DAS_INDEX 1
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+Check for a coding flag with name 'PROVISIONING/DAS_INDEX'.
+Persisting all coding data
+CPS already exists, no-op
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ #
+[2026-05-16 16:30:29]   Executing (serial): devcoding write ECALL/SIM_CARD 1
+[2026-05-16 16:30:31]   [OK] Response received
+devcoding write ECALL/SIM_CARD 1
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+Check for a coding flag with name 'ECALL/SIM_CARD'.
+Persisting all coding data
+CPS already exists, no-op
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ #
+[2026-05-16 16:30:32]   Executing (serial): devcoding write ECALL/TELEMATIC 1
+[2026-05-16 16:30:33]   [OK] Response received
+devcoding write ECALL/TELEMATIC 1
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+Check for a coding flag with name 'ECALL/TELEMATIC'.
+Persisting all coding data
+CPS already exists, no-op
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ #
+[2026-05-16 16:30:34]   Checking provisioning daemon...
+[2026-05-16 16:30:35]   [OK] Provisioning daemon check done
+ps | grep provisioningd
+  970 tel_prov  320m S    /opt/telematics/rootfs/usr/bin/provisioningd-ipnext
+  971 tel_prov  331m S    /opt/telematics/rootfs/usr/bin/provisioningd
+~ #
+[2026-05-16 16:30:35] 
+[STEP 2.3] Remount filesystem as read-only
+[2026-05-16 16:30:36]   [OK] Filesystem remounted as read-only
+mount -o remount,ro /opt/telematics/
+[ 2954.232048] EXT4-fs (dm-1): re-mounted 0000c0ac-2828-ff08-8a22-ecac81cb625e ro. Quota mode: none.
+~ #
+[2026-05-16 16:30:37] 
+[STEP 2.4] Rebooting device (REQUIRED after setup)...
+[2026-05-16 16:30:40]   [OK] Reboot initiated, waiting 60 seconds...
+[2026-05-16 16:31:40] 
+[STEP 2.5] Post-reboot Verification
+[2026-05-16 16:31:40]   Checking service state after reboot...
+[2026-05-16 16:31:40] ERROR: Shell lost. Attempting to reconnect...
+[2026-05-16 16:31:40] === Starting ADB Shell ===
+[2026-05-16 16:31:40] [2026-05-16 16:31:40]
+[2026-05-16 16:31:41] Reconnected shell (attempt 1)
+[2026-05-16 16:31:41] sh-3.2# sldd telephony getservicestate
+[2026-05-16 16:31:41] sh-3.2# 
+[2026-05-16 16:31:41] sldd telephony getservicestate ; echo __CMD_DONE_0c8ab379c7fb4e28a8dash-3.2# sldd telephony getservicestate ; echo __CMD_DONE_0c8ab379c7fb4e28a8da5dd 
+[2026-05-16 16:31:41] 68352eb3a__
+[2026-05-16 16:31:41] 
+[2026-05-16 16:31:41] sh: sldd: command not found
+[2026-05-16 16:31:41] 
+[2026-05-16 16:31:41] __CMD_DONE_0c8ab379c7fb4e28a8da5dd68352eb3a__
+[2026-05-16 16:31:41] 
+[2026-05-16 16:31:41]   [WARNING] Service state check attempt 1/5
+[2026-05-16 16:31:44] sh-3.2# sldd telephony getservicestate
+[2026-05-16 16:31:44] sh-3.2# sldd telephony getservicestate ; echo __CMD_DONE_41575c4b832142f09898ea5 
+[2026-05-16 16:31:44] b5fdaec09__
+[2026-05-16 16:31:44] 
+[2026-05-16 16:31:44] sh: sldd: command not found
+[2026-05-16 16:31:44] 
+[2026-05-16 16:31:44] __CMD_DONE_41575c4b832142f09898ea5b5fdaec09__
+[2026-05-16 16:31:44] 
+[2026-05-16 16:31:44]   [WARNING] Service state check attempt 2/5
+[2026-05-16 16:31:47] sh-3.2# sldd telephony getservicestate
+[2026-05-16 16:31:47] sh-3.2# sldd telephony getservicestate ; echo __CMD_DONE_a15062cdc77c4a69914509c 
+[2026-05-16 16:31:47] f4e59e569__
+[2026-05-16 16:31:47] 
+[2026-05-16 16:31:47] sh: sldd: command not found
+[2026-05-16 16:31:47] 
+[2026-05-16 16:31:47] __CMD_DONE_a15062cdc77c4a69914509cf4e59e569__
+[2026-05-16 16:31:47] 
+[2026-05-16 16:31:47]   [WARNING] Service state check attempt 3/5
+[2026-05-16 16:31:50] sh-3.2# sldd telephony getservicestate
+[2026-05-16 16:31:50] sh-3.2# sldd telephony getservicestate ; echo __CMD_DONE_4350851f3e464a2cbfaabae 
+[2026-05-16 16:31:50] 98daee20f__
+[2026-05-16 16:31:50] 
+[2026-05-16 16:31:50] sh: sldd: command not found
+[2026-05-16 16:31:50] 
+[2026-05-16 16:31:50] __CMD_DONE_4350851f3e464a2cbfaabae98daee20f__
+[2026-05-16 16:31:50] 
+[2026-05-16 16:31:50]   [WARNING] Service state check attempt 4/5
+[2026-05-16 16:31:53] sh-3.2# sldd telephony getservicestate
+[2026-05-16 16:31:53] sh-3.2# sldd telephony getservicestate ; echo __CMD_DONE_45ff935492cd4a15a5dfb45 
+[2026-05-16 16:31:53] 606fb8707__
+[2026-05-16 16:31:53] 
+[2026-05-16 16:31:53] sh: sldd: command not found
+[2026-05-16 16:31:53] 
+[2026-05-16 16:31:53] __CMD_DONE_45ff935492cd4a15a5dfb45606fb8707__
+[2026-05-16 16:31:53] 
+[2026-05-16 16:31:53]   [WARNING] Service state check attempt 5/5
+[2026-05-16 16:31:53]   [WARNING] Service state verification inconclusive, continuing anyway
+[2026-05-16 16:31:54] 
+======================================================================
+[2026-05-16 16:31:54] CERTIFICATE DOWNLOAD - PRE-TEST VERIFICATION PHASE
+[2026-05-16 16:31:54] ======================================================================
+[2026-05-16 16:31:54] 
+======================================================================
+[2026-05-16 16:31:54] CERTIFICATE DOWNLOAD - DNS VERIFICATION (NAD + BAM) (with Retry)
+[2026-05-16 16:31:54] ======================================================================
+[2026-05-16 16:31:54] 
+[DNS VERIFICATION - ATTEMPT 1/5]
+[2026-05-16 16:31:54] 
+[NAD SIDE - ADB Shell]
+[2026-05-16 16:31:54] sh-3.2# nslookup www.google.com
+[2026-05-16 16:31:54] sh-3.2# nslookup www.google.com ; echo __CMD_DONE_e5c9ac9bd80348c8a300f82252db40 
+[2026-05-16 16:31:54] 32__
+[2026-05-16 16:31:54] 
+[2026-05-16 16:31:54] Server:    127.0.0.1
+[2026-05-16 16:31:54] 
+[2026-05-16 16:31:54] Address 1: 127.0.0.1 localhost.localdomain
+[2026-05-16 16:31:54] 
+[2026-05-16 16:31:54] 
+[2026-05-16 16:31:54] 
+[2026-05-16 16:31:54] Name:      www.google.com
+[2026-05-16 16:31:54] 
+[2026-05-16 16:31:54] Address 1: 142.251.152.119
+[2026-05-16 16:31:54] 
+[2026-05-16 16:31:54] Address 2: 142.251.154.119
+[2026-05-16 16:31:54] 
+[2026-05-16 16:31:54] Address 3: 142.251.155.119
+[2026-05-16 16:31:54] 
+[2026-05-16 16:31:55] Address 4: 142.251.150.119
+[2026-05-16 16:31:55] 
+[2026-05-16 16:31:55] Address 5: 142.251.153.119
+[2026-05-16 16:31:55] 
+[2026-05-16 16:31:55] Address 6: 142.251.156.119
+[2026-05-16 16:31:55] 
+[2026-05-16 16:31:55] Address 7: 142.251.157.119
+[2026-05-16 16:31:55] 
+[2026-05-16 16:31:55] Address 8: 142.251.151.119
+[2026-05-16 16:31:55] 
+[2026-05-16 16:31:56] Address 9: 2001:4860:482b:7700::
+[2026-05-16 16:31:56] 
+[2026-05-16 16:31:56] Address 10: 2001:4860:4826:7700::
+[2026-05-16 16:31:56] 
+[2026-05-16 16:31:56] Address 11: 2001:4860:4829:7700::
+[2026-05-16 16:31:56] 
+[2026-05-16 16:31:56] Address 12: 2001:4860:4828:7700::
+[2026-05-16 16:31:56] 
+[2026-05-16 16:31:56] Address 13: 2001:4860:482a:7700::
+[2026-05-16 16:31:56] 
+[2026-05-16 16:31:57] Address 14: 2001:4860:482c:7700::
+[2026-05-16 16:31:57] 
+[2026-05-16 16:31:57] Address 15: 2001:4860:4827:7700::
+[2026-05-16 16:31:57] 
+[2026-05-16 16:31:57] Address 16: 2001:4860:482d:7700::
+[2026-05-16 16:31:57] 
+[2026-05-16 16:31:57] __CMD_DONE_e5c9ac9bd80348c8a300f82252db4032__
+[2026-05-16 16:31:57] 
+[2026-05-16 16:32:05]   DNS 'www.google.com (NAD)': Found 17 addresses (expected ~10)
+[2026-05-16 16:32:05]   [OK] Address count verified
+[2026-05-16 16:32:06] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-05-16 16:32:06] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud ; echo __CMD_DONE_3720b7ea7fbe4 
+[2026-05-16 16:32:06] ac1bc93d57b41cfd1d4__
+[2026-05-16 16:32:06] 
+[2026-05-16 16:32:06] Server:    127.0.0.1
+[2026-05-16 16:32:06] 
+[2026-05-16 16:32:06] Address 1: 127.0.0.1 localhost.localdomain
+[2026-05-16 16:32:06] 
+[2026-05-16 16:32:06] 
+[2026-05-16 16:32:06] 
+[2026-05-16 16:32:06] Name:      asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-05-16 16:32:06] 
+[2026-05-16 16:32:06] Address 1: 35.156.4.45 ec2-35-156-4-45.eu-central-1.compute.amazonaws.com
+[2026-05-16 16:32:06] 
+[2026-05-16 16:32:06] Address 2: 2a05:d014:46a:4c06:8431:68ba:ed2:2e1f
+[2026-05-16 16:32:06] 
+[2026-05-16 16:32:06] __CMD_DONE_3720b7ea7fbe4ac1bc93d57b41cfd1d4__
+[2026-05-16 16:32:06] 
+[2026-05-16 16:32:14]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (NAD)': Found 3 addresses (expected ~2)
+[2026-05-16 16:32:14]   [OK] Address count verified
+[2026-05-16 16:32:15]   [OK] NAD DNS verified
+[2026-05-16 16:32:15] 
+[BAM SIDE - Dns Check]
+[2026-05-16 16:32:15]   [DNS CHECK 1] Testing www.google.com (BAM)...
+[2026-05-16 16:32:25]   DNS 'www.google.com (BAM)': Found 17 addresses (expected ~10)
+[2026-05-16 16:32:25]   [OK] Address count verified
+[2026-05-16 16:32:26]   [DNS CHECK 2] Testing asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)...
+[2026-05-16 16:32:35]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)': Found 3 addresses (expected ~2)
+[2026-05-16 16:32:35]   [OK] Address count verified
+[2026-05-16 16:32:36]   [OK] BAM DNS verified
+[2026-05-16 16:32:36] 
+[OK] DNS verification PASSED (NAD + BAM)
+[2026-05-16 16:32:37] 
+======================================================================
+[2026-05-16 16:32:37] CERTIFICATE DOWNLOAD - ACTUAL TEST PHASE (Start Stack)
+[2026-05-16 16:32:37] ======================================================================
+[2026-05-16 16:32:58] sh-3.2# sldd v2xmgr setdataprivacy 1
+[2026-05-16 16:32:58] sh-3.2# sldd v2xmgr setdataprivacy 1 ; echo __CMD_DONE_67d7caef362a4e509408c55ff 
+[2026-05-16 16:32:58] c86cc6e__
+[2026-05-16 16:32:58] 
+[2026-05-16 16:32:58] sh: sldd: command not found
+[2026-05-16 16:32:58] 
+[2026-05-16 16:32:58] __CMD_DONE_67d7caef362a4e509408c55ffc86cc6e__
+[2026-05-16 16:32:58] 
+[2026-05-16 16:32:58] [OK] DLT capture started, waiting 5 seconds...
+[2026-05-16 16:33:03] [Stack Check] Attempt 1...
+[2026-05-16 16:33:03] sh-3.2# unplugged-rt-status-gen
+[2026-05-16 16:33:03] sh-3.2# unplugged-rt-status-gen ; echo __CMD_DONE_aef0db968ddc46eeb778d3dc21625b 
+[2026-05-16 16:33:03] 39__
+[2026-05-16 16:33:03] 
+[2026-05-16 16:33:03] [2026-05-16 11:02:46.248] [E] [REM] eac_api_client:1796 - Unable to connect to 127.0.0.1
+[2026-05-16 16:33:03] 
+[2026-05-16 16:33:03] __CMD_DONE_aef0db968ddc46eeb778d3dc21625b39__
+[2026-05-16 16:33:03] 
+[2026-05-16 16:33:03] Lines in output: 4
+[2026-05-16 16:33:03] Stack still OFF. Waiting 5s before retry...
+[2026-05-16 16:33:08] [Stack Check] Attempt 2...
+[2026-05-16 16:33:08] sh-3.2# unplugged-rt-status-gen
+[2026-05-16 16:33:08] sh-3.2# unplugged-rt-status-gen ; echo __CMD_DONE_4f39235d7bc945cf973955386332d5 
+[2026-05-16 16:33:08] 63__
+[2026-05-16 16:33:08] 
+[2026-05-16 16:33:09] [2026-05-16 11:02:51.503] [E] [REM] eac_api_client:1796 - Unable to connect to 127.0.0.1
+[2026-05-16 16:33:09] 
+[2026-05-16 16:33:09] __CMD_DONE_4f39235d7bc945cf973955386332d563__
+[2026-05-16 16:33:09] 
+[2026-05-16 16:33:09] Lines in output: 4
+[2026-05-16 16:33:09] Stack still OFF. Waiting 5s before retry...
+[2026-05-16 16:33:14] [Stack Check] Attempt 3...
+[2026-05-16 16:33:14] sh-3.2# unplugged-rt-status-gen
+[2026-05-16 16:33:14] sh-3.2# unplugged-rt-status-gen ; echo __CMD_DONE_fac4ec09e006435b95225ae516c088 
+[2026-05-16 16:33:14] 1a__
+[2026-05-16 16:33:14] 
+[2026-05-16 16:33:14] [2026-05-16 11:02:56.763] [E] [REM] eac_api_client:1796 - Unable to connect to 127.0.0.1
+[2026-05-16 16:33:14] 
+[2026-05-16 16:33:14] __CMD_DONE_fac4ec09e006435b95225ae516c0881a__
+[2026-05-16 16:33:14] 
+[2026-05-16 16:33:14] Lines in output: 4
+[2026-05-16 16:33:14] Stack still OFF. Waiting 5s before retry...
+[2026-05-16 16:33:19] [Stack Check] Attempt 4...
+[2026-05-16 16:33:19] sh-3.2# unplugged-rt-status-gen
+[2026-05-16 16:33:19] sh-3.2# unplugged-rt-status-gen ; echo __CMD_DONE_fb44e4079117425ea145fb5b9d692c 
+[2026-05-16 16:33:19] 0c__
+[2026-05-16 16:33:19] 
+[2026-05-16 16:33:19] [2026-05-16 11:03:02.022] [E] [REM] eac_api_client:1796 - Unable to connect to 127.0.0.1
+[2026-05-16 16:33:19] 
+[2026-05-16 16:33:19] __CMD_DONE_fb44e4079117425ea145fb5b9d692c0c__
+[2026-05-16 16:33:19] 
+[2026-05-16 16:33:19] Lines in output: 4
+[2026-05-16 16:33:19] Stack still OFF. Waiting 5s before retry...
+[2026-05-16 16:33:24] [Stack Check] Attempt 5...
+[2026-05-16 16:33:24] sh-3.2# unplugged-rt-status-gen
+[2026-05-16 16:33:24] sh-3.2# unplugged-rt-status-gen ; echo __CMD_DONE_f251071461a34c23880cbc47ec2310 
+[2026-05-16 16:33:24] 46__
+[2026-05-16 16:33:24] 
+[2026-05-16 16:33:24] [2026-05-16 11:03:07.283] [E] [REM] eac_api_client:1796 - Unable to connect to 127.0.0.1
+[2026-05-16 16:33:24] 
+[2026-05-16 16:33:24] __CMD_DONE_f251071461a34c23880cbc47ec231046__
+[2026-05-16 16:33:24] 
+[2026-05-16 16:33:24] Lines in output: 4
+[2026-05-16 16:33:24] ERROR: [Stack Check] Stack not ON after maximum attempts. Exiting...
+[2026-05-16 16:33:24] === ADB Shell Closed ===
+[2026-05-16 16:33:24] [2026-05-16 16:33:24]
+14:35:16 - INFO - ============================================================
+14:35:16 - INFO - ECU Interface Initialized
+14:35:16 - INFO - Port: COM43, Baudrate: 1000000
+14:35:16 - INFO - Console Output: Disabled
+14:35:16 - INFO - ============================================================
+[2026-06-10 14:35:16] === Starting ADB Shell ===
+[2026-06-10 14:35:16] [2026-06-10 14:35:16]
+[2026-06-10 14:35:17] 
+============================================================
+[2026-06-10 14:35:17] Test: Certificate Download Test
+[2026-06-10 14:35:17] Log File: ../logs/certificate_download.log
+[2026-06-10 14:35:17] ============================================================
+
+[2026-06-10 14:35:17] 
+======================================================================
+[2026-06-10 14:35:17] CERTIFICATE DOWNLOAD - Initial Setup(devcoding + IMEI + UTC Time + Reboot)
+[2026-06-10 14:35:17] ======================================================================
+[2026-06-10 14:35:17] 
+[DNS PREREQUISITES] Setting up necessary prerequisites for DNS verification
+[2026-06-10 14:35:17] 
+[STEP 1] Set IMEI (via ADB - NAD side)
+[2026-06-10 14:35:17] sldd telephony factorysetimei 354028100010134
+[2026-06-10 14:35:17] sh: sldd: command not found
+[2026-06-10 14:35:17]   [NAD] IMEI set successfully
+[2026-06-10 14:35:18] 
+[STEP 2] Devcoding Setup (via Serial Interface - BAM side)
+14:35:18 - INFO - Connecting to COM43... (Attempt 1/5)
+14:35:18 - INFO - [OK] ECU Connected Successfully
+14:35:18 - INFO - Monitor thread started
+[2026-06-10 14:35:18] devcoding write PROVISIONING/DAS_INDEX 1
+[2026-06-10 14:35:20] [setup_cert_prerequisites] devcoding write PROVISIONING/DAS_INDEX 1
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+Check for a coding flag with name 'PROVISIONING/DAS_INDEX'.
+Persisting all coding data
+CPS already exists, no-op
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ #
+[2026-06-10 14:35:20] devcoding write ECALL/SIM_CARD 1
+[2026-06-10 14:35:22] [setup_cert_prerequisites] devcoding write ECALL/SIM_CARD 1
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+Check for a coding flag with name 'ECALL/SIM_CARD'.
+Persisting all coding data
+CPS already exists, no-op
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ #
+[2026-06-10 14:35:23] devcoding write ECALL/TELEMATIC 1
+[2026-06-10 14:35:24] [setup_cert_prerequisites] devcoding write ECALL/TELEMATIC 1
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+Check for a coding flag with name 'ECALL/TELEMATIC'.
+Persisting all coding data
+CPS already exists, no-op
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ #
+[2026-06-10 14:35:25]   ps | grep provisioningd daemon...
+[2026-06-10 14:35:26]   [setup_cert_prerequisites] ps | grep provisioningd
+  964 tel_prov  320m S    /opt/telematics/rootfs/usr/bin/provisioningd-ipnext
+  966 tel_prov  331m S    /opt/telematics/rootfs/usr/bin/provisioningd
+~ #
+[2026-06-10 14:35:27] 
+[STEP 3] Remount filesystem as read-only
+[2026-06-10 14:35:29] [BAM]  mount -o remount,ro /opt/telematics/ 
+mount -o remount,ro /opt/telematics/
+[  214.629900] EXT4-fs (dm-1): re-mounted 0000c0ac-2828-ff08-8a22-ecac81cb625e ro. Quota mode: none.
+~ #
+[2026-06-10 14:35:29]   [OK] Filesystem remounted as read-only
+[2026-06-10 14:35:30] 
+[STEP 4] Rebooting device (REQUIRED after setup)...
+[2026-06-10 14:35:31]   [BAM] Reboot initiated, waiting 60 seconds...
+[2026-06-10 14:36:31] 
+[STEP 5] Post-reboot Verification
+[2026-06-10 14:36:31]   Checking service state after reboot...
+[2026-06-10 14:36:31] ERROR: Shell lost. Attempting to reconnect...
+[2026-06-10 14:36:31] === Starting ADB Shell ===
+[2026-06-10 14:36:31] [2026-06-10 14:36:31]
+[2026-06-10 14:36:32] Reconnected shell (attempt 1)
+[2026-06-10 14:36:32] sh-3.2#
+[2026-06-10 14:36:33] sh-3.2# sldd telephony getservicestate
+[2026-06-10 14:36:33] sh: sldd: command not found
+[2026-06-10 14:36:33]   [WARNING] Service state check attempt 1/5
+[2026-06-10 14:36:36] sh-3.2# sldd telephony getservicestate
+[2026-06-10 14:36:36] sh: sldd: command not found
+[2026-06-10 14:36:36]   [WARNING] Service state check attempt 2/5
+[2026-06-10 14:36:39] sh-3.2# sldd telephony getservicestate
+[2026-06-10 14:36:39] sh: sldd: command not found
+[2026-06-10 14:36:39]   [WARNING] Service state check attempt 3/5
+[2026-06-10 14:36:42] sh-3.2# sldd telephony getservicestate
+[2026-06-10 14:36:42] sh: sldd: command not found
+[2026-06-10 14:36:42]   [WARNING] Service state check attempt 4/5
+[2026-06-10 14:36:42] === ADB Shell Closed ===
+[2026-06-10 14:36:42] [2026-06-10 14:36:42]
+14:39:22 - INFO - ============================================================
+14:39:22 - INFO - ECU Interface Initialized
+14:39:22 - INFO - Port: COM43, Baudrate: 1000000
+14:39:22 - INFO - Console Output: Disabled
+14:39:22 - INFO - ============================================================
+[2026-06-10 14:39:22] === Starting ADB Shell ===
+[2026-06-10 14:39:22] [2026-06-10 14:39:22]
+[2026-06-10 14:39:23] 
+============================================================
+[2026-06-10 14:39:23] Test: Certificate Download Test
+[2026-06-10 14:39:23] Log File: ../logs/certificate_download.log
+[2026-06-10 14:39:23] ============================================================
+
+[2026-06-10 14:39:23] 
+======================================================================
+[2026-06-10 14:39:23] CERTIFICATE DOWNLOAD - Initial Setup(devcoding + IMEI + UTC Time + Reboot)
+[2026-06-10 14:39:23] ======================================================================
+[2026-06-10 14:39:23] 
+[DNS PREREQUISITES] Setting up necessary prerequisites for DNS verification
+[2026-06-10 14:39:23] 
+[STEP 1] Set IMEI (via ADB - NAD side)
+[2026-06-10 14:39:23] sldd telephony fash-3.2# sldd telephony factorysetimei 354028100010134
+[2026-06-10 14:39:23] sh: sldd: command not found
+[2026-06-10 14:39:23]   [NAD] IMEI set successfully
+[2026-06-10 14:39:24] 
+[STEP 2] Devcoding Setup (via Serial Interface - BAM side)
+14:39:24 - INFO - Connecting to COM43... (Attempt 1/5)
+14:39:24 - INFO - [OK] ECU Connected Successfully
+14:39:24 - INFO - Monitor thread started
+[2026-06-10 14:39:24] devcoding write PROVISIONING/DAS_INDEX 1
+[2026-06-10 14:39:26] [setup_cert_prerequisites] devcoding write PROVISIONING/DAS_INDEX 1
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+Check for a coding flag with name 'PROVISIONING/DAS_INDEX'.
+Persisting all coding data
+CPS already exists, no-op
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ #
+[2026-06-10 14:39:27] devcoding write ECALL/SIM_CARD 1
+[2026-06-10 14:39:29] [setup_cert_prerequisites] devcoding write ECALL/SIM_CARD 1
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+Check for a coding flag with name 'ECALL/SIM_CARD'.
+Persisting all coding data
+CPS already exists, no-op
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ #
+[2026-06-10 14:39:29] devcoding write ECALL/TELEMATIC 1
+[2026-06-10 14:39:31] [setup_cert_prerequisites] devcoding write ECALL/TELEMATIC 1
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+Check for a coding flag with name 'ECALL/TELEMATIC'.
+Persisting all coding data
+CPS already exists, no-op
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ #
+[2026-06-10 14:39:31]   ps | grep provisioningd daemon...
+[2026-06-10 14:39:33]   [setup_cert_prerequisites] ps | grep provisioningd
+  973 tel_prov  320m S    /opt/telematics/rootfs/usr/bin/provisioningd-ipnext
+  977 tel_prov  331m S    /opt/telematics/rootfs/usr/bin/provisioningd
+~ #
+[2026-06-10 14:39:34] 
+[STEP 3] Remount filesystem as read-only
+[2026-06-10 14:39:35] [BAM]  mount -o remount,ro /opt/telematics/ 
+mount -o remount,ro /opt/telematics/
+[  226.294062] EXT4-fs (dm-1): re-mounted 0000c0ac-2828-ff08-8a22-ecac81cb625e ro. Quota mode: none.
+~ #
+[2026-06-10 14:39:35]   [OK] Filesystem remounted as read-only
+[2026-06-10 14:39:36] 
+[STEP 4] Rebooting device (REQUIRED after setup)...
+[2026-06-10 14:39:38]   [BAM] Reboot initiated, waiting 35 seconds...
+[2026-06-10 14:40:13] 
+[STEP 5] Post-reboot Verification
+[2026-06-10 14:40:13]   Checking service state after reboot...
+[2026-06-10 14:40:13] ERROR: Shell lost. Attempting to reconnect...
+[2026-06-10 14:40:13] === Starting ADB Shell ===
+[2026-06-10 14:40:13] [2026-06-10 14:40:13]
+[2026-06-10 14:40:16] Reconnected shell (attempt 1)
+[2026-06-10 14:40:16] sh-3.2#
+[2026-06-10 14:40:16] sldd telephony gsh-3.2# sldd telephony getservicestate
+[2026-06-10 14:40:16] sh: sldd: command not found
+[2026-06-10 14:40:16]   [WARNING] Service state check attempt 1/5
+[2026-06-10 14:40:19] sh-3.2# sldd telephony getservicestate
+[2026-06-10 14:40:19] sh: sldd: command not found
+[2026-06-10 14:40:19]   [WARNING] Service state check attempt 2/5
+[2026-06-10 14:40:22] sh-3.2# sldd telephony getservicestate
+[2026-06-10 14:40:22] sh: sldd: command not found
+[2026-06-10 14:40:22]   [WARNING] Service state check attempt 3/5
+[2026-06-10 14:40:25] sh-3.2# sldd telephony getservicestate
+[2026-06-10 14:40:25] sh: sldd: command not found
+[2026-06-10 14:40:25]   [WARNING] Service state check attempt 4/5
+[2026-06-10 14:40:28] sh-3.2# sldd telephony getservicestate
+[2026-06-10 14:40:28] sh: sldd: command not found
+[2026-06-10 14:40:28]   [WARNING] Service state check attempt 5/5
+[2026-06-10 14:40:28]   [WARNING] Service state verification inconclusive, continuing anyway
+[2026-06-10 14:40:29] 
+======================================================================
+[2026-06-10 14:40:29] CERTIFICATE DOWNLOAD - PRE-TEST VERIFICATION PHASE
+[2026-06-10 14:40:29] ======================================================================
+[2026-06-10 14:40:29] 
+======================================================================
+[2026-06-10 14:40:29] CERTIFICATE DOWNLOAD - DNS Ping VERIFICATION (NAD + BAM)
+[2026-06-10 14:40:29] ======================================================================
+[2026-06-10 14:40:29] 
+[DNS VERIFICATION - ATTEMPT 1/5]
+[2026-06-10 14:40:29] 
+[NAD SIDE - ADB Shell]
+[2026-06-10 14:40:29] sh-3.2# nslookup www.google.com
+[2026-06-10 14:40:29] Server:    127.0.0.1
+[2026-06-10 14:40:29] Address 1: 127.0.0.1 localhost.localdomain
+[2026-06-10 14:40:29] nslookup: can't resolve 'www.google.com'
+[2026-06-10 14:40:37]   DNS 'www.google.com (NAD)': Found 1 addresses (expected ~10)
+[2026-06-10 14:40:37]   [WARNING] Lower than expected count
+[2026-06-10 14:40:38] === ADB Shell Closed ===
+[2026-06-10 14:40:38] [2026-06-10 14:40:38]
+14:42:14 - INFO - ============================================================
+14:42:14 - INFO - ECU Interface Initialized
+14:42:14 - INFO - Port: COM43, Baudrate: 1000000
+14:42:14 - INFO - Console Output: Disabled
+14:42:14 - INFO - ============================================================
+[2026-06-10 14:42:14] === Starting ADB Shell ===
+[2026-06-10 14:42:14] [2026-06-10 14:42:14]
+[2026-06-10 14:42:15] 
+============================================================
+[2026-06-10 14:42:15] Test: Certificate Download Test
+[2026-06-10 14:42:15] Log File: ../logs/certificate_download.log
+[2026-06-10 14:42:15] ============================================================
+
+[2026-06-10 14:42:15] 
+======================================================================
+[2026-06-10 14:42:15] CERTIFICATE DOWNLOAD - Initial Setup(devcoding + IMEI + UTC Time + Reboot)
+[2026-06-10 14:42:15] ======================================================================
+[2026-06-10 14:42:15] 
+[DNS PREREQUISITES] Setting up necessary prerequisites for DNS verification
+[2026-06-10 14:42:15] 
+[STEP 1] Set IMEI (via ADB - NAD side)
+[2026-06-10 14:42:15] sldd telephony factoryssh-3.2# sldd telephony factorysetimei 354028100010134
+[2026-06-10 14:42:15] sh: sldd: command not found
+[2026-06-10 14:42:15]   [NAD] IMEI set successfully
+[2026-06-10 14:42:16] 
+[STEP 2] Devcoding Setup (via Serial Interface - BAM side)
+14:42:16 - INFO - Connecting to COM43... (Attempt 1/5)
+14:42:16 - INFO - [OK] ECU Connected Successfully
+14:42:16 - INFO - Monitor thread started
+[2026-06-10 14:42:16] devcoding write PROVISIONING/DAS_INDEX 1
+[2026-06-10 14:42:18] [setup_cert_prerequisites] devcoding write PROVISIONING/DAS_INDEX 1
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+Check for a coding flag with name 'PROVISIONING/DAS_INDEX'.
+Persisting all coding data
+CPS already exists, no-op
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ #
+[2026-06-10 14:42:19] devcoding write ECALL/SIM_CARD 1
+[2026-06-10 14:42:20] [setup_cert_prerequisites] devcoding write ECALL/SIM_CARD 1
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+Check for a coding flag with name 'ECALL/SIM_CARD'.
+Persisting all coding data
+CPS already exists, no-op
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ #
+[2026-06-10 14:42:21] devcoding write ECALL/TELEMATIC 1
+[2026-06-10 14:42:23] [setup_cert_prerequisites] devcoding write ECALL/TELEMATIC 1
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+Check for a coding flag with name 'ECALL/TELEMATIC'.
+Persisting all coding data
+CPS already exists, no-op
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ #
+[2026-06-10 14:42:23]   ps | grep provisioningd daemon...
+[2026-06-10 14:42:24]   [setup_cert_prerequisites] ps | grep provisioningd
+  950 tel_prov  320m S    /opt/telematics/rootfs/usr/bin/provisioningd-ipnext
+  951 tel_prov  331m S    /opt/telematics/rootfs/usr/bin/provisioningd
+~ #
+[2026-06-10 14:42:25] 
+[STEP 3] Remount filesystem as read-only
+[2026-06-10 14:42:27] [BAM]  mount -o remount,ro /opt/telematics/ 
+mount -o remount,ro /opt/telematics/
+[  151.447583] EXT4-fs (dm-1): re-mounted 0000c0ac-2828-ff08-8a22-ecac81cb625e ro. Quota mode: none.
+~ #
+[2026-06-10 14:42:27]   [OK] Filesystem remounted as read-only
+[2026-06-10 14:42:28] 
+[STEP 4] Rebooting device (REQUIRED after setup)...
+[2026-06-10 14:42:30]   [BAM] Reboot initiated, waiting 35 seconds...
+[2026-06-10 14:43:05] 
+[STEP 5] Post-reboot Verification
+[2026-06-10 14:43:05]   Checking service state after reboot...
+[2026-06-10 14:43:05] ERROR: Shell lost. Attempting to reconnect...
+[2026-06-10 14:43:05] === Starting ADB Shell ===
+[2026-06-10 14:43:05] [2026-06-10 14:43:05]
+[2026-06-10 14:43:08] Reconnected shell (attempt 1)
+[2026-06-10 14:43:08] sh-3.2#
+[2026-06-10 14:43:08] sldd telephonysh-3.2# sldd telephony getservicestate
+[2026-06-10 14:43:08] sh: sldd: command not found
+[2026-06-10 14:43:08]   [WARNING] Service state check attempt 1/5
+[2026-06-10 14:43:11] sh-3.2# sldd telephony getservicestate
+[2026-06-10 14:43:11] sh: sldd: command not found
+[2026-06-10 14:43:11]   [WARNING] Service state check attempt 2/5
+[2026-06-10 14:43:14] sh-3.2# sldd telephony getservicestate
+[2026-06-10 14:43:14] sh: sldd: command not found
+[2026-06-10 14:43:14]   [WARNING] Service state check attempt 3/5
+[2026-06-10 14:43:17] sh-3.2# sldd telephony getservicestate
+[2026-06-10 14:43:17] sh: sldd: command not found
+[2026-06-10 14:43:17]   [WARNING] Service state check attempt 4/5
+[2026-06-10 14:43:20] sh-3.2# sldd telephony getservicestate
+[2026-06-10 14:43:20] sh: sldd: command not found
+[2026-06-10 14:43:20]   [WARNING] Service state check attempt 5/5
+[2026-06-10 14:43:20]   [WARNING] Service state verification inconclusive, continuing anyway
+[2026-06-10 14:43:21] 
+======================================================================
+[2026-06-10 14:43:21] CERTIFICATE DOWNLOAD - PRE-TEST VERIFICATION PHASE
+[2026-06-10 14:43:21] ======================================================================
+[2026-06-10 14:43:21] 
+======================================================================
+[2026-06-10 14:43:21] CERTIFICATE DOWNLOAD - DNS Ping VERIFICATION (NAD + BAM)
+[2026-06-10 14:43:21] ======================================================================
+[2026-06-10 14:43:21] 
+[DNS VERIFICATION - ATTEMPT 1/5]
+[2026-06-10 14:43:21] 
+[NAD SIDE - ADB Shell]
+[2026-06-10 14:43:21] sh-3.2# nslookup www.google.com
+[2026-06-10 14:43:21] Server:    127.0.0.1
+[2026-06-10 14:43:21] Address 1: 127.0.0.1 localhost.localdomain
+[2026-06-10 14:43:21] nslookup: can't resolve 'www.google.com'
+[2026-06-10 14:43:29]   DNS 'www.google.com (NAD)': Found 1 addresses (expected ~10)
+[2026-06-10 14:43:29]   [WARNING] Lower than expected count
+[2026-06-10 14:43:31] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-06-10 14:43:31] Server:    127.0.0.1
+[2026-06-10 14:43:31] Address 1: 127.0.0.1 localhost.localdomain
+[2026-06-10 14:43:31] nslookup: can't resolve 'asbc-v2x.e2e.cvs-emea.bmw.cloud'
+[2026-06-10 14:43:39]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (NAD)': Found 1 addresses (expected ~2)
+[2026-06-10 14:43:39]   [WARNING] Lower than expected count
+[2026-06-10 14:43:40]   [WARNING] NAD DNS incomplete
+[2026-06-10 14:43:40] 
+[BAM SIDE - Dns Check]
+[2026-06-10 14:43:40]   [DNS CHECK 1] Testing www.google.com (BAM)...
+[2026-06-10 14:43:49]   DNS 'www.google.com (BAM)': Found 1 addresses (expected ~10)
+[2026-06-10 14:43:49]   [WARNING] Lower than expected count
+[2026-06-10 14:43:50]   [DNS CHECK 2] Testing asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)...
+[2026-06-10 14:43:59]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)': Found 1 addresses (expected ~2)
+[2026-06-10 14:43:59]   [WARNING] Lower than expected count
+[2026-06-10 14:44:00]   [WARNING] BAM DNS incomplete
+[2026-06-10 14:44:00] 
+[WARNING] DNS verification attempt 1 incomplete (NAD: False, BAM: False)
+[2026-06-10 14:44:00] [RETRY] Waiting 5 seconds before retry...
+[2026-06-10 14:44:05] 
+[DNS VERIFICATION - ATTEMPT 2/5]
+[2026-06-10 14:44:05] 
+[NAD SIDE - ADB Shell]
+[2026-06-10 14:44:05] sh-3.2# nslookup www.google.com
+[2026-06-10 14:44:05] Server:    127.0.0.1
+[2026-06-10 14:44:05] Address 1: 127.0.0.1 localhost.localdomain
+[2026-06-10 14:44:05] nslookup: can't resolve 'www.google.com'
+[2026-06-10 14:44:13]   DNS 'www.google.com (NAD)': Found 1 addresses (expected ~10)
+[2026-06-10 14:44:13]   [WARNING] Lower than expected count
+[2026-06-10 14:44:14] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-06-10 14:44:14] Server:    127.0.0.1
+[2026-06-10 14:44:14] Address 1: 127.0.0.1 localhost.localdomain
+[2026-06-10 14:44:14] nslookup: can't resolve 'asbc-v2x.e2e.cvs-emea.bmw.cloud'
+[2026-06-10 14:44:23]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (NAD)': Found 1 addresses (expected ~2)
+[2026-06-10 14:44:23]   [WARNING] Lower than expected count
+[2026-06-10 14:44:24]   [WARNING] NAD DNS incomplete
+[2026-06-10 14:44:24] 
+[BAM SIDE - Dns Check]
+[2026-06-10 14:44:24]   [DNS CHECK 1] Testing www.google.com (BAM)...
+[2026-06-10 14:44:33]   DNS 'www.google.com (BAM)': Found 1 addresses (expected ~10)
+[2026-06-10 14:44:33]   [WARNING] Lower than expected count
+[2026-06-10 14:44:34]   [DNS CHECK 2] Testing asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)...
+[2026-06-10 14:44:43]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)': Found 1 addresses (expected ~2)
+[2026-06-10 14:44:43]   [WARNING] Lower than expected count
+[2026-06-10 14:44:44]   [WARNING] BAM DNS incomplete
+[2026-06-10 14:44:44] 
+[WARNING] DNS verification attempt 2 incomplete (NAD: False, BAM: False)
+[2026-06-10 14:44:44] [RETRY] Waiting 5 seconds before retry...
+[2026-06-10 14:44:49] 
+[DNS VERIFICATION - ATTEMPT 3/5]
+[2026-06-10 14:44:49] 
+[NAD SIDE - ADB Shell]
+[2026-06-10 14:44:49] sh-3.2# nslookup www.google.com
+[2026-06-10 14:44:49] Server:    127.0.0.1
+[2026-06-10 14:44:49] Address 1: 127.0.0.1 localhost.localdomain
+[2026-06-10 14:44:49] nslookup: can't resolve 'www.google.com'
+[2026-06-10 14:44:57]   DNS 'www.google.com (NAD)': Found 1 addresses (expected ~10)
+[2026-06-10 14:44:57]   [WARNING] Lower than expected count
+[2026-06-10 14:44:59] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-06-10 14:44:59] Server:    127.0.0.1
+[2026-06-10 14:44:59] Address 1: 127.0.0.1 localhost.localdomain
+[2026-06-10 14:44:59] nslookup: can't resolve 'asbc-v2x.e2e.cvs-emea.bmw.cloud'
+[2026-06-10 14:45:07]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (NAD)': Found 1 addresses (expected ~2)
+[2026-06-10 14:45:07]   [WARNING] Lower than expected count
+[2026-06-10 14:45:08]   [WARNING] NAD DNS incomplete
+[2026-06-10 14:45:08] 
+[BAM SIDE - Dns Check]
+[2026-06-10 14:45:08]   [DNS CHECK 1] Testing www.google.com (BAM)...
+[2026-06-10 14:45:17]   DNS 'www.google.com (BAM)': Found 1 addresses (expected ~10)
+[2026-06-10 14:45:17]   [WARNING] Lower than expected count
+[2026-06-10 14:45:18]   [DNS CHECK 2] Testing asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)...
+[2026-06-10 14:45:27]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)': Found 1 addresses (expected ~2)
+[2026-06-10 14:45:27]   [WARNING] Lower than expected count
+[2026-06-10 14:45:28]   [WARNING] BAM DNS incomplete
+[2026-06-10 14:45:28] 
+[WARNING] DNS verification attempt 3 incomplete (NAD: False, BAM: False)
+[2026-06-10 14:45:28] [RETRY] Waiting 5 seconds before retry...
+[2026-06-10 14:45:33] 
+[DNS VERIFICATION - ATTEMPT 4/5]
+[2026-06-10 14:45:33] 
+[NAD SIDE - ADB Shell]
+[2026-06-10 14:45:33] sh-3.2# nslookup www.google.com
+[2026-06-10 14:45:33] Server:    127.0.0.1
+[2026-06-10 14:45:33] Address 1: 127.0.0.1 localhost.localdomain
+[2026-06-10 14:45:33] nslookup: can't resolve 'www.google.com'
+[2026-06-10 14:45:41]   DNS 'www.google.com (NAD)': Found 1 addresses (expected ~10)
+[2026-06-10 14:45:41]   [WARNING] Lower than expected count
+[2026-06-10 14:45:42] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-06-10 14:45:42] Server:    127.0.0.1
+[2026-06-10 14:45:42] Address 1: 127.0.0.1 localhost.localdomain
+[2026-06-10 14:45:42] nslookup: can't resolve 'asbc-v2x.e2e.cvs-emea.bmw.cloud'
+[2026-06-10 14:45:50]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (NAD)': Found 1 addresses (expected ~2)
+[2026-06-10 14:45:50]   [WARNING] Lower than expected count
+[2026-06-10 14:45:51]   [WARNING] NAD DNS incomplete
+[2026-06-10 14:45:51] 
+[BAM SIDE - Dns Check]
+[2026-06-10 14:45:51]   [DNS CHECK 1] Testing www.google.com (BAM)...
+[2026-06-10 14:46:01]   DNS 'www.google.com (BAM)': Found 1 addresses (expected ~10)
+[2026-06-10 14:46:01]   [WARNING] Lower than expected count
+[2026-06-10 14:46:02]   [DNS CHECK 2] Testing asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)...
+[2026-06-10 14:46:11]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)': Found 1 addresses (expected ~2)
+[2026-06-10 14:46:11]   [WARNING] Lower than expected count
+[2026-06-10 14:46:12]   [WARNING] BAM DNS incomplete
+[2026-06-10 14:46:12] 
+[WARNING] DNS verification attempt 4 incomplete (NAD: False, BAM: False)
+[2026-06-10 14:46:12] [RETRY] Waiting 5 seconds before retry...
+[2026-06-10 14:46:17] 
+[DNS VERIFICATION - ATTEMPT 5/5]
+[2026-06-10 14:46:17] 
+[NAD SIDE - ADB Shell]
+[2026-06-10 14:46:17] sh-3.2# nslookup www.google.com
+[2026-06-10 14:46:17] Server:    127.0.0.1
+[2026-06-10 14:46:17] Address 1: 127.0.0.1 localhost.localdomain
+[2026-06-10 14:46:17] nslookup: can't resolve 'www.google.com'
+[2026-06-10 14:46:25]   DNS 'www.google.com (NAD)': Found 1 addresses (expected ~10)
+[2026-06-10 14:46:25]   [WARNING] Lower than expected count
+[2026-06-10 14:46:26] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-06-10 14:46:26] Server:    127.0.0.1
+[2026-06-10 14:46:26] Address 1: 127.0.0.1 localhost.localdomain
+[2026-06-10 14:46:26] nslookup: can't resolve 'asbc-v2x.e2e.cvs-emea.bmw.cloud'
+[2026-06-10 14:46:34]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (NAD)': Found 1 addresses (expected ~2)
+[2026-06-10 14:46:34]   [WARNING] Lower than expected count
+[2026-06-10 14:46:35]   [WARNING] NAD DNS incomplete
+[2026-06-10 14:46:35] 
+[BAM SIDE - Dns Check]
+[2026-06-10 14:46:35]   [DNS CHECK 1] Testing www.google.com (BAM)...
+[2026-06-10 14:46:45]   DNS 'www.google.com (BAM)': Found 1 addresses (expected ~10)
+[2026-06-10 14:46:45]   [WARNING] Lower than expected count
+[2026-06-10 14:46:46]   [DNS CHECK 2] Testing asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)...
+[2026-06-10 14:46:55]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)': Found 1 addresses (expected ~2)
+[2026-06-10 14:46:55]   [WARNING] Lower than expected count
+[2026-06-10 14:46:56]   [WARNING] BAM DNS incomplete
+[2026-06-10 14:46:56] 
+[WARNING] DNS verification attempt 5 incomplete (NAD: False, BAM: False)
+[2026-06-10 14:46:56] 
+[CRITICAL] All 5 DNS verification attempts FAILED
+[2026-06-10 14:46:56] 
+[CRITICAL] DNS verification failed - halting test
+[2026-06-10 14:46:56] === ADB Shell Closed ===
+[2026-06-10 14:46:56] [2026-06-10 14:46:56]
+19:17:56 - INFO - ============================================================
+19:17:56 - INFO - ECU Interface Initialized
+19:17:56 - INFO - Port: COM43, Baudrate: 1000000
+19:17:56 - INFO - Console Output: Disabled
+19:17:56 - INFO - ============================================================
+[2026-07-22 19:17:56] === Starting ADB Shell ===
+[2026-07-22 19:17:56] [2026-07-22 19:17:56]
+[2026-07-22 19:17:57] 
+============================================================
+[2026-07-22 19:17:57] Test: Certificate Download Test
+[2026-07-22 19:17:57] Log File: ../logs/certificate_download.log
+[2026-07-22 19:17:57] ============================================================
+
+[2026-07-22 19:17:57] 
+======================================================================
+[2026-07-22 19:17:57] CERTIFICATE DOWNLOAD - Initial Setup(devcoding + IMEI + UTC Time + Reboot)
+[2026-07-22 19:17:57] ======================================================================
+[2026-07-22 19:17:57] 
+[DNS PREREQUISITES] Setting up necessary prerequisites for DNS verification
+[2026-07-22 19:17:57] 
+[STEP 1] Set IMEI (via ADB - NAD side)
+[2026-07-22 19:17:57] sldd telephony factorysetimei 354028100010134
+[2026-07-22 19:17:57] sh: sldd: command not found
+[2026-07-22 19:17:57]   [NAD] IMEI set successfully
+[2026-07-22 19:17:58] 
+[STEP 2] Devcoding Setup (via Serial Interface - BAM side)
+19:17:58 - INFO - Connecting to COM43... (Attempt 1/5)
+19:17:58 - INFO - [OK] ECU Connected Successfully
+19:17:58 - INFO - Monitor thread started
+[2026-07-22 19:17:58] devcoding write PROVISIONING/DAS_INDEX 1
+[2026-07-22 19:18:03] [setup_cert_prerequisites] [   24.863825] cnss: M3 memory, va: 0x0000000000000000, pa: 0x00000000e1d80000, size: 0x411bc
+[   24.893287] cnss: Posting event: FW_READY(4), state: 0x13 flags: 0x0
+[   24.896555] cnss: Processing driver event: FW_READY(4), state: 0x13
+
+icon-babam login: root (automatic login)
+
+~ # [   25.999810] cnss: Mode: 0, config: 0000000000000000, host_version: 5.2.1.123Z
+[   26.016151] cnss: Sending mode message, mode: MISSION(0), state: 0x17
+[   26.064802] wlan_pld:pld_is_ipa_offload_disabled:2854:: Not supported on type 0
+[   26.065822] [kworke][0x18d9d8d][19:42:32.543915] qca6490: [47:E:POLICY_MGR] policy_mgr_init_cfg: max_conc_cxns 3 non-nan
+[   26.122188] [kworke][0x18e79ba][19:42:32.600281] qca6490: [47:E:QDF] __cds_get_context: Module ID 66 context is Null (via hdd_update_ol_config)
+[   26.204060] [kworke][0x18fb98a][19:42:32.682152] qca6490: [47:E:QDF] __cds_get_context: Module ID 66 context is Null (via cds_open)
+[   26.221492] [kworke][0x18ffd9f][19:42:32.699582] qca6490: [47:I:WMA] wma_open: WMA --> wmi_unified_attach - success
+[   26.326540] [kworke][0x19197f5][19:42:32.804628] qca6490: [47:E:QDF] htc_wait_target: Target Ready! TX resource : 1 size:2176, MaxMsgsPerHTCBundle = 1
+[   26.385595] [kworke][0x1927ea3][19:42:32.863682] qca6490: [47:E:QDF] htc_setup_target_buffer_assignments: SVS Index : 1 TX : 0x100 : alloc:1
+[   26.722816] [kworke][0x197a3ee][19:42:33.200908] qca6490: [47:I:scan] scm_channel_list_db_init: min_freq 5935 max_freq 7115
+[   26.740496] [kworke][0x197e8fe][19:42:33.218589] qca6490: [47:I:SPECTRAL] wlan_spectral_psoc_open: Spectral feature is disabled
+[   26.799811] [kworke][0x198d0ac][19:42:33.277898] qca6490: [47:I:TXRX] hal_rx_fst base address 0x0000000000000000
+[   26.958321] [kworke][0x19b3bdf][19:42:33.436413] qca6490: [11:I:WMA] wma_rx_service_ready_event: Firmware build version : 1144049d
+[   26.970964] [kworke][0x19b6d41][19:42:33.449055] qca6490: [11:I:WMA] wma_rx_service_ready_event: Board version: 8 0 0 41 1
+[   26.988718] [kworke][0x19bb29c][19:42:33.466810] qca6490: [11:I:TIF] init_deinit_populate_hw_mode_capability: Preferred mode is not set, use mode id 1
+[   26.988718] 
+[   27.007752] [kworke][0x19bfcf4][19:42:33.485842] qca6490: [11:I:WMI] extract_hw_bdf_status: FW and BDF ver check skipped
+[   27.033253] [kworke][0x19c6093][19:42:33.511345] qca6490: [11:E:TIF] init_deinit_populate_dbs_or_sbs_cap_ext2: Extraction of twt capability failed
+[   27.034795] [kworke][0x19c669b][19:42:33.512889] qca6490: [11:E:TIF] init_deinit_populate_sap_coex_capability: Extraction of sap_coex_chan_pref cap failed
+[   27.373282] [kworke][0x1a190d0][19:42:33.851374] qca6490: [11:E:WMI] extract_reg_fcc_rules_tlv: Fcc rules not sent by fw
+[   27.374900] [kworke][0x1a19720][19:42:33.852990] qca6490: [11:E:WMI] extract_reg_fcc_rules_tlv: Fcc rules not sent by fw
+[   27.409507] [kworke][0x1a21e50][19:42:33.887599] qca6490: [11:I:WMI] ready_extract_init_status_tlv: ready_extract_init_status_tlv:0
+[   27.442957] [kworke][0x1a2a0fa][19:42:33.921049] qca6490: [11:E:REGULATORY] reg_set_keep_6ghz_sta_cli_connection: pdev reg component is NULL
+[   27.478376] [kworke][0x1a32b55][19:42:33.956467] qca6490: [11:E:OBJMGR] wlan_objmgr_pdev_try_get_ref: [Ref id: 22] pdev [0] is not in Created(st:0)
+[   27.503243] [kworke][0x1a38c73][19:42:33.981330] qca6490: [11:E:REGULATORY] reg_send_scheduler_msg_nb: error taking pdev ref cnt
+[   27.526651] [kworke][0x1a3e7e8][19:42:34.004742] qca6490: [11:I:dfs] WLAN_DEBUG_DFS_ALWAYS : wlan_dfs_pdev_obj_create_notification: dfs_bangradar_320_support 0
+[   27.551773] [kworke][0x1a44a04][19:42:34.029859] qca6490: [11:I:SPECTRAL] wlan_spectral_pdev_obj_create_handler: Spectral feature is disabled
+[   27.553273] [kworke][0x1a44fe7][19:42:34.031365] qca6490: [11:I:GREEN_AP] wlan_green_ap_pdev_obj_create_notification: Green AP creation successful, green ap ctx: 0000000000000000, pdev: 0000000000000000
+[   27.623613] [kworke][0x1a562aa][19:42:34.101704] qca6490: [11:I:REGULATORY] reg_set_band: same band 7
+[   27.632140] [kworke][0x1a583f5][19:42:34.110228] qca6490: [11:I:HDD] hdd_intersect_igmp_offload_setting: fw cap to handle igmp 1 igmp_offload_enable ini 0
+[   27.642028] [kworke][0x1a5aa99][19:42:34.120119] qca6490: [11:I:GREEN_AP] target_if_green_ap_register_egap_event_handler: Set the Enhance Green AP event handler
+[   27.651766] [kworke][0x1a5d0a3][19:42:34.129858] qca6490: [47:I:WMA] wma_wait_for_ready_event: FW ready event received
+[   27.658586] [kworke][0x1a5eb43][19:42:34.136674] qca6490: [47:I:SPECTRAL] spectral_pdev_open: Spectral feature is disabled
+[   27.672405] [kworke][0x1a62142][19:42:34.150496] qca6490: [47:I:SPECTRAL] wlan_register_spectral_wmi_ops: Spectral feature is disabled
+[   27.682742] [kworke][0x1a649a4][19:42:34.160834] qca6490: [47:I:SYS] Creating periodic timer for OLBC UPDATE CACHE TIMEOUT
+[   27.682742] 
+[   27.695108] [kworke][0x1a679f2][19:42:34.173200] qca6490: [47:I:SPECTRAL] spectral_register_legacy_cb: Spectral feature is disabled
+[   27.711528] [kworke][0x1a6ba15][19:42:34.189620] qca6490: [47:I:DIRECT_BUF_RX] target_if_direct_buf_rx_register_events: DBR Handler Context 1
+[   27.728993] [kworke][0x1a6fe4f][19:42:34.207086] qca6490: [47:I:SPECTRAL] wlan_spectral_psoc_enable: Spectral feature is disabled
+[   27.754029] [kworke][0x1a7601b][19:42:34.232122] qca6490: [47:E:WMI] send_action_oui_cmd_tlv: Invalid action id
+[   27.764859] [kworke][0x1a78a69][19:42:34.242951] qca6490: [47:E:action_oui] action_oui_send_config: Failed to send: 14
+[   27.783341] [kworke][0x1a7d297][19:42:34.261429] qca6490: [47:E:WMI] send_action_oui_cmd_tlv: Invalid action id
+[   27.798801] [kworke][0x1a80efe][19:42:34.276892] qca6490: [47:E:action_oui] action_oui_send_config: Failed to send: 15
+[   27.831818] [kworke][0x1a88ff7][19:42:34.309909] qca6490: [47:E:fwol] ucfg_fwol_send_get_thermal_stats_cmd: Command Disabled in Ini gThermalStatsTempOffset 5 or not enabled in FW 0
+[   27.833931] [kworke][0x1a89837][19:42:34.312022] qca6490: [47:E:OSIF] os_if_fwol_get_thermal_stats_req: Failed to send get thermal stats cmd to FW, 4
+[   27.912200] [kworke][0x1a9c9ef][19:42:34.390286] qca6490: [47:I:HDD] hdd_initialize_mac_address: using default MAC address
+[   27.928368] [kworke][0x1aa091d][19:42:34.406460] qca6490: [47:E:HDD] __wlan_hdd_validate_context: Driver load is in progress (via hdd_netdev_notifier_bridge_intf)
+[   27.948257] [kworke][0x1aa56cd][19:42:34.426348] qca6490: [47:E:HDD] __wlan_hdd_validate_context: Driver load is in progress (via hdd_netdev_notifier_bridge_intf)
+[   28.247857] [kworke][0x1aee910][19:42:34.725935] qca6490: [28:I:HDD] hdd_psoc_idle_timeout_callback: Psoc idle timeout elapsed; starting psoc shutdown
+[2026-07-22 19:18:03] devcoding write ECALL/SIM_CARD 1
+[2026-07-22 19:18:05] [setup_cert_prerequisites] devcoding write ECALL/SIM_CARD 1
+[   30.088700] [kworke][0x1caffe4][19:42:36.566787] qca6490: [28:I:HDD] hdd_psoc_idle_timeout_callback: Psoc idle timeout elapsed; starting psoc shutdown
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+While loading block '/var/sys/sysfunc/coding/area_00.bin', Coding file cannot be opened.
+Coding data inexistent or invalid. Loading default coding flags values...
+Check for a coding flag with name 'ECALL/SIM_CARD'.
+Persisting all coding data
+CPS not found, will create a default one
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ #
+[2026-07-22 19:18:05] devcoding write ECALL/TELEMATIC 1
+[2026-07-22 19:18:08] [setup_cert_prerequisites] devcoding write ECALL/TELEMATIC 1
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+Check for a coding flag with name 'ECALL/TELEMATIC'.
+Persisting all coding data
+CPS already exists, no-op
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ # [   33.767210] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[   33.770219] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 1
+[   33.771369] xhci-hcd xhci-hcd.1.auto: hcc params 0x200073c9 hci version 0x100 quirks 0x0000082000008090
+[   33.774581] xhci-hcd xhci-hcd.1.auto: irq 567, io mem 0x06010000
+[   33.777506] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[   33.778175] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 2
+[   33.779464] xhci-hcd xhci-hcd.1.auto: Host supports USB 3.0 SuperSpeed
+[   33.785653] hub 1-0:1.0: USB hub found
+[   33.786233] hub 1-0:1.0: 1 port detected
+[   33.788417] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[   33.791509] hub 2-0:1.0: USB hub found
+[   33.793032] hub 2-0:1.0: 1 port detected
+[   34.096276] LoadPin: kexec-image pinning-excluded obj=<unknown> pid=1700 cmdline="/usr/sbin/kexec -d -p -c --type=Image /boot/Image --dtb=/boot/dtb/ti/icon-kdump.dtb --initrd=/boot/kdump_ramdiskImage --append=console=ttyS2,1000000 root=/dev/ram0 rootwait rw maxcpus=1 reset_devices panic=2 ramdisk_size=21000 init=/etc/init.d/rcS"
+[2026-07-22 19:18:09]   ps | grep provisioningd daemon...
+[2026-07-22 19:18:10]   [setup_cert_prerequisites] ps | grep provisioningd
+  977 tel_prov  320m S    /opt/telematics/rootfs/usr/bin/provisioningd-ipnext
+  980 tel_prov  321m S    /opt/telematics/rootfs/usr/bin/provisioningd
+~ #
+[2026-07-22 19:18:11] 
+[STEP 3] Remount filesystem as read-only
+[2026-07-22 19:18:13] [BAM]  mount -o remount,ro /opt/telematics/ 
+mount -o remount,ro /opt/telematics/
+[   38.311887] EXT4-fs (dm-1): re-mounted 0000c0ac-282a-0f08-8a22-490c98a91b08 ro. Quota mode: none.
+~ #
+[2026-07-22 19:18:13]   [OK] Filesystem remounted as read-only
+[2026-07-22 19:18:14] 
+[STEP 4] Rebooting device (REQUIRED after setup)...
+[2026-07-22 19:18:16]   [BAM] Reboot initiated, waiting 35 seconds...
+[2026-07-22 19:18:51] 
+[STEP 5] Post-reboot Verification
+[2026-07-22 19:18:51]   Checking service state after reboot...
+[2026-07-22 19:18:51] ERROR: Shell lost. Attempting to reconnect...
+[2026-07-22 19:18:51] === Starting ADB Shell ===
+[2026-07-22 19:18:51] [2026-07-22 19:18:51]
+[2026-07-22 19:18:55] Reconnected shell (attempt 1)
+[2026-07-22 19:18:55] sh-3.2#
+[2026-07-22 19:18:55] sldd telephony getservicestate
+[2026-07-22 19:18:55] sh: sldd: command not found
+[2026-07-22 19:18:55]   [WARNING] Service state check attempt 1/5
+[2026-07-22 19:18:58] sh-3.2# sldd telephony getservicestate
+[2026-07-22 19:18:58] sh: sldd: command not found
+[2026-07-22 19:18:58]   [WARNING] Service state check attempt 2/5
+[2026-07-22 19:19:01] sh-3.2# sldd telephony getservicestate
+[2026-07-22 19:19:01] sh: sldd: command not found
+[2026-07-22 19:19:01]   [WARNING] Service state check attempt 3/5
+[2026-07-22 19:19:04] sh-3.2# sldd telephony getservicestate
+[2026-07-22 19:19:04] sh: sldd: command not found
+[2026-07-22 19:19:04]   [WARNING] Service state check attempt 4/5
+[2026-07-22 19:19:07] sh-3.2# sldd telephony getservicestate
+[2026-07-22 19:19:07] sh: sldd: command not found
+[2026-07-22 19:19:07]   [WARNING] Service state check attempt 5/5
+[2026-07-22 19:19:07]   [WARNING] Service state verification inconclusive, continuing anyway
+[2026-07-22 19:19:08] 
+======================================================================
+[2026-07-22 19:19:08] CERTIFICATE DOWNLOAD - PRE-TEST VERIFICATION PHASE
+[2026-07-22 19:19:08] ======================================================================
+[2026-07-22 19:19:08] 
+======================================================================
+[2026-07-22 19:19:08] CERTIFICATE DOWNLOAD - DNS Ping VERIFICATION (NAD + BAM)
+[2026-07-22 19:19:08] ======================================================================
+[2026-07-22 19:19:08] 
+[DNS VERIFICATION - ATTEMPT 1/5]
+[2026-07-22 19:19:08] 
+[NAD SIDE - ADB Shell]
+[2026-07-22 19:19:08] sh-3.2# nslookup www.google.com
+[2026-07-22 19:19:08] Server:    127.0.0.1
+[2026-07-22 19:19:08] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-22 19:19:08] nslookup: can't resolve 'www.google.com'
+[2026-07-22 19:19:10]   DNS 'www.google.com (NAD)': Found 1 addresses (expected ~10)
+[2026-07-22 19:19:10]   [WARNING] Lower than expected count
+[2026-07-22 19:19:11] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-07-22 19:19:11] Server:    127.0.0.1
+[2026-07-22 19:19:11] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-22 19:19:11] nslookup: can't resolve 'asbc-v2x.e2e.cvs-emea.bmw.cloud'
+[2026-07-22 19:19:13]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (NAD)': Found 1 addresses (expected ~2)
+[2026-07-22 19:19:13]   [WARNING] Lower than expected count
+[2026-07-22 19:19:14]   [WARNING] NAD DNS incomplete
+[2026-07-22 19:19:14] 
+[BAM SIDE - Dns Check]
+[2026-07-22 19:19:14]   [DNS CHECK 1] Testing www.google.com (BAM)...
+[2026-07-22 19:19:18]   DNS 'www.google.com (BAM)': Found 1 addresses (expected ~10)
+[2026-07-22 19:19:18]   [WARNING] Lower than expected count
+[2026-07-22 19:19:19]   [DNS CHECK 2] Testing asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)...
+[2026-07-22 19:19:22]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)': Found 1 addresses (expected ~2)
+[2026-07-22 19:19:22]   [WARNING] Lower than expected count
+[2026-07-22 19:19:23]   [WARNING] BAM DNS incomplete
+[2026-07-22 19:19:23] 
+[WARNING] DNS verification attempt 1 incomplete (NAD: False, BAM: False)
+[2026-07-22 19:19:23] [RETRY] Waiting 3 seconds before retry...
+[2026-07-22 19:19:26] 
+[DNS VERIFICATION - ATTEMPT 2/5]
+[2026-07-22 19:19:26] 
+[NAD SIDE - ADB Shell]
+[2026-07-22 19:19:26] sh-3.2# nslookup www.google.com
+[2026-07-22 19:19:26] Server:    127.0.0.1
+[2026-07-22 19:19:26] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-22 19:19:26] nslookup: can't resolve 'www.google.com'
+[2026-07-22 19:19:28]   DNS 'www.google.com (NAD)': Found 1 addresses (expected ~10)
+[2026-07-22 19:19:28]   [WARNING] Lower than expected count
+[2026-07-22 19:19:29] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-07-22 19:19:29] Server:    127.0.0.1
+[2026-07-22 19:19:29] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-22 19:19:29] nslookup: can't resolve 'asbc-v2x.e2e.cvs-emea.bmw.cloud'
+[2026-07-22 19:19:31]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (NAD)': Found 1 addresses (expected ~2)
+[2026-07-22 19:19:31]   [WARNING] Lower than expected count
+[2026-07-22 19:19:32]   [WARNING] NAD DNS incomplete
+[2026-07-22 19:19:32] 
+[BAM SIDE - Dns Check]
+[2026-07-22 19:19:32]   [DNS CHECK 1] Testing www.google.com (BAM)...
+[2026-07-22 19:19:36]   DNS 'www.google.com (BAM)': Found 1 addresses (expected ~10)
+[2026-07-22 19:19:36]   [WARNING] Lower than expected count
+[2026-07-22 19:19:37]   [DNS CHECK 2] Testing asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)...
+[2026-07-22 19:19:40]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)': Found 1 addresses (expected ~2)
+[2026-07-22 19:19:40]   [WARNING] Lower than expected count
+[2026-07-22 19:19:41]   [WARNING] BAM DNS incomplete
+[2026-07-22 19:19:41] 
+[WARNING] DNS verification attempt 2 incomplete (NAD: False, BAM: False)
+[2026-07-22 19:19:41] [RETRY] Waiting 3 seconds before retry...
+[2026-07-22 19:19:44] 
+[DNS VERIFICATION - ATTEMPT 3/5]
+[2026-07-22 19:19:44] 
+[NAD SIDE - ADB Shell]
+[2026-07-22 19:19:44] sh-3.2# nslookup www.google.com
+[2026-07-22 19:19:44] Server:    127.0.0.1
+[2026-07-22 19:19:44] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-22 19:19:44] nslookup: can't resolve 'www.google.com'
+[2026-07-22 19:19:46]   DNS 'www.google.com (NAD)': Found 1 addresses (expected ~10)
+[2026-07-22 19:19:46]   [WARNING] Lower than expected count
+[2026-07-22 19:19:47] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-07-22 19:19:47] Server:    127.0.0.1
+[2026-07-22 19:19:47] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-22 19:19:47] nslookup: can't resolve 'asbc-v2x.e2e.cvs-emea.bmw.cloud'
+[2026-07-22 19:19:49]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (NAD)': Found 1 addresses (expected ~2)
+[2026-07-22 19:19:49]   [WARNING] Lower than expected count
+[2026-07-22 19:19:50]   [WARNING] NAD DNS incomplete
+[2026-07-22 19:19:50] 
+[BAM SIDE - Dns Check]
+[2026-07-22 19:19:50]   [DNS CHECK 1] Testing www.google.com (BAM)...
+[2026-07-22 19:19:53]   DNS 'www.google.com (BAM)': Found 1 addresses (expected ~10)
+[2026-07-22 19:19:53]   [WARNING] Lower than expected count
+[2026-07-22 19:19:54]   [DNS CHECK 2] Testing asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)...
+[2026-07-22 19:19:58]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)': Found 1 addresses (expected ~2)
+[2026-07-22 19:19:58]   [WARNING] Lower than expected count
+[2026-07-22 19:19:59]   [WARNING] BAM DNS incomplete
+[2026-07-22 19:19:59] 
+[WARNING] DNS verification attempt 3 incomplete (NAD: False, BAM: False)
+[2026-07-22 19:19:59] [RETRY] Waiting 3 seconds before retry...
+[2026-07-22 19:20:02] 
+[DNS VERIFICATION - ATTEMPT 4/5]
+[2026-07-22 19:20:02] 
+[NAD SIDE - ADB Shell]
+[2026-07-22 19:20:02] sh-3.2# nslookup www.google.com
+[2026-07-22 19:20:02] Server:    127.0.0.1
+[2026-07-22 19:20:02] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-22 19:20:02] nslookup: can't resolve 'www.google.com'
+[2026-07-22 19:20:04]   DNS 'www.google.com (NAD)': Found 1 addresses (expected ~10)
+[2026-07-22 19:20:04]   [WARNING] Lower than expected count
+[2026-07-22 19:20:05] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-07-22 19:20:05] Server:    127.0.0.1
+[2026-07-22 19:20:05] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-22 19:20:05] nslookup: can't resolve 'asbc-v2x.e2e.cvs-emea.bmw.cloud'
+[2026-07-22 19:20:07]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (NAD)': Found 1 addresses (expected ~2)
+[2026-07-22 19:20:07]   [WARNING] Lower than expected count
+[2026-07-22 19:20:08]   [WARNING] NAD DNS incomplete
+[2026-07-22 19:20:08] 
+[BAM SIDE - Dns Check]
+[2026-07-22 19:20:08]   [DNS CHECK 1] Testing www.google.com (BAM)...
+[2026-07-22 19:20:11]   DNS 'www.google.com (BAM)': Found 1 addresses (expected ~10)
+[2026-07-22 19:20:11]   [WARNING] Lower than expected count
+[2026-07-22 19:20:12]   [DNS CHECK 2] Testing asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)...
+[2026-07-22 19:20:16]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)': Found 1 addresses (expected ~2)
+[2026-07-22 19:20:16]   [WARNING] Lower than expected count
+[2026-07-22 19:20:17]   [WARNING] BAM DNS incomplete
+[2026-07-22 19:20:17] 
+[WARNING] DNS verification attempt 4 incomplete (NAD: False, BAM: False)
+[2026-07-22 19:20:17] [RETRY] Waiting 3 seconds before retry...
+[2026-07-22 19:20:20] 
+[DNS VERIFICATION - ATTEMPT 5/5]
+[2026-07-22 19:20:20] 
+[NAD SIDE - ADB Shell]
+[2026-07-22 19:20:20] sh-3.2# nslookup www.google.com
+[2026-07-22 19:20:20] Server:    127.0.0.1
+[2026-07-22 19:20:20] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-22 19:20:20] Name:      www.google.com
+[2026-07-22 19:20:21] Address 1: 2001:4860:4829:7700::
+[2026-07-22 19:20:22] Address 2: 2001:4860:4827:7700::
+[2026-07-22 19:20:24] Address 3: 2001:4860:4828:7700::
+[2026-07-22 19:20:24] Address 4: 2001:4860:482b:7700::
+[2026-07-22 19:20:25] Address 5: 2001:4860:4826:7700::
+[2026-07-22 19:20:25] Address 6: 2001:4860:482d:7700::
+[2026-07-22 19:20:26] Address 7: 2001:4860:482c:7700::
+[2026-07-22 19:20:26] Address 8: 2001:4860:482a:7700::
+[2026-07-22 19:20:26] Address 9: 142.251.157.119
+[2026-07-22 19:20:27] Address 10: 142.251.152.119
+[2026-07-22 19:20:27] Address 11: 142.251.151.119
+[2026-07-22 19:20:27] Address 12: 142.251.153.119
+[2026-07-22 19:20:28] Address 13: 142.251.156.119
+[2026-07-22 19:20:28] Address 14: 142.251.155.119
+[2026-07-22 19:20:28] Address 15: 142.251.154.119
+[2026-07-22 19:20:28] Address 16: 142.251.150.119
+[2026-07-22 19:20:30]   DNS 'www.google.com (NAD)': Found 17 addresses (expected ~10)
+[2026-07-22 19:20:30]   [OK] Address count verified
+[2026-07-22 19:20:32] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-07-22 19:20:32] Server:    127.0.0.1
+[2026-07-22 19:20:32] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-22 19:20:32] Name:      asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-07-22 19:20:32] Address 1: 2a05:d014:46a:4c07:1e0:a477:3012:12b2
+[2026-07-22 19:20:33] Address 2: 3.78.69.101 ec2-3-78-69-101.eu-central-1.compute.amazonaws.com
+[2026-07-22 19:20:35]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (NAD)': Found 3 addresses (expected ~2)
+[2026-07-22 19:20:35]   [OK] Address count verified
+[2026-07-22 19:20:36]   [OK] NAD DNS verified
+[2026-07-22 19:20:36] 
+[BAM SIDE - Dns Check]
+[2026-07-22 19:20:36]   [DNS CHECK 1] Testing www.google.com (BAM)...
+[2026-07-22 19:20:39]   DNS 'www.google.com (BAM)': Found 1 addresses (expected ~10)
+[2026-07-22 19:20:39]   [WARNING] Lower than expected count
+[2026-07-22 19:20:40]   [DNS CHECK 2] Testing asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)...
+[2026-07-22 19:20:43]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)': Found 1 addresses (expected ~2)
+[2026-07-22 19:20:43]   [WARNING] Lower than expected count
+[2026-07-22 19:20:44]   [WARNING] BAM DNS incomplete
+[2026-07-22 19:20:44] 
+[WARNING] DNS verification attempt 5 incomplete (NAD: True, BAM: False)
+[2026-07-22 19:20:44] 
+[CRITICAL] All 5 DNS verification attempts FAILED
+[2026-07-22 19:20:44] 
+[CRITICAL] DNS verification failed - halting test
+[2026-07-22 19:20:44] === ADB Shell Closed ===
+[2026-07-22 19:20:44] [2026-07-22 19:20:44]
+19:34:23 - INFO - ============================================================
+19:34:23 - INFO - ECU Interface Initialized
+19:34:23 - INFO - Port: COM43, Baudrate: 1000000
+19:34:23 - INFO - Console Output: Disabled
+19:34:23 - INFO - ============================================================
+[2026-07-22 19:34:23] === Starting ADB Shell ===
+[2026-07-22 19:34:23] [2026-07-22 19:34:23]
+[2026-07-22 19:34:24] 
+============================================================
+[2026-07-22 19:34:24] Test: Certificate Download Test
+[2026-07-22 19:34:24] Log File: ../logs/certificate_download.log
+[2026-07-22 19:34:24] ============================================================
+
+[2026-07-22 19:34:24] 
+======================================================================
+[2026-07-22 19:34:24] CERTIFICATE DOWNLOAD - Initial Setup(devcoding + IMEI + UTC Time + Reboot)
+[2026-07-22 19:34:24] ======================================================================
+[2026-07-22 19:34:24] 
+[DNS PREREQUISITES] Setting up necessary prerequisites for DNS verification
+[2026-07-22 19:34:24] 
+[STEP 1] Set IMEI (via ADB - NAD side)
+[2026-07-22 19:34:24] sldd telephony factorysetimei 354028100010134
+[2026-07-22 19:34:24] sh: sldd: command not found
+[2026-07-22 19:34:24]   [NAD] IMEI set successfully
+[2026-07-22 19:34:25] 
+[STEP 2] Devcoding Setup (via Serial Interface - BAM side)
+19:34:25 - INFO - Connecting to COM43... (Attempt 1/5)
+19:34:25 - INFO - [OK] ECU Connected Successfully
+19:34:25 - INFO - Monitor thread started
+[2026-07-22 19:34:25] devcoding write PROVISIONING/DAS_INDEX 1
+[2026-07-22 19:34:27] [setup_cert_prerequisites] devcoding write PROVISIONING/DAS_INDEX 1
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+Check for a coding flag with name 'PROVISIONING/DAS_INDEX'.
+Persisting all coding data
+CPS already exists, no-op
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ #
+[2026-07-22 19:34:27] devcoding write ECALL/SIM_CARD 1
+[2026-07-22 19:34:29] [setup_cert_prerequisites] devcoding write ECALL/SIM_CARD 1
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+Check for a coding flag with name 'ECALL/SIM_CARD'.
+Persisting all coding data
+CPS already exists, no-op
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ #
+[2026-07-22 19:34:30] devcoding write ECALL/TELEMATIC 1
+[2026-07-22 19:34:31] [setup_cert_prerequisites] devcoding write ECALL/TELEMATIC 1
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+Check for a coding flag with name 'ECALL/TELEMATIC'.
+Persisting all coding data
+CPS already exists, no-op
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ #
+[2026-07-22 19:34:32]   ps | grep provisioningd daemon...
+[2026-07-22 19:34:33]   [setup_cert_prerequisites] ps | grep provisioningd
+  986 tel_prov  320m S    /opt/telematics/rootfs/usr/bin/provisioningd-ipnext
+  994 tel_prov  321m S    /opt/telematics/rootfs/usr/bin/provisioningd
+~ #
+[2026-07-22 19:34:34] 
+[STEP 3] Remount filesystem as read-only
+[2026-07-22 19:34:35] [BAM]  mount -o remount,ro /opt/telematics/ 
+mount -o remount,ro /opt/telematics/
+[  961.486019] EXT4-fs (dm-1): re-mounted 0000c0ac-282a-0f08-8a22-490c98a91b08 ro. Quota mode: none.
+~ #
+[2026-07-22 19:34:35]   [OK] Filesystem remounted as read-only
+[2026-07-22 19:34:36] 
+[STEP 4] Rebooting device (REQUIRED after setup)...
+[2026-07-22 19:34:39]   [BAM] Reboot initiated, waiting 35 seconds...
+[2026-07-22 19:35:09] 
+[STEP 5] Post-reboot Verification
+[2026-07-22 19:35:09]   Checking service state after reboot...
+[2026-07-22 19:35:09] ERROR: Shell lost. Attempting to reconnect...
+[2026-07-22 19:35:09] === Starting ADB Shell ===
+[2026-07-22 19:35:09] [2026-07-22 19:35:09]
+[2026-07-22 19:35:18] Reconnected shell (attempt 1)
+[2026-07-22 19:35:18] sh-3.2#
+[2026-07-22 19:35:18] ssh-3.2# sldd telephony getservicestate
+[2026-07-22 19:35:18] sh: sldd: command not found
+[2026-07-22 19:35:18]   [WARNING] Service state check attempt 1/5
+[2026-07-22 19:35:21] sh-3.2# sldd telephony getservicestate
+[2026-07-22 19:35:21] sh: sldd: command not found
+[2026-07-22 19:35:21]   [WARNING] Service state check attempt 2/5
+[2026-07-22 19:35:24] sh-3.2# sldd telephony getservicestate
+[2026-07-22 19:35:24] sh: sldd: command not found
+[2026-07-22 19:35:24]   [WARNING] Service state check attempt 3/5
+[2026-07-22 19:35:27] sh-3.2# sldd telephony getservicestate
+[2026-07-22 19:35:27] sh: sldd: command not found
+[2026-07-22 19:35:27]   [WARNING] Service state check attempt 4/5
+[2026-07-22 19:35:30] sh-3.2# sldd telephony getservicestate
+[2026-07-22 19:35:30] sh: sldd: command not found
+[2026-07-22 19:35:30]   [WARNING] Service state check attempt 5/5
+[2026-07-22 19:35:30]   [WARNING] Service state verification inconclusive, continuing anyway
+[2026-07-22 19:35:31] 
+======================================================================
+[2026-07-22 19:35:31] CERTIFICATE DOWNLOAD - PRE-TEST VERIFICATION PHASE
+[2026-07-22 19:35:31] ======================================================================
+[2026-07-22 19:35:31] 
+======================================================================
+[2026-07-22 19:35:31] CERTIFICATE DOWNLOAD - DNS Ping VERIFICATION (NAD + BAM)
+[2026-07-22 19:35:31] ======================================================================
+[2026-07-22 19:35:31] 
+[DNS VERIFICATION - ATTEMPT 1/5]
+[2026-07-22 19:35:31] 
+[NAD SIDE - ADB Shell]
+[2026-07-22 19:35:31] sh-3.2# nslookup www.google.com
+[2026-07-22 19:35:31] Server:    127.0.0.1
+[2026-07-22 19:35:31] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-22 19:35:31] nslookup: can't resolve 'www.google.com'
+[2026-07-22 19:35:33]   DNS 'www.google.com (NAD)': Found 1 addresses (expected ~10)
+[2026-07-22 19:35:33]   [WARNING] Lower than expected count
+[2026-07-22 19:35:34] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-07-22 19:35:34] Server:    127.0.0.1
+[2026-07-22 19:35:34] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-22 19:35:34] nslookup: can't resolve 'asbc-v2x.e2e.cvs-emea.bmw.cloud'
+[2026-07-22 19:35:36]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (NAD)': Found 1 addresses (expected ~2)
+[2026-07-22 19:35:36]   [WARNING] Lower than expected count
+[2026-07-22 19:35:37]   [WARNING] NAD DNS incomplete
+[2026-07-22 19:35:37] 
+[BAM SIDE - Dns Check]
+[2026-07-22 19:35:37]   [DNS CHECK 1] Testing www.google.com (BAM)...
+[2026-07-22 19:35:47]   DNS 'www.google.com (BAM)': Found 14 addresses (expected ~10)
+[2026-07-22 19:35:47]   [OK] Address count verified
+[2026-07-22 19:35:48]   [DNS CHECK 2] Testing asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)...
+[2026-07-22 19:35:55]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)': Found 6 addresses (expected ~2)
+[2026-07-22 19:35:55]   [OK] Address count verified
+[2026-07-22 19:35:56]   [OK] BAM DNS verified
+[2026-07-22 19:35:56] 
+[WARNING] DNS verification attempt 1 incomplete (NAD: False, BAM: True)
+[2026-07-22 19:35:56] [RETRY] Waiting 3 seconds before retry...
+[2026-07-22 19:35:59] 
+[DNS VERIFICATION - ATTEMPT 2/5]
+[2026-07-22 19:35:59] 
+[NAD SIDE - ADB Shell]
+[2026-07-22 19:35:59] sh-3.2# nslookup www.google.com
+[2026-07-22 19:35:59] Server:    127.0.0.1
+[2026-07-22 19:35:59] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-22 19:35:59] Name:      www.google.com
+[2026-07-22 19:35:59] Address 1: 142.251.155.119
+[2026-07-22 19:35:59] Address 2: 142.251.151.119
+[2026-07-22 19:35:59] Address 3: 142.251.152.119
+[2026-07-22 19:35:59] Address 4: 142.251.157.119
+[2026-07-22 19:35:59] Address 5: 142.251.153.119
+[2026-07-22 19:35:59] Address 6: 142.251.154.119
+[2026-07-22 19:36:00] Address 7: 142.251.150.119
+[2026-07-22 19:36:00] Address 8: 142.251.156.119
+[2026-07-22 19:36:01] Address 9: 2001:4860:482c:7700::
+[2026-07-22 19:36:01] Address 10: 2001:4860:4827:7700::
+[2026-07-22 19:36:02] Address 11: 2001:4860:482b:7700::
+[2026-07-22 19:36:02] Address 12: 2001:4860:4828:7700::
+[2026-07-22 19:36:03] Address 13: 2001:4860:4829:7700::
+[2026-07-22 19:36:04] Address 14: 2001:4860:482a:7700::
+[2026-07-22 19:36:04] Address 15: 2001:4860:482d:7700::
+[2026-07-22 19:36:05] Address 16: 2001:4860:4826:7700::
+[2026-07-22 19:36:07]   DNS 'www.google.com (NAD)': Found 17 addresses (expected ~10)
+[2026-07-22 19:36:07]   [OK] Address count verified
+[2026-07-22 19:36:08] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-07-22 19:36:08] Server:    127.0.0.1
+[2026-07-22 19:36:08] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-22 19:36:08] Name:      asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-07-22 19:36:08] Address 1: 35.156.4.45 ec2-35-156-4-45.eu-central-1.compute.amazonaws.com
+[2026-07-22 19:36:08] Address 2: 2a05:d014:46a:4c07:1e0:a477:3012:12b2
+[2026-07-22 19:36:10]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (NAD)': Found 3 addresses (expected ~2)
+[2026-07-22 19:36:10]   [OK] Address count verified
+[2026-07-22 19:36:11]   [OK] NAD DNS verified
+[2026-07-22 19:36:11] 
+[BAM SIDE - Dns Check]
+[2026-07-22 19:36:11]   [DNS CHECK 1] Testing www.google.com (BAM)...
+[2026-07-22 19:36:18]   DNS 'www.google.com (BAM)': Found 17 addresses (expected ~10)
+[2026-07-22 19:36:18]   [OK] Address count verified
+[2026-07-22 19:36:19]   [DNS CHECK 2] Testing asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)...
+[2026-07-22 19:36:22]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)': Found 3 addresses (expected ~2)
+[2026-07-22 19:36:22]   [OK] Address count verified
+[2026-07-22 19:36:23]   [OK] BAM DNS verified
+[2026-07-22 19:36:23] 
+[OK] DNS verification PASSED (NAD + BAM)
+[2026-07-22 19:36:24] 
+======================================================================
+[2026-07-22 19:36:24] CERTIFICATE DOWNLOAD - ACTUAL TEST PHASE (Start Stack)
+[2026-07-22 19:36:24] ======================================================================
+[2026-07-22 19:37:12] sh-3.2# sldd v2xmgr setdataprivacy 1
+[2026-07-22 19:37:12] sh: sldd: command not found
+[2026-07-22 19:37:17] [Stack Check] Attempt 1...
+[2026-07-22 19:37:17] sh-3.2# unplugged-rt-status-gen
+[2026-07-22 19:37:18] [2026-07-22 14:07:17.877] [E] [REM] eac_api_client:1796 - Unable to connect to 127.0.0.1
+[2026-07-22 19:37:18] Lines in output: 2
+[2026-07-22 19:37:18] Stack still OFF. Waiting 8s before retry...
+[2026-07-22 19:37:26] [Stack Check] Attempt 2...
+[2026-07-22 19:37:26] sh-3.2# unplugged-rt-status-gen
+[2026-07-22 19:37:26] [2026-07-22 14:07:26.178] [E] [REM] eac_api_client:1796 - Unable to connect to 127.0.0.1
+[2026-07-22 19:37:26] Lines in output: 2
+[2026-07-22 19:37:26] Stack still OFF. Waiting 8s before retry...
+[2026-07-22 19:37:34] [Stack Check] Attempt 3...
+[2026-07-22 19:37:34] sh-3.2# unplugged-rt-status-gen
+[2026-07-22 19:37:34] [2026-07-22 14:07:34.446] [E] [REM] eac_api_client:1796 - Unable to connect to 127.0.0.1
+[2026-07-22 19:37:34] Lines in output: 2
+[2026-07-22 19:37:34] Stack still OFF. Waiting 8s before retry...
+[2026-07-22 19:37:42] [Stack Check] Attempt 4...
+[2026-07-22 19:37:42] sh-3.2# unplugged-rt-status-gen
+[2026-07-22 19:37:42] [2026-07-22 14:07:42.000] [E] [REM] eac_api_client:1796 - Unable to connect to 127.0.0.1
+[2026-07-22 19:37:42] Lines in output: 2
+[2026-07-22 19:37:42] Stack still OFF. Waiting 8s before retry...
+[2026-07-22 19:37:50] [Stack Check] Attempt 5...
+[2026-07-22 19:37:51] sh-3.2# unplugged-rt-status-gen
+[2026-07-22 19:37:51] [2026-07-22 14:07:50.269] [E] [REM] eac_api_client:1796 - Unable to connect to 127.0.0.1
+[2026-07-22 19:37:51] Lines in output: 2
+[2026-07-22 19:37:51] ERROR: [Stack Check] Stack not ON after maximum attempts. Exiting...
+[2026-07-22 19:37:51] === ADB Shell Closed ===
+[2026-07-22 19:37:51] [2026-07-22 19:37:51]
+13:45:01 - INFO - ============================================================
+13:45:01 - INFO - ECU Interface Initialized
+13:45:01 - INFO - Port: COM43, Baudrate: 1000000
+13:45:01 - INFO - Console Output: Disabled
+13:45:01 - INFO - ============================================================
+[2026-07-24 13:45:01] === Starting ADB Shell ===
+[2026-07-24 13:45:01] [2026-07-24 13:45:01]
+[2026-07-24 13:45:02] 
+============================================================
+[2026-07-24 13:45:02] Test: Certificate Download Test
+[2026-07-24 13:45:02] Log File: ../logs/certificate_download.log
+[2026-07-24 13:45:02] ============================================================
+
+[2026-07-24 13:45:02] 
+======================================================================
+[2026-07-24 13:45:02] CERTIFICATE DOWNLOAD - Initial Setup(devcoding + IMEI + UTC Time + Reboot)
+[2026-07-24 13:45:02] ======================================================================
+[2026-07-24 13:45:02] 
+[DNS PREREQUISITES] Setting up necessary prerequisites for DNS verification
+[2026-07-24 13:45:02] 
+[STEP 1] Set IMEI (via ADB - NAD side)
+[2026-07-24 13:45:02] sldd telephony factorysetimei 354028100010134 ;sh-3.2# sldd telephony factorysetimei 354028100010134
+[2026-07-24 13:45:02] -----------------------------------------------------------
+[2026-07-24 13:45:02] Set IMEI
+[2026-07-24 13:45:02] -----------------------------------------------------------
+[2026-07-24 13:45:02] -> Result : true
+[2026-07-24 13:45:02]   [NAD] IMEI set successfully
+[2026-07-24 13:45:03] 
+[STEP 2] Devcoding Setup (via Serial Interface - BAM side)
+13:45:03 - INFO - Connecting to COM43... (Attempt 1/5)
+13:45:03 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:45:03 - WARNING - Retrying in 2 seconds...
+13:45:05 - INFO - Connecting to COM43... (Attempt 2/5)
+13:45:05 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:45:05 - WARNING - Retrying in 2 seconds...
+13:45:07 - INFO - Connecting to COM43... (Attempt 3/5)
+13:45:07 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:45:07 - WARNING - Retrying in 2 seconds...
+13:45:09 - INFO - Connecting to COM43... (Attempt 4/5)
+13:45:09 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:45:09 - WARNING - Retrying in 2 seconds...
+13:45:11 - INFO - Connecting to COM43... (Attempt 5/5)
+13:45:11 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:45:11 - ERROR - Failed to connect after 5 attempts
+[2026-07-24 13:45:11] ERROR: [ERROR] Setup failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+[2026-07-24 13:45:11] 
+[CRITICAL ERROR] Test failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+[2026-07-24 13:45:11] Traceback (most recent call last):
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\tests\test_certificate_download.py", line 423, in run
+    self.setup_custom()
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\tests\test_certificate_download.py", line 141, in setup_custom
+    self._setup_cert_prerequisites()
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\tests\test_certificate_download.py", line 97, in _setup_cert_prerequisites
+    self.ecu_serial.connect()
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\framework\serial_com\bam.py", line 165, in connect
+    self.ser = serial.Serial(
+               ^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python312\Lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Program Files\Python312\Lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+
+[2026-07-24 13:45:11] === ADB Shell Closed ===
+[2026-07-24 13:45:11] [2026-07-24 13:45:11]
+13:46:38 - INFO - ============================================================
+13:46:38 - INFO - ECU Interface Initialized
+13:46:38 - INFO - Port: COM43, Baudrate: 1000000
+13:46:38 - INFO - Console Output: Disabled
+13:46:38 - INFO - ============================================================
+[2026-07-24 13:46:38] === Starting ADB Shell ===
+[2026-07-24 13:46:38] [2026-07-24 13:46:38]
+[2026-07-24 13:46:40] 
+============================================================
+[2026-07-24 13:46:40] Test: Certificate Download Test
+[2026-07-24 13:46:40] Log File: ../logs/certificate_download.log
+[2026-07-24 13:46:40] ============================================================
+
+[2026-07-24 13:46:40] 
+======================================================================
+[2026-07-24 13:46:40] CERTIFICATE DOWNLOAD - Initial Setup(devcoding + IMEI + UTC Time + Reboot)
+[2026-07-24 13:46:40] ======================================================================
+[2026-07-24 13:46:40] 
+[DNS PREREQUISITES] Setting up necessary prerequisites for DNS verification
+[2026-07-24 13:46:40] 
+[STEP 1] Set IMEI (via ADB - NAD side)
+[2026-07-24 13:46:40] sh-3.2# sldd telephony factorysetimei 354028100010134
+[2026-07-24 13:46:40] -----------------------------------------------------------
+[2026-07-24 13:46:40] Set IMEI
+[2026-07-24 13:46:40] -----------------------------------------------------------
+[2026-07-24 13:46:40] -> Result : true
+[2026-07-24 13:46:40]   [NAD] IMEI set successfully
+[2026-07-24 13:46:41] 
+[STEP 2] Devcoding Setup (via Serial Interface - BAM side)
+13:46:41 - INFO - Connecting to COM43... (Attempt 1/5)
+13:46:41 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:46:41 - WARNING - Retrying in 2 seconds...
+13:46:43 - INFO - Connecting to COM43... (Attempt 2/5)
+13:46:43 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:46:43 - WARNING - Retrying in 2 seconds...
+13:46:45 - INFO - Connecting to COM43... (Attempt 3/5)
+13:46:45 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:46:45 - WARNING - Retrying in 2 seconds...
+13:46:47 - INFO - Connecting to COM43... (Attempt 4/5)
+13:46:47 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:46:47 - WARNING - Retrying in 2 seconds...
+13:46:49 - INFO - Connecting to COM43... (Attempt 5/5)
+13:46:49 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:46:49 - ERROR - Failed to connect after 5 attempts
+[2026-07-24 13:46:49] ERROR: [ERROR] Setup failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+[2026-07-24 13:46:49] 
+[CRITICAL ERROR] Test failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+[2026-07-24 13:46:49] Traceback (most recent call last):
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\tests\test_certificate_download.py", line 423, in run
+    self.setup_custom()
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\tests\test_certificate_download.py", line 141, in setup_custom
+    self._setup_cert_prerequisites()
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\tests\test_certificate_download.py", line 97, in _setup_cert_prerequisites
+    self.ecu_serial.connect()
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\framework\serial_com\bam.py", line 165, in connect
+    self.ser = serial.Serial(
+               ^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python312\Lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Program Files\Python312\Lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+
+[2026-07-24 13:46:49] === ADB Shell Closed ===
+[2026-07-24 13:46:49] [2026-07-24 13:46:49]
+13:47:47 - INFO - ============================================================
+13:47:47 - INFO - ECU Interface Initialized
+13:47:47 - INFO - Port: COM43, Baudrate: 1000000
+13:47:47 - INFO - Console Output: Disabled
+13:47:47 - INFO - ============================================================
+[2026-07-24 13:47:47] === Starting ADB Shell ===
+[2026-07-24 13:47:47] [2026-07-24 13:47:47]
+[2026-07-24 13:47:48] 
+============================================================
+[2026-07-24 13:47:48] Test: Certificate Download Test
+[2026-07-24 13:47:48] Log File: ../logs/certificate_download.log
+[2026-07-24 13:47:48] ============================================================
+
+[2026-07-24 13:47:48] 
+======================================================================
+[2026-07-24 13:47:48] CERTIFICATE DOWNLOAD - Initial Setup(devcoding + IMEI + UTC Time + Reboot)
+[2026-07-24 13:47:48] ======================================================================
+[2026-07-24 13:47:48] 
+[DNS PREREQUISITES] Setting up necessary prerequisites for DNS verification
+[2026-07-24 13:47:48] 
+[STEP 1] Set IMEI (via ADB - NAD side)
+[2026-07-24 13:47:48] sldd telephony factorysetsh-3.2# sldd telephony factorysetimei 354028100010134
+[2026-07-24 13:47:49] -----------------------------------------------------------
+[2026-07-24 13:47:49] Set IMEI
+[2026-07-24 13:47:49] -----------------------------------------------------------
+[2026-07-24 13:47:49] -> Result : true
+[2026-07-24 13:47:49]   [NAD] IMEI set successfully
+[2026-07-24 13:47:50] 
+[STEP 2] Devcoding Setup (via Serial Interface - BAM side)
+13:47:50 - INFO - Connecting to COM43... (Attempt 1/5)
+13:47:50 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:47:50 - WARNING - Retrying in 2 seconds...
+13:47:52 - INFO - Connecting to COM43... (Attempt 2/5)
+13:47:52 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:47:52 - WARNING - Retrying in 2 seconds...
+13:47:54 - INFO - Connecting to COM43... (Attempt 3/5)
+13:47:54 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:47:54 - WARNING - Retrying in 2 seconds...
+13:47:56 - INFO - Connecting to COM43... (Attempt 4/5)
+13:47:56 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:47:56 - WARNING - Retrying in 2 seconds...
+13:47:58 - INFO - Connecting to COM43... (Attempt 5/5)
+13:47:58 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:47:58 - ERROR - Failed to connect after 5 attempts
+[2026-07-24 13:47:58] ERROR: [ERROR] Setup failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+[2026-07-24 13:47:58] 
+[CRITICAL ERROR] Test failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+[2026-07-24 13:47:58] Traceback (most recent call last):
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\tests\test_certificate_download.py", line 423, in run
+    self.setup_custom()
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\tests\test_certificate_download.py", line 141, in setup_custom
+    self._setup_cert_prerequisites()
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\tests\test_certificate_download.py", line 97, in _setup_cert_prerequisites
+    self.ecu_serial.connect()
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\framework\serial_com\bam.py", line 165, in connect
+    self.ser = serial.Serial(
+               ^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python312\Lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Program Files\Python312\Lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+
+[2026-07-24 13:47:58] === ADB Shell Closed ===
+[2026-07-24 13:47:58] [2026-07-24 13:47:58]
+13:49:56 - INFO - ============================================================
+13:49:56 - INFO - ECU Interface Initialized
+13:49:56 - INFO - Port: COM43, Baudrate: 1000000
+13:49:56 - INFO - Console Output: Disabled
+13:49:56 - INFO - ============================================================
+[2026-07-24 13:49:56] === Starting ADB Shell ===
+[2026-07-24 13:49:56] [2026-07-24 13:49:56]
+[2026-07-24 13:49:58] 
+============================================================
+[2026-07-24 13:49:58] Test: Certificate Download Test
+[2026-07-24 13:49:58] Log File: ../logs/certificate_download.log
+[2026-07-24 13:49:58] ============================================================
+
+[2026-07-24 13:49:58] 
+======================================================================
+[2026-07-24 13:49:58] CERTIFICATE DOWNLOAD - Initial Setup(devcoding + IMEI + UTC Time + Reboot)
+[2026-07-24 13:49:58] ======================================================================
+[2026-07-24 13:49:58] 
+[DNS PREREQUISITES] Setting up necessary prerequisites for DNS verification
+[2026-07-24 13:49:58] 
+[STEP 1] Set IMEI (via ADB - NAD side)
+[2026-07-24 13:49:58] sldd telephony factorysetimei 354028100010134 ; sh-3.2# sldd telephony factorysetimei 354028100010134
+[2026-07-24 13:49:58] -----------------------------------------------------------
+[2026-07-24 13:49:58] Set IMEI
+[2026-07-24 13:49:58] -----------------------------------------------------------
+[2026-07-24 13:49:58] -> Result : true
+[2026-07-24 13:49:58]   [NAD] IMEI set successfully
+[2026-07-24 13:49:59] 
+[STEP 2] Devcoding Setup (via Serial Interface - BAM side)
+13:49:59 - INFO - Connecting to COM43... (Attempt 1/5)
+13:49:59 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:49:59 - WARNING - Retrying in 2 seconds...
+13:50:01 - INFO - Connecting to COM43... (Attempt 2/5)
+13:50:01 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:50:01 - WARNING - Retrying in 2 seconds...
+13:50:03 - INFO - Connecting to COM43... (Attempt 3/5)
+13:50:03 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:50:03 - WARNING - Retrying in 2 seconds...
+13:50:05 - INFO - Connecting to COM43... (Attempt 4/5)
+13:50:05 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:50:05 - WARNING - Retrying in 2 seconds...
+13:50:07 - INFO - Connecting to COM43... (Attempt 5/5)
+13:50:07 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:50:07 - ERROR - Failed to connect after 5 attempts
+[2026-07-24 13:50:07] ERROR: [ERROR] Setup failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+[2026-07-24 13:50:07] 
+[CRITICAL ERROR] Test failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+[2026-07-24 13:50:07] Traceback (most recent call last):
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\tests\test_certificate_download.py", line 423, in run
+    self.setup_custom()
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\tests\test_certificate_download.py", line 141, in setup_custom
+    self._setup_cert_prerequisites()
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\tests\test_certificate_download.py", line 97, in _setup_cert_prerequisites
+    self.ecu_serial.connect()
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\framework\serial_com\bam.py", line 165, in connect
+    self.ser = serial.Serial(
+               ^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python312\Lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Program Files\Python312\Lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+
+[2026-07-24 13:50:07] === ADB Shell Closed ===
+[2026-07-24 13:50:07] [2026-07-24 13:50:07]
+13:55:45 - INFO - ============================================================
+13:55:45 - INFO - ECU Interface Initialized
+13:55:45 - INFO - Port: COM43, Baudrate: 1000000
+13:55:45 - INFO - Console Output: Disabled
+13:55:45 - INFO - ============================================================
+[2026-07-24 13:55:45] === Starting ADB Shell ===
+[2026-07-24 13:55:45] [2026-07-24 13:55:45]
+[2026-07-24 13:55:47] 
+============================================================
+[2026-07-24 13:55:47] Test: Certificate Download Test
+[2026-07-24 13:55:47] Log File: ../logs/certificate_download.log
+[2026-07-24 13:55:47] ============================================================
+
+[2026-07-24 13:55:47] 
+======================================================================
+[2026-07-24 13:55:47] CERTIFICATE DOWNLOAD - Initial Setup(devcoding + IMEI + UTC Time + Reboot)
+[2026-07-24 13:55:47] ======================================================================
+[2026-07-24 13:55:47] 
+[DNS PREREQUISITES] Setting up necessary prerequisites for DNS verification
+[2026-07-24 13:55:47] 
+[STEP 1] Set IMEI (via ADB - NAD side)
+[2026-07-24 13:55:47] sldd telephony factorysetimei 35402810001013sh-3.2# sldd telephony factorysetimei 354028100010134
+[2026-07-24 13:55:47] -----------------------------------------------------------
+[2026-07-24 13:55:47] Set IMEI
+[2026-07-24 13:55:47] -----------------------------------------------------------
+[2026-07-24 13:55:47] -> Result : true
+[2026-07-24 13:55:47]   [NAD] IMEI set successfully
+[2026-07-24 13:55:48] 
+[STEP 2] Devcoding Setup (via Serial Interface - BAM side)
+13:55:48 - INFO - Connecting to COM43... (Attempt 1/5)
+13:55:48 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:55:48 - WARNING - Retrying in 2 seconds...
+13:55:50 - INFO - Connecting to COM43... (Attempt 2/5)
+13:55:50 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:55:50 - WARNING - Retrying in 2 seconds...
+13:55:52 - INFO - Connecting to COM43... (Attempt 3/5)
+13:55:52 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:55:52 - WARNING - Retrying in 2 seconds...
+13:55:54 - INFO - Connecting to COM43... (Attempt 4/5)
+13:55:54 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:55:54 - WARNING - Retrying in 2 seconds...
+13:55:56 - INFO - Connecting to COM43... (Attempt 5/5)
+13:55:56 - WARNING - Connection failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+13:55:56 - ERROR - Failed to connect after 5 attempts
+[2026-07-24 13:55:56] ERROR: [ERROR] Setup failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+[2026-07-24 13:55:56] 
+[CRITICAL ERROR] Test failed: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+[2026-07-24 13:55:56] Traceback (most recent call last):
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\tests\test_certificate_download.py", line 423, in run
+    self.setup_custom()
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\tests\test_certificate_download.py", line 141, in setup_custom
+    self._setup_cert_prerequisites()
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\tests\test_certificate_download.py", line 97, in _setup_cert_prerequisites
+    self.ecu_serial.connect()
+  File "D:\stable_sanity_script\v2x_sanity_script_org_stable_v7.0\framework\serial_com\bam.py", line 165, in connect
+    self.ser = serial.Serial(
+               ^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Program Files\Python312\Lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Program Files\Python312\Lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM43': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+
+[2026-07-24 13:55:56] === ADB Shell Closed ===
+[2026-07-24 13:55:56] [2026-07-24 13:55:56]
+13:56:30 - INFO - ============================================================
+13:56:30 - INFO - ECU Interface Initialized
+13:56:30 - INFO - Port: COM40, Baudrate: 1000000
+13:56:30 - INFO - Console Output: Disabled
+13:56:30 - INFO - ============================================================
+[2026-07-24 13:56:30] === Starting ADB Shell ===
+[2026-07-24 13:56:30] [2026-07-24 13:56:30]
+[2026-07-24 13:56:31] 
+============================================================
+[2026-07-24 13:56:31] Test: Certificate Download Test
+[2026-07-24 13:56:31] Log File: ../logs/certificate_download.log
+[2026-07-24 13:56:31] ============================================================
+
+[2026-07-24 13:56:31] 
+======================================================================
+[2026-07-24 13:56:31] CERTIFICATE DOWNLOAD - Initial Setup(devcoding + IMEI + UTC Time + Reboot)
+[2026-07-24 13:56:31] ======================================================================
+[2026-07-24 13:56:31] 
+[DNS PREREQUISITES] Setting up necessary prerequisites for DNS verification
+[2026-07-24 13:56:31] 
+[STEP 1] Set IMEI (via ADB - NAD side)
+[2026-07-24 13:56:31] sldd telephony factorysh-3.2# sldd telephony factorysetimei 354028100010134
+[2026-07-24 13:56:31] -----------------------------------------------------------
+[2026-07-24 13:56:31] Set IMEI
+[2026-07-24 13:56:31] -----------------------------------------------------------
+[2026-07-24 13:56:31] -> Result : true
+[2026-07-24 13:56:31]   [NAD] IMEI set successfully
+[2026-07-24 13:56:32] 
+[STEP 2] Devcoding Setup (via Serial Interface - BAM side)
+13:56:32 - INFO - Connecting to COM40... (Attempt 1/5)
+13:56:32 - INFO - [OK] ECU Connected Successfully
+13:56:32 - INFO - Monitor thread started
+[2026-07-24 13:56:32] devcoding write PROVISIONING/DAS_INDEX 1
+[2026-07-24 13:56:34] [setup_cert_prerequisites] devcoding write PROVISIONING/DAS_INDEX 1
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+Check for a coding flag with name 'PROVISIONING/DAS_INDEX'.
+Persisting all coding data
+CPS already exists, no-op
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ #
+[2026-07-24 13:56:34] devcoding write ECALL/SIM_CARD 1
+[2026-07-24 13:56:36] [setup_cert_prerequisites] devcoding write ECALL/SIM_CARD 1
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+Check for a coding flag with name 'ECALL/SIM_CARD'.
+Persisting all coding data
+CPS already exists, no-op
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ #
+[2026-07-24 13:56:37] devcoding write ECALL/TELEMATIC 1
+[2026-07-24 13:56:38] [setup_cert_prerequisites] devcoding write ECALL/TELEMATIC 1
+ECU = icon_25
+Coding metadata path not specified, using default path '/usr/share/sysfunc/coding/cafd_icon_25.bin' for CAF metadata.
+Coding area not specified, using coding area 0.
+Loading default coding block file...
+Check for a coding flag with name 'ECALL/TELEMATIC'.
+Persisting all coding data
+CPS already exists, no-op
+Saving devcoded area
+Data has been persisted into '/var/sys/sysfunc/coding/area_00.bin'.
+00 00 00 06 00 01 61 F4 71 01 F0 3E 
+Data has been mirrored successfully.
+~ #
+[2026-07-24 13:56:39]   ps | grep provisioningd daemon...
+[2026-07-24 13:56:40]   [setup_cert_prerequisites] ps | grep provisioningd
+ 1025 tel_prov  320m S    /opt/telematics/rootfs/usr/bin/provisioningd-ipnext
+ 1029 tel_prov  331m S    /opt/telematics/rootfs/usr/bin/provisioningd
+~ #
+[2026-07-24 13:56:41] 
+[STEP 3] Remount filesystem as read-only
+[2026-07-24 13:56:43] [BAM]  mount -o remount,ro /opt/telematics/ 
+mount -o remount,ro /opt/telematics/
+[  932.671956] EXT4-fs (dm-1): re-mounted 0000c0ac-282a-ff08-8a22-416cdbccf9a5 ro. Quota mode: none.
+~ #
+[2026-07-24 13:56:43]   [OK] Filesystem remounted as read-only
+[2026-07-24 13:56:44] 
+[STEP 4] Rebooting device (REQUIRED after setup)...
+[2026-07-24 13:56:46]   [BAM] Reboot initiated, waiting 35 seconds...
+[2026-07-24 13:57:16] 
+[STEP 5] Post-reboot Verification
+[2026-07-24 13:57:16]   Checking service state after reboot...
+[2026-07-24 13:57:16] ERROR: Shell lost. Attempting to reconnect...
+[2026-07-24 13:57:16] === Starting ADB Shell ===
+[2026-07-24 13:57:16] [2026-07-24 13:57:16]
+[2026-07-24 13:57:26] Reconnected shell (attempt 1)
+[2026-07-24 13:57:26] sh-3.2#
+[2026-07-24 13:57:26] sldd telephony getservicestate
+[2026-07-24 13:57:26] -----------------------------------------------------------
+[2026-07-24 13:57:26] Get service state
+[2026-07-24 13:57:26] -----------------------------------------------------------
+[2026-07-24 13:57:26] -> Service state (Voice network) : 2 (Emergency only)
+[2026-07-24 13:57:26] -> Service state (Data network) : 2 (Emergency only)
+[2026-07-24 13:57:26]   [WARNING] Service state check attempt 1/5
+[2026-07-24 13:57:29] sh-3.2# sldd telephony getservicestate
+[2026-07-24 13:57:29] -----------------------------------------------------------
+[2026-07-24 13:57:29] Get service state
+[2026-07-24 13:57:29] -----------------------------------------------------------
+[2026-07-24 13:57:29] -> Service state (Voice network) : 2 (Emergency only)
+[2026-07-24 13:57:29] -> Service state (Data network) : 2 (Emergency only)
+[2026-07-24 13:57:29]   [WARNING] Service state check attempt 2/5
+[2026-07-24 13:57:32] sh-3.2# sldd telephony getservicestate
+[2026-07-24 13:57:32] -----------------------------------------------------------
+[2026-07-24 13:57:32] Get service state
+[2026-07-24 13:57:32] -----------------------------------------------------------
+[2026-07-24 13:57:32] -> Service state (Voice network) : 2 (Emergency only)
+[2026-07-24 13:57:32] -> Service state (Data network) : 2 (Emergency only)
+[2026-07-24 13:57:32]   [WARNING] Service state check attempt 3/5
+[2026-07-24 13:57:35] sh-3.2# sldd telephony getservicestate
+[2026-07-24 13:57:36] -----------------------------------------------------------
+[2026-07-24 13:57:36] Get service state
+[2026-07-24 13:57:36] -----------------------------------------------------------
+[2026-07-24 13:57:36] -> Service state (Voice network) : 2 (Emergency only)
+[2026-07-24 13:57:36] -> Service state (Data network) : 2 (Emergency only)
+[2026-07-24 13:57:36]   [WARNING] Service state check attempt 4/5
+[2026-07-24 13:57:39] sh-3.2# sldd telephony getservicestate
+[2026-07-24 13:57:39] -----------------------------------------------------------
+[2026-07-24 13:57:39] Get service state
+[2026-07-24 13:57:39] -----------------------------------------------------------
+[2026-07-24 13:57:39] -> Service state (Voice network) : 2 (Emergency only)
+[2026-07-24 13:57:39] -> Service state (Data network) : 2 (Emergency only)
+[2026-07-24 13:57:39]   [WARNING] Service state check attempt 5/5
+[2026-07-24 13:57:39]   [WARNING] Service state verification inconclusive, continuing anyway
+[2026-07-24 13:57:40] 
+======================================================================
+[2026-07-24 13:57:40] CERTIFICATE DOWNLOAD - PRE-TEST VERIFICATION PHASE
+[2026-07-24 13:57:40] ======================================================================
+[2026-07-24 13:57:40] 
+======================================================================
+[2026-07-24 13:57:40] CERTIFICATE DOWNLOAD - DNS Ping VERIFICATION (NAD + BAM)
+[2026-07-24 13:57:40] ======================================================================
+[2026-07-24 13:57:40] 
+[DNS VERIFICATION - ATTEMPT 1/5]
+[2026-07-24 13:57:40] 
+[NAD SIDE - ADB Shell]
+[2026-07-24 13:57:40] sh-3.2# nslookup www.google.com
+[2026-07-24 13:57:40] Server:    127.0.0.1
+[2026-07-24 13:57:40] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-24 13:57:40] nslookup: can't resolve 'www.google.com'
+[2026-07-24 13:57:42]   DNS 'www.google.com (NAD)': Found 1 addresses (expected ~10)
+[2026-07-24 13:57:42]   [WARNING] Lower than expected count
+[2026-07-24 13:57:43] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-07-24 13:57:43] Server:    127.0.0.1
+[2026-07-24 13:57:43] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-24 13:57:43] nslookup: can't resolve 'asbc-v2x.e2e.cvs-emea.bmw.cloud'
+[2026-07-24 13:57:45]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (NAD)': Found 1 addresses (expected ~2)
+[2026-07-24 13:57:45]   [WARNING] Lower than expected count
+[2026-07-24 13:57:46]   [WARNING] NAD DNS incomplete
+[2026-07-24 13:57:46] 
+[BAM SIDE - Dns Check]
+[2026-07-24 13:57:46]   [DNS CHECK 1] Testing www.google.com (BAM)...
+[2026-07-24 13:57:49]   DNS 'www.google.com (BAM)': Found 1 addresses (expected ~10)
+[2026-07-24 13:57:49]   [WARNING] Lower than expected count
+[2026-07-24 13:57:50]   [DNS CHECK 2] Testing asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)...
+[2026-07-24 13:57:54]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)': Found 1 addresses (expected ~2)
+[2026-07-24 13:57:54]   [WARNING] Lower than expected count
+[2026-07-24 13:57:55]   [WARNING] BAM DNS incomplete
+[2026-07-24 13:57:55] 
+[WARNING] DNS verification attempt 1 incomplete (NAD: False, BAM: False)
+[2026-07-24 13:57:55] [RETRY] Waiting 3 seconds before retry...
+[2026-07-24 13:57:58] 
+[DNS VERIFICATION - ATTEMPT 2/5]
+[2026-07-24 13:57:58] 
+[NAD SIDE - ADB Shell]
+[2026-07-24 13:57:58] sh-3.2# nslookup www.google.com
+[2026-07-24 13:57:58] Server:    127.0.0.1
+[2026-07-24 13:57:58] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-24 13:57:58] nslookup: can't resolve 'www.google.com'
+[2026-07-24 13:58:00]   DNS 'www.google.com (NAD)': Found 1 addresses (expected ~10)
+[2026-07-24 13:58:00]   [WARNING] Lower than expected count
+[2026-07-24 13:58:01] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-07-24 13:58:01] Server:    127.0.0.1
+[2026-07-24 13:58:01] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-24 13:58:01] nslookup: can't resolve 'asbc-v2x.e2e.cvs-emea.bmw.cloud'
+[2026-07-24 13:58:03]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (NAD)': Found 1 addresses (expected ~2)
+[2026-07-24 13:58:03]   [WARNING] Lower than expected count
+[2026-07-24 13:58:04]   [WARNING] NAD DNS incomplete
+[2026-07-24 13:58:04] 
+[BAM SIDE - Dns Check]
+[2026-07-24 13:58:04]   [DNS CHECK 1] Testing www.google.com (BAM)...
+[2026-07-24 13:58:07]   DNS 'www.google.com (BAM)': Found 1 addresses (expected ~10)
+[2026-07-24 13:58:07]   [WARNING] Lower than expected count
+[2026-07-24 13:58:08]   [DNS CHECK 2] Testing asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)...
+[2026-07-24 13:58:12]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)': Found 1 addresses (expected ~2)
+[2026-07-24 13:58:12]   [WARNING] Lower than expected count
+[2026-07-24 13:58:13]   [WARNING] BAM DNS incomplete
+[2026-07-24 13:58:13] 
+[WARNING] DNS verification attempt 2 incomplete (NAD: False, BAM: False)
+[2026-07-24 13:58:13] [RETRY] Waiting 3 seconds before retry...
+[2026-07-24 13:58:16] 
+[DNS VERIFICATION - ATTEMPT 3/5]
+[2026-07-24 13:58:16] 
+[NAD SIDE - ADB Shell]
+[2026-07-24 13:58:16] sh-3.2# nslookup www.google.com
+[2026-07-24 13:58:16] Server:    127.0.0.1
+[2026-07-24 13:58:16] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-24 13:58:16] nslookup: can't resolve 'www.google.com'
+[2026-07-24 13:58:18]   DNS 'www.google.com (NAD)': Found 1 addresses (expected ~10)
+[2026-07-24 13:58:18]   [WARNING] Lower than expected count
+[2026-07-24 13:58:19] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-07-24 13:58:19] Server:    127.0.0.1
+[2026-07-24 13:58:19] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-24 13:58:19] nslookup: can't resolve 'asbc-v2x.e2e.cvs-emea.bmw.cloud'
+[2026-07-24 13:58:21]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (NAD)': Found 1 addresses (expected ~2)
+[2026-07-24 13:58:21]   [WARNING] Lower than expected count
+[2026-07-24 13:58:22]   [WARNING] NAD DNS incomplete
+[2026-07-24 13:58:22] 
+[BAM SIDE - Dns Check]
+[2026-07-24 13:58:22]   [DNS CHECK 1] Testing www.google.com (BAM)...
+[2026-07-24 13:58:25]   DNS 'www.google.com (BAM)': Found 1 addresses (expected ~10)
+[2026-07-24 13:58:25]   [WARNING] Lower than expected count
+[2026-07-24 13:58:26]   [DNS CHECK 2] Testing asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)...
+[2026-07-24 13:58:29]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)': Found 1 addresses (expected ~2)
+[2026-07-24 13:58:29]   [WARNING] Lower than expected count
+[2026-07-24 13:58:31]   [WARNING] BAM DNS incomplete
+[2026-07-24 13:58:31] 
+[WARNING] DNS verification attempt 3 incomplete (NAD: False, BAM: False)
+[2026-07-24 13:58:31] [RETRY] Waiting 3 seconds before retry...
+[2026-07-24 13:58:34] 
+[DNS VERIFICATION - ATTEMPT 4/5]
+[2026-07-24 13:58:34] 
+[NAD SIDE - ADB Shell]
+[2026-07-24 13:58:34] sh-3.2# nslookup www.google.com
+[2026-07-24 13:58:34] Server:    127.0.0.1
+[2026-07-24 13:58:34] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-24 13:58:34] nslookup: can't resolve 'www.google.com'
+[2026-07-24 13:58:36]   DNS 'www.google.com (NAD)': Found 1 addresses (expected ~10)
+[2026-07-24 13:58:36]   [WARNING] Lower than expected count
+[2026-07-24 13:58:37] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-07-24 13:58:37] Server:    127.0.0.1
+[2026-07-24 13:58:37] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-24 13:58:37] nslookup: can't resolve 'asbc-v2x.e2e.cvs-emea.bmw.cloud'
+[2026-07-24 13:58:39]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (NAD)': Found 1 addresses (expected ~2)
+[2026-07-24 13:58:39]   [WARNING] Lower than expected count
+[2026-07-24 13:58:40]   [WARNING] NAD DNS incomplete
+[2026-07-24 13:58:40] 
+[BAM SIDE - Dns Check]
+[2026-07-24 13:58:40]   [DNS CHECK 1] Testing www.google.com (BAM)...
+[2026-07-24 13:58:43]   DNS 'www.google.com (BAM)': Found 1 addresses (expected ~10)
+[2026-07-24 13:58:43]   [WARNING] Lower than expected count
+[2026-07-24 13:58:44]   [DNS CHECK 2] Testing asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)...
+[2026-07-24 13:58:48]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)': Found 1 addresses (expected ~2)
+[2026-07-24 13:58:48]   [WARNING] Lower than expected count
+[2026-07-24 13:58:49]   [WARNING] BAM DNS incomplete
+[2026-07-24 13:58:49] 
+[WARNING] DNS verification attempt 4 incomplete (NAD: False, BAM: False)
+[2026-07-24 13:58:49] [RETRY] Waiting 3 seconds before retry...
+[2026-07-24 13:58:52] 
+[DNS VERIFICATION - ATTEMPT 5/5]
+[2026-07-24 13:58:52] 
+[NAD SIDE - ADB Shell]
+[2026-07-24 13:58:52] sh-3.2# nslookup www.google.com
+[2026-07-24 13:58:52] Server:    127.0.0.1
+[2026-07-24 13:58:52] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-24 13:58:52] nslookup: can't resolve 'www.google.com'
+[2026-07-24 13:58:54]   DNS 'www.google.com (NAD)': Found 1 addresses (expected ~10)
+[2026-07-24 13:58:54]   [WARNING] Lower than expected count
+[2026-07-24 13:58:55] sh-3.2# nslookup asbc-v2x.e2e.cvs-emea.bmw.cloud
+[2026-07-24 13:58:55] Server:    127.0.0.1
+[2026-07-24 13:58:55] Address 1: 127.0.0.1 localhost.localdomain
+[2026-07-24 13:58:55] nslookup: can't resolve 'asbc-v2x.e2e.cvs-emea.bmw.cloud'
+[2026-07-24 13:58:57]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (NAD)': Found 1 addresses (expected ~2)
+[2026-07-24 13:58:57]   [WARNING] Lower than expected count
+[2026-07-24 13:58:58]   [WARNING] NAD DNS incomplete
+[2026-07-24 13:58:58] 
+[BAM SIDE - Dns Check]
+[2026-07-24 13:58:58]   [DNS CHECK 1] Testing www.google.com (BAM)...
+[2026-07-24 13:59:01]   DNS 'www.google.com (BAM)': Found 1 addresses (expected ~10)
+[2026-07-24 13:59:01]   [WARNING] Lower than expected count
+[2026-07-24 13:59:02]   [DNS CHECK 2] Testing asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)...
+[2026-07-24 13:59:06]   DNS 'asbc-v2x.e2e.cvs-emea.bmw.cloud (BAM)': Found 1 addresses (expected ~2)
+[2026-07-24 13:59:06]   [WARNING] Lower than expected count
+[2026-07-24 13:59:07]   [WARNING] BAM DNS incomplete
+[2026-07-24 13:59:07] 
+[WARNING] DNS verification attempt 5 incomplete (NAD: False, BAM: False)
+[2026-07-24 13:59:07] 
+[CRITICAL] All 5 DNS verification attempts FAILED
+[2026-07-24 13:59:07] 
+[CRITICAL] DNS verification failed - halting test
+[2026-07-24 13:59:07] === ADB Shell Closed ===
+[2026-07-24 13:59:07] [2026-07-24 13:59:07]

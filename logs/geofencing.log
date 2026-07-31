@@ -1,0 +1,39 @@
+[2026-07-27 21:59:39] === Starting ADB Shell ===
+[2026-07-27 21:59:39] [2026-07-27 21:59:39]
+[2026-07-27 21:59:40] 
+============================================================
+[2026-07-27 21:59:40] Test: Geofencing Test
+[2026-07-27 21:59:40] Log File: ../logs/geofencing.log
+[2026-07-27 21:59:40] ============================================================
+
+[2026-07-27 21:59:40] cat /etc/version 
+
+[2026-07-27 21:59:40] [INFO] Version file empty; attempting runtime detection...
+[2026-07-27 21:59:40] ERROR: Test failed with error: type object 'Helper' has no attribute 'detect_device_type'
+[2026-07-27 21:59:40] === ADB Shell Closed ===
+[2026-07-27 21:59:40] [2026-07-27 21:59:40]
+[2026-07-27 21:59:40] === ADB Shell Closed ===
+[2026-07-27 21:59:40] [2026-07-27 21:59:40]
+[2026-07-27 21:59:46] === Starting ADB Shell ===
+[2026-07-27 21:59:46] [2026-07-27 21:59:46]
+[2026-07-27 21:59:47] 
+============================================================
+[2026-07-27 21:59:47] Test: Geofencing Test
+[2026-07-27 21:59:47] Log File: ../logs/geofencing.log
+[2026-07-27 21:59:47] ============================================================
+
+[2026-07-27 21:59:47] ICON_NAD.v040.042.082.iconsf25.mtk_260724
+[2026-07-27 21:59:47] cat /etc/version 
+ICON_NAD.v040.042.082.iconsf25.mtk_260724
+[2026-07-27 21:59:47] Mode: MASTER (native binary)
+[2026-07-27 21:59:47] [INFO] Pulling /etc/its.json → D:\Help\automation\its.json
+[2026-07-27 21:59:47] [OK] Pulled /etc/its.json → D:\Help\automation\its.json
+[2026-07-27 21:59:47] Region detected: EU
+[2026-07-27 21:59:47] 
+=== Starting Geofencing_EU Test ===
+
+[2026-07-27 21:59:47] ERROR: Test failed with error: expected str, bytes or os.PathLike object, not ADBLogger
+[2026-07-27 21:59:47] === ADB Shell Closed ===
+[2026-07-27 21:59:47] [2026-07-27 21:59:47]
+[2026-07-27 21:59:47] === ADB Shell Closed ===
+[2026-07-27 21:59:47] [2026-07-27 21:59:47]

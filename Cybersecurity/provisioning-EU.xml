@@ -1,0 +1,1448 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bmwprovsigned>
+	<bmwprov timestamp="2024-10-04T04:40:31" type="ota" uuid="fc6fcd99-8298-4622-b02f-258a8a66e566" vin="WBA31HR0X0HY40202">
+		<set>
+			<data>
+				<mobile_data_vlan_routing>
+					<vlan_1>77</vlan_1>
+					<vlan1_route>mobile-b2b</vlan1_route>
+					<vlan_2>97</vlan_2>
+					<vlan2_route>blocked</vlan2_route>
+					<vlan_3>107</vlan_3>
+					<vlan3_route>mobile-b2b</vlan3_route>
+					<vlan_4>67</vlan_4>
+					<vlan4_route>blocked</vlan4_route>
+				</mobile_data_vlan_routing>
+				<flexcon>
+					<app_to_category>
+						<sas_rsu>rsu</sas_rsu>
+						<mod_wifi>wifionly</mod_wifi>
+						<tel_dtsd>datatransfer</tel_dtsd>
+						<tel_udmd>udmlocal</tel_udmd>
+						<tel_mcpg>max_reliable</tel_mcpg>
+						<tel_pds>max_reliable</tel_pds>
+						<tel_wupd>max_reliable</tel_wupd>
+						<is_time>max_reliable</is_time>
+						<perso_persodatadaemon>max_reliable</perso_persodatadaemon>
+						<sas_sfam>max_reliable</sas_sfam>
+						<pos_gnss>reliable_not_metered</pos_gnss>
+						<cos_afwp>factory</cos_afwp>
+						<cos_rudi>udmclient</cos_rudi>
+						<tel_udmd.cos_rudi>udmclient</tel_udmd.cos_rudi>
+						<tel_udmd.MapUpdate>udmclient</tel_udmd.MapUpdate>
+						<tel_udmd.ipnext-adas-gnss-plugin>private</tel_udmd.ipnext-adas-gnss-plugin>
+						<tel_udmd.ipnext-adas-hd-map-live>udmclient</tel_udmd.ipnext-adas-hd-map-live>
+						<tel_udmd.ipnext-adas-ldu-urgent>udmclient</tel_udmd.ipnext-adas-ldu-urgent>
+						<tel_udmd.ipnext-cdc-caip>udmclient</tel_udmd.ipnext-cdc-caip>
+						<tel_udmd.ipnext-adas-ldu-dev>udmclientfree</tel_udmd.ipnext-adas-ldu-dev>
+						<tel_udmd.ipnext-adas-hd-map-prep>udmclientfree</tel_udmd.ipnext-adas-hd-map-prep>
+					</app_to_category>
+					<category_to_network_channels>
+						<default>
+							<network_channel_priority>wifi,unmeteredwifi,wifi,internet</network_channel_priority>
+							<allowed_restriction_set_1>AVOID_OEM_PAID_CELLULAR</allowed_restriction_set_1>
+							<allowed_restriction_set_2>AVOID_METERED_WIFI</allowed_restriction_set_2>
+							<allowed_restriction_set_3>AVOID_ALL_WIFI</allowed_restriction_set_3>
+							<dts_oem_ext_diag enabled="false"/>
+							<dts_cross_ecu enabled="false"/>
+						</default>
+						<rsu>
+							<network_channel_priority>internet,unmeteredwifi</network_channel_priority>
+							<allowed_restriction_set_1>AVOID_OEM_PAID_CELLULAR</allowed_restriction_set_1>
+							<dts_oem_ext_diag enabled="true"/>
+							<dts_cross_ecu enabled="false"/>
+						</rsu>
+						<datatransfer>
+							<network_channel_priority>internet,unmeteredwifi,wifi</network_channel_priority>
+						</datatransfer>
+						<udmlocal>
+							<network_channel_priority>internet,unmeteredwifi</network_channel_priority>
+							<allowed_restriction_set_1>AVOID_OEM_PAID_CELLULAR</allowed_restriction_set_1>
+							<allowed_restriction_set_2>AVOID_ALL_WIFI</allowed_restriction_set_2>
+							<dts_oem_ext_diag enabled="false"/>
+							<dts_cross_ecu enabled="true"/>
+						</udmlocal>
+						<udmclient>
+							<network_channel_priority>internet,unmeteredwifi</network_channel_priority>
+							<allowed_restriction_set_1>AVOID_OEM_PAID_CELLULAR</allowed_restriction_set_1>
+							<dts_oem_ext_diag enabled="false"/>
+							<dts_cross_ecu enabled="true"/>
+						</udmclient>
+						<udmclientfree>
+							<network_channel_priority>internet,unmeteredwifi</network_channel_priority>
+							<dts_oem_ext_diag enabled="false"/>
+							<dts_cross_ecu enabled="true"/>
+						</udmclientfree>
+						<max_reliable>
+							<network_channel_priority>internet,unmeteredwifi,wifi</network_channel_priority>
+							<allowed_restriction_set_1>AVOID_METERED_WIFI</allowed_restriction_set_1>
+							<allowed_restriction_set_2>AVOID_ALL_WIFI</allowed_restriction_set_2>
+							<dts_oem_ext_diag enabled="false"/>
+							<dts_cross_ecu enabled="false"/>
+						</max_reliable>
+						<reliable_not_metered>
+							<network_channel_priority>internet,unmeteredwifi</network_channel_priority>
+							<dts_oem_ext_diag enabled="false"/>
+							<dts_cross_ecu enabled="false"/>
+						</reliable_not_metered>
+						<private>
+							<network_channel_priority>internet</network_channel_priority>
+							<dts_oem_ext_diag enabled="false"/>
+							<dts_cross_ecu enabled="false"/>
+						</private>
+						<factory>
+							<network_channel_priority>internet</network_channel_priority>
+							<dts_oem_ext_diag enabled="false"/>
+							<dts_cross_ecu enabled="false"/>
+						</factory>
+						<wifionly>
+							<network_channel_priority>unmeteredwifi,wifi</network_channel_priority>
+							<dts_oem_ext_diag enabled="false"/>
+							<dts_cross_ecu enabled="false"/>
+						</wifionly>
+					</category_to_network_channels>
+				</flexcon>
+				<wifi>
+					<WiFiStationMode enabled="true"/>
+					<WiFiSpeedLockMode enabled="false"/>
+					<numberSavedNetworks>100</numberSavedNetworks>
+					<WiFiAntennaConfiguration>1</WiFiAntennaConfiguration>
+					<WiFiDualStationMode enabled="false"/>
+					<WiFiAccessPointMode enabled="false"/>
+					<WakeUpOnWiFi enabled="false"/>
+					<WiFiConCheckURL>http://netstatus.e2e.cvs-emea.bmw.cloud/generate204</WiFiConCheckURL>
+				</wifi>
+				<bt>
+					<BtBle enabled="false"/>
+					<WakeUpOnBT enabled="false"/>
+				</bt>
+				<mcp-gateway>
+					<common>
+						<session>
+							<maximum_packet_size>100000</maximum_packet_size>
+							<default_message_expiry_interval_sec>1209600</default_message_expiry_interval_sec>
+						</session>
+					</common>
+					<local>
+						<server>
+							<connection_timeout_ms>1000</connection_timeout_ms>
+						</server>
+						<session>
+							<max_session_expiry_interval_sec>1209600</max_session_expiry_interval_sec>
+							<expired_sessions_clean_up_interval_sec>30</expired_sessions_clean_up_interval_sec>
+							<keep_alive_sec>120</keep_alive_sec>
+							<receive_maximum>3</receive_maximum>
+							<send_quota_maximum>5</send_quota_maximum>
+							<send_queue_len>20</send_queue_len>
+						</session>
+					</local>
+					<remote>
+						<platform>
+							<unique_client_identifier>1</unique_client_identifier>
+						</platform>
+						<session>
+							<keep_alive_sec>60</keep_alive_sec>
+							<receive_maximum>20</receive_maximum>
+							<send_quota_maximum>20</send_quota_maximum>
+							<send_queue_len>200</send_queue_len>
+							<default_mqtt_timeout_interval_ms>30000</default_mqtt_timeout_interval_ms>
+							<reconnect_delay>
+								<initial_delay_min_ms>2000</initial_delay_min_ms>
+								<initial_delay_max_ms>4000</initial_delay_max_ms>
+								<base_ten_fold>20</base_ten_fold>
+								<delay_max_ms>180000</delay_max_ms>
+							</reconnect_delay>
+						</session>
+						<brokers>
+							<broker>
+								<name>EMEA_E2E</name>
+								<url>tcps://mqtt.e2e.cvs-emea.bmw.cloud:8883</url>
+								<send_connection_notification>1</send_connection_notification>
+							</broker>
+						</brokers>
+						<bridges>
+							<bridge>
+								<filter>#</filter>
+								<broker_name>EMEA_E2E</broker_name>
+							</bridge>
+						</bridges>
+					</remote>
+				</mcp-gateway>
+				<dts>
+					<acls enforcement="warn">
+						<acl type="bmw">https://.*\.bmw.cloud:[0-9]+/.*</acl>
+						<acl type="bmw">https://.*\.bmw:[0-9]+/.*</acl>
+						<acl type="public">https?://.*\.amazonaws.com</acl>
+					</acls>
+					<maxActiveTransfers>50</maxActiveTransfers>
+					<maxTransfers>1000</maxTransfers>
+				</dts>
+				<httpsomeipd enabled="true"/>
+				<udm enabled="true">
+					<uds_api>https://uds.e2e.cvs-emea.bmw.cloud/uds/datatransfer/v1/</uds_api>
+					<transfers_while_parked_timeout>1200</transfers_while_parked_timeout>
+				</udm>
+				<storagemanagerd>
+					<usecases>
+						<usecase>
+							<id>tcu_mod_nad_qc_ap_kernel_dump</id>
+							<applications>
+								<application_id>mod_ramd</application_id>
+							</applications>
+							<priority>120</priority>
+						</usecase>
+						<usecase>
+							<id>tcu_mod_nad_qc_cp_crash_dump</id>
+							<applications>
+								<application_id>mod_ramd</application_id>
+							</applications>
+							<priority>120</priority>
+						</usecase>
+						<usecase>
+							<id>adas_gnss_secplugin_cn</id>
+							<applications>
+								<application_id>tel_udmd</application_id>
+							</applications>
+							<priority>110</priority>
+						</usecase>
+						<usecase>
+							<id>adas_hd_map_local</id>
+							<applications>
+								<application_id>tel_udmd</application_id>
+							</applications>
+							<priority>100</priority>
+						</usecase>
+						<usecase>
+							<id>remote_vehicle_log_collection_high</id>
+							<applications>
+								<application_id>cos_rudi</application_id>
+								<application_id>sm_ltm</application_id>
+								<application_id>tel_udmd</application_id>
+							</applications>
+							<priority>90</priority>
+						</usecase>
+						<usecase>
+							<id>LDU:adas_critical_event_logs</id>
+							<applications>
+								<application_id>tel_udmd</application_id>
+							</applications>
+							<priority>80</priority>
+						</usecase>
+						<usecase>
+							<id>remote_vehicle_log_collection_mid</id>
+							<applications>
+								<application_id>cos_rudi</application_id>
+								<application_id>sm_ltm</application_id>
+								<application_id>tel_udmd</application_id>
+							</applications>
+							<priority>70</priority>
+						</usecase>
+						<usecase>
+							<id>LDU:adas_dev_event_logs</id>
+							<applications>
+								<application_id>tel_udmd</application_id>
+							</applications>
+							<priority>60</priority>
+						</usecase>
+						<usecase>
+							<id>adas_hd_map_region</id>
+							<applications>
+								<application_id>tel_udmd</application_id>
+							</applications>
+							<priority>40</priority>
+						</usecase>
+						<usecase>
+							<id>caip_model_download</id>
+							<applications>
+								<application_id>tel_udmd</application_id>
+							</applications>
+							<priority>30</priority>
+						</usecase>
+						<usecase>
+							<id>remote_vehicle_log_collection_low</id>
+							<applications>
+								<application_id>cos_rudi</application_id>
+								<application_id>sm_ltm</application_id>
+								<application_id>tel_udmd</application_id>
+							</applications>
+							<priority>20</priority>
+						</usecase>
+					</usecases>
+				</storagemanagerd>
+				<v2x_basic_connectivity>
+					<v2xApplications>
+						<fcw enabled="true">
+							<vMin>4.1667</vMin>
+							<vMax>343</vMax>
+							<vMinHyst>1.3889</vMinHyst>
+							<vMaxHyst>0</vMaxHyst>
+							<targetLength>50</targetLength>
+							<useAdaptiveTarget enabled="false"/>
+							<ttc>4.5</ttc>
+							<useAdaptiveTtc enabled="false"/>
+							<useAccelerationForTtc enabled="true"/>
+							<useMultiObjectMethod enabled="false"/>
+						</fcw>
+						<ima enabled="true">
+							<vMin>1.3889</vMin>
+							<vMax>343</vMax>
+							<vMinHyst>1.3889</vMinHyst>
+							<vMaxHyst>0</vMaxHyst>
+							<targetRadius>100</targetRadius>
+							<useAdaptiveTarget enabled="true"/>
+							<ttc>5</ttc>
+							<useAdaptiveTtc enabled="false"/>
+							<useAccelerationForTtc enabled="true"/>
+							<dangerousDistance>8</dangerousDistance>
+						</ima>
+						<lta enabled="true">
+							<vMin>0.5556</vMin>
+							<vMax>8.3333</vMax>
+							<vMinHyst>0</vMinHyst>
+							<vMaxHyst>2.7778</vMaxHyst>
+							<targetLength>50</targetLength>
+							<vStat>0.5556</vStat>
+							<turnRadius>9</turnRadius>
+							<turnSpeed>6.944</turnSpeed>
+							<safetyTime>3</safetyTime>
+							<timeCorrectionSpeedCoeff>0</timeCorrectionSpeedCoeff>
+						</lta>
+						<bsw enabled="true">
+							<vMin>1.3889</vMin>
+							<vMax>343</vMax>
+							<vMinHyst>1.3889</vMinHyst>
+							<vMaxHyst>0</vMaxHyst>
+							<targetLength>7</targetLength>
+							<targetOffset>1</targetOffset>
+							<timeout>1</timeout>
+						</bsw>
+						<lca enabled="true">
+							<vMin>1.3889</vMin>
+							<vMax>343</vMax>
+							<vMinHyst>1.3889</vMinHyst>
+							<vMaxHyst>1</vMaxHyst>
+							<targetLength>50</targetLength>
+							<targetOffset>1</targetOffset>
+							<useAdaptiveTarget enabled="false"/>
+							<dangerousDistance>9</dangerousDistance>
+							<ttc>7</ttc>
+							<useAdaptiveTtc enabled="true"/>
+							<useAccelerationForTtc enabled="true"/>
+						</lca>
+						<dnpw enabled="true">
+							<vMin>0</vMin>
+							<vMax>19.4444</vMax>
+							<vMinHyst/>
+							<vMaxHyst>0.0556</vMaxHyst>
+							<activationTimeGap>3</activationTimeGap>
+							<activationDistance>30</activationDistance>
+							<DTC>200</DTC>
+							<TTC>5</TTC>
+						</dnpw>
+						<eebl enabled="true">
+							<vMin>1.3889</vMin>
+							<vMax>343</vMax>
+							<vMinHyst>1.3889</vMinHyst>
+							<vMaxHyst>0</vMaxHyst>
+							<targetLength>50</targetLength>
+							<useAdaptiveTarget enabled="true"/>
+							<accelerationThr>-4</accelerationThr>
+							<useHbf enabled="false"/>
+						</eebl>
+						<svw enabled="true">
+							<vMin>4.1667</vMin>
+							<vMax>343</vMax>
+							<vMinHyst>1.3889</vMinHyst>
+							<vMaxHyst>0</vMaxHyst>
+							<stationarySpeedThr>1</stationarySpeedThr>
+							<triggerForTargetArea enabled="true"/>
+							<triggerForLaneConnections enabled="false"/>
+							<triggerForAbnormalVehicles enabled="true"/>
+							<isv>
+								<useTurnSignal enabled="true"/>
+								<stopLineDistThr>10</stopLineDistThr>
+							</isv>
+							<tsv>
+								<targetLength>100</targetLength>
+								<useAdaptiveTarget enabled="true"/>
+								<ttc>4.5</ttc>
+								<useAdaptiveTtc enabled="true"/>
+								<useAccelerationForTtc enabled="true"/>
+							</tsv>
+							<asv>
+								<targetLength>70</targetLength>
+								<useAdaptiveTarget enabled="false"/>
+								<stationarySpeedThr>2.7778</stationarySpeedThr>
+							</asv>
+						</svw>
+						<clw enabled="true">
+							<vMin>1.3889</vMin>
+							<vMax>343</vMax>
+							<vMinHyst>1.3889</vMinHyst>
+							<vMaxHyst>0</vMaxHyst>
+							<targetLength>100</targetLength>
+							<useAdaptiveTarget enabled="true"/>
+							<dangerousDistance>5</dangerousDistance>
+							<ttc>10</ttc>
+							<useAdaptiveTtc enabled="true"/>
+							<useAccelerationForTtc enabled="false"/>
+						</clw>
+						<spd enabled="true">
+							<vMin>1.3889</vMin>
+							<vMax>343</vMax>
+							<vMinHyst>1.3889</vMinHyst>
+							<vMaxHyst>0</vMaxHyst>
+							<minOverspeedThr>0.5</minOverspeedThr>
+							<relativeOverspeedThr>2</relativeOverspeedThr>
+						</spd>
+						<glo enabled="true"/>
+						<rlv enabled="true"/>
+						<tsi enabled="true">
+							<useTurnSignal enabled="true"/>
+							<preferLikelyTime enabled="false"/>
+						</tsi>
+						<vrucw enabled="true">
+							<vMin>1.3889</vMin>
+							<vMax>343</vMax>
+							<vMinHyst>1.3889</vMinHyst>
+							<vMaxHyst>0</vMaxHyst>
+							<targetLength>50</targetLength>
+							<useAdaptiveTarget enabled="true"/>
+							<dangerousDistance>3</dangerousDistance>
+							<ttc>4</ttc>
+							<useAdaptiveTtc enabled="true"/>
+							<useAccelerationForTtc enabled="true"/>
+							<useSimpleAlgorithm enabled="false"/>
+						</vrucw>
+						<evw enabled="true">
+							<targetRadius>100</targetRadius>
+							<useAdaptiveTarget enabled="true"/>
+						</evw>
+						<tiw enabled="true"/>
+						<ivs enabled="true"/>
+					</v2xApplications>
+					<urlV2xBes>https://eu-v2x-bes.e2e.cvs-emea.bmw.cloud:11300/asbc-v2x-eu</urlV2xBes>
+					<stackRegion>eu</stackRegion>
+					<enforcePkiResetTimestamp>0</enforcePkiResetTimestamp>
+					<connectionTimeout>120</connectionTimeout>
+					<retryCount>10</retryCount>	
+					<retryTimeout>5</retryTimeout>	
+					<updateTrustLists>0</updateTrustLists>	
+					<v2xService enabled="true" />
+					<v2xSecurity enabled="true" />	
+					<cbp>
+						<ppsUpperTarget>1000</ppsUpperTarget>
+						<ppsLowerTarget>800</ppsLowerTarget>
+					</cbp>
+				</v2x_basic_connectivity>
+				<cdc_jobmanager enabled="true">
+					<requestUrl>https://cmcs.e2e.cvs-emea.bmw.cloud:6920/cmvs</requestUrl>
+				</cdc_jobmanager>
+				<eCallLEDSingle>
+					<LEDSelftestNoError LEDoff="0" LEDon="0" color="green" duration="3000" mode="solid"/>
+					<LEDPhase2Call LEDoff="500" LEDon="500" color="green" mode="flash"/>
+					<LEDPhase2Data LEDoff="250" LEDon="250" color="green" mode="flash"/>
+					<LEDPhase2DataError LEDoff="0" LEDon="0" color="green" duration="0" mode="solid"/>
+					<LEDVoiceFailed LEDoff="250" LEDon="250" color="green" duration="30000" mode="flash"/>
+					<LEDTestmodeNoError LEDoff="0" LEDon="0" color="green" duration="0" mode="solid"/>
+					<LEDTestmodeError LEDoff="250" LEDon="250" color="green" duration="30000" mode="flash"/>
+				</eCallLEDSingle>
+				<eCallLEDDual>
+					<LEDSelftestNoError LEDoff="0" LEDon="0" color="green" duration="3000" mode="solid"/>
+					<LEDPhase2Call LEDoff="500" LEDon="500" color="green" mode="flash"/>
+					<LEDPhase2Data LEDoff="250" LEDon="250" color="green" mode="flash"/>
+					<LEDPhase2DataError LEDoff="250" LEDon="250" color="red" duration="3000" mode="flash"/>
+					<LEDVoiceFailed LEDoff="500" LEDon="500" color="red" duration="30000" mode="flash"/>
+					<LEDTestmodeNoError LEDoff="0" LEDon="0" color="green" duration="3000" mode="solid"/>
+					<LEDTestmodeError LEDoff="250" LEDon="250" color="red" duration="30000" mode="flash"/>
+				</eCallLEDDual>
+				<remote_parking_collision_recorder_sp25 enabled="false">
+					<domainName>rcc.rs-360</domainName>
+				</remote_parking_collision_recorder_sp25>
+				<remote_theft_recorder_sp25 enabled="false">
+					<domainName>rcc.rs-360</domainName>
+					<rtr_sp25_download enabled="false"/>
+				</remote_theft_recorder_sp25>
+				<remote_360_sp25 enabled="false">
+					<domainName>rcc.rs-360</domainName>
+				</remote_360_sp25>
+				<oneupdate enabled="false"/>
+				<remote_in_car_SP25 enabled="true">
+					<domainName>rcc.rs-360</domainName>
+				</remote_in_car_SP25>
+				<remote_in_car_dwa_SP25 enabled="true">
+					<domainName>rcc.rs-360</domainName>
+				</remote_in_car_dwa_SP25>
+				<anti_theft_notification_EES25 enabled="true">
+					<domainName>rcc.dwa-push</domainName>
+				</anti_theft_notification_EES25>
+				<parking_collision_basic_function enabled="true">
+					<domainName>rcc.collision-push</domainName>
+				</parking_collision_basic_function>
+				<firewall_nad>
+					<rule chain="VARIABLE_IN" decision="a" dport="31337" in_if="rmnet_data+" ip_version="v4" proto="udp" src_ip="10.19.3.0/25"/>
+					<rule chain="VARIABLE_IN" decision="a" dport="31337" in_if="rmnet_data+" ip_version="v4" proto="udp" src_ip="10.19.0.0/25"/>
+					<rule chain="VARIABLE_IN" decision="a" dport="31337" in_if="rmnet_data+" ip_version="v6" proto="udp" src_ip="2a03:1e84:9261::/56"/>
+					<rule chain="VARIABLE_IN" decision="a" dport="31337" in_if="rmnet_data+" ip_version="v6" proto="udp" src_ip="2a03:1e84:9260::/56"/>
+				</firewall_nad>
+				<modem>
+					<RAT>[1 1 1 1 1]</RAT>
+					<NetworkRecoveryRejectMonitor enabled="true"/>
+					<NetworkRecoveryStuckMonitor enabled="true"/>
+					<NetworkRecoveryDataMonitor enabled="true"/>
+					<NetworkRecoveryOutOfServiceTimer mode="M">12</NetworkRecoveryOutOfServiceTimer>
+					<NetworkRecoveryResetType>SW_Reset</NetworkRecoveryResetType>
+					<NetworkRecoveryDataStallTimer mode="M">3</NetworkRecoveryDataStallTimer>
+					<NetworkRecoveryDataStallMaxCycles>3</NetworkRecoveryDataStallMaxCycles>
+					<NetworkRecoveryDataStallReceivedPackets>3</NetworkRecoveryDataStallReceivedPackets>
+					<NetworkRecoveryDataStallTransmittedPackets>10</NetworkRecoveryDataStallTransmittedPackets>
+					<NetworkRecoveryNextRetryAfterPermRejectTimer mode="M">30</NetworkRecoveryNextRetryAfterPermRejectTimer>
+					<NetworkRecoveryMaxRetryAfterPermReject>3</NetworkRecoveryMaxRetryAfterPermReject>
+					<DSDS_Mode enabled="false"/>
+					<NetworkSlicing enabled="false"/>
+					<NetworkSlicingConfigUrl>dummy_url</NetworkSlicingConfigUrl>
+					<NetworkSlicingConfigHash>dummy_hash_code</NetworkSlicingConfigHash>
+					<FrequencyConfigUrl>dummy_url</FrequencyConfigUrl>
+					<FrequencyConfigHash>dummy_hash_code</FrequencyConfigHash>
+					<APNConfigUrl>dummy_url</APNConfigUrl>
+					<APNConfigHash>dummy_hash_code</APNConfigHash>
+					<IMSConfigUrl>dummy_url</IMSConfigUrl>
+					<IMSConfigHash>dummy_hash_code</IMSConfigHash>
+					<JammingDetection enabled="false"/>
+					<ModemLogFilterSetting>1</ModemLogFilterSetting>
+				</modem>
+				<subscription_settings>
+					<subscription_discovery_url>sm-ds-047-a-gtm.pr.go-esim.com:443</subscription_discovery_url>
+					<subscription_M-SMDP_url/>
+					<subscription_H-SMDP_url/>
+					<tramo_timer>1</tramo_timer>
+					<SubMan_DS_polling_period_normal>180</SubMan_DS_polling_period_normal>
+					<notification_timer>300</notification_timer>
+					<activation_timer>1200</activation_timer>
+					<SM-DS_transaction_started>false</SM-DS_transaction_started>
+					<InitialERA-Glonass>false</InitialERA-Glonass>
+					<timeout_timer>60</timeout_timer>
+					<mcc_local_profile_req_list/>
+				</subscription_settings>
+				<remote_door_unlock enabled="true">
+					<pwf_state>parken,wohnen</pwf_state>
+					<trunk enabled="true"/>
+					<play_protection enabled="true"/>
+				</remote_door_unlock>
+				<remote_door_lock enabled="true">
+					<pwf_state>parken,wohnen</pwf_state>
+					<play_protection enabled="true"/>
+				</remote_door_lock>
+				<vehicle_finder enabled="true">
+					<pwf_state>parken,wohnen,fahren</pwf_state>
+					<play_protection enabled="false"/>
+				</vehicle_finder>
+				<remote_climate_timer enabled="true">
+					<pwf_state>parken,wohnen</pwf_state>
+					<play_protection enabled="true"/>
+				</remote_climate_timer>
+				<remote_climate_now enabled="true">
+					<pwf_state>parken,wohnen</pwf_state>
+					<play_protection enabled="true"/>
+				</remote_climate_now>
+				<remote_light_flash enabled="true">
+					<pwf_state>parken,wohnen</pwf_state>
+					<play_protection enabled="true"/>
+				</remote_light_flash>
+				<remote_horn_blow enabled="true">
+					<pwf_state>parken,wohnen</pwf_state>
+					<play_protection enabled="true"/>
+				</remote_horn_blow>
+				<remote_charging_profile enabled="true">
+					<pwf_state>parken,wohnen</pwf_state>
+					<play_protection enabled="true"/>
+				</remote_charging_profile>
+				<eCallAudio>
+					<useEcallAudioProfile>0</useEcallAudioProfile>
+					<audioCalibrationFileUrl/>
+					<audioCalibrationFileHash/>
+					<speakerVolumeMin>50</speakerVolumeMin>
+					<speakerVolumeMax>100</speakerVolumeMax>
+					<speakerVolumeDef>98</speakerVolumeDef>
+				</eCallAudio>
+				<secure_time>
+					<delta_time>45</delta_time>
+					<stsurl>https://sectime.e2e.cvs-emea.bmw.cloud:8123/sts/v1/secureTime</stsurl>
+				</secure_time>
+				<w_call>
+					<isTestEnvironment>true</isTestEnvironment>
+					<hv_warn enabled="true">
+						<max_duration>300</max_duration>
+						<hv_warn_centreNum useFromSim="true">fallback number</hv_warn_centreNum>
+						<hv_warn_destinationNum useFromSim="true">fallback number</hv_warn_destinationNum>
+						<hv_warn_validity_period useFromSim="true">fallback number</hv_warn_validity_period>
+					</hv_warn>
+					<cpd enabled="true">
+						<cpd_centreNum useFromSim="true">fallback number</cpd_centreNum>
+						<cpd_destinationNum useFromSim="true">fallback number</cpd_destinationNum>
+						<cpd_validity_period useFromSim="true">fallback number</cpd_validity_period>
+					</cpd>
+					<mcp_env/>
+				</w_call>
+				<remote_charging_control enabled="true">
+					<pwf_state>parken,wohnen</pwf_state>
+					<play_protection enabled="true"/>
+				</remote_charging_control>
+				<rs_timing>
+					<rs_keepalive>45000</rs_keepalive>
+					<rhb_earcon_play_update>500</rhb_earcon_play_update>
+					<rchc_charging_control_update>500</rchc_charging_control_update>
+					<rchp_charging_settings_update>500</rchp_charging_settings_update>
+					<rchp_charging_window_update>500</rchp_charging_window_update>
+					<battary_control_status_notify>500</battary_control_status_notify>
+					<battery_control_status_update>500</battery_control_status_update>
+					<vf_last_position_status_notify>500</vf_last_position_status_notify>
+					<vf_pearl_chain_status_notify>500</vf_pearl_chain_status_notify>
+					<rdc_status_notify>500</rdc_status_notify>
+					<rpw_status_energy_notify>500</rpw_status_energy_notify>
+					<rwc_status_notify>3000</rwc_status_notify>
+					<rwc_status_update>3000</rwc_status_update>
+					<cls_status_notify>500</cls_status_notify>
+					<rs_pn_timeout>120000</rs_pn_timeout>
+					<rs_postpone_duration>600000</rs_postpone_duration>
+				</rs_timing>
+				<rsu allowed="true" autoinstall_feature_enabled="true" enabled="true">
+					<rsu_timer>42</rsu_timer>
+					<rsu-ce-app-url>http://open.bmwgroup.com/bmw/vehicle/rsu/app</rsu-ce-app-url>
+					<root_cname>VehicleBackend-EMEA_RoW-RootCA-2025</root_cname>
+					<hub_cert_url>https://uds.e2e.cd-emea.bmw:6630/uds/datatransfer/v1/51abd8c2-6c00-476b-82d9-11673bfb3a67/hubcas.xml</hub_cert_url>
+					<be_crl_url_root>http://uds.e2e.cd-emea.bmw:6631/uds/datatransfer/v1/2caa93e2-d33e-4bcd-b18d-9d40116f092d/beroot.crls/</be_crl_url_root>
+					<be_crl_url_hub>http://uds.e2e.cd-emea.bmw:6631/uds/datatransfer/v1/2caa93e2-d33e-4bcd-b18d-9d40116f092d/behub.crls/</be_crl_url_hub>
+					<be_crl_url_rsu>http://uds.e2e.cd-emea.bmw:6631/uds/datatransfer/v1/2caa93e2-d33e-4bcd-b18d-9d40116f092d/bersu.crls</be_crl_url_rsu>
+				</rsu>
+				<sms>
+					<dcs>04</dcs>
+					<centreNum useFromSim="true">fallback number</centreNum>
+					<destinationNum useFromSim="true">fallback number</destinationNum>
+					<validity_period useFromSim="true">fallback number</validity_period>
+				</sms>
+				<apn>
+					<private_apn allowed="true" enabled="true">
+						<use_private_apn_from_SIM enabled="true"/>
+						<private_apn_name/>
+						<private_apn_user/>
+						<private_apn_pwd/>
+						<ip_version_private_apn>ipv4only</ip_version_private_apn>
+					</private_apn>
+					<b2b2c_apn allowed="false" enabled="false">
+						<use_b2b2c_apn_from_SIM enabled="true"/>
+						<b2b2c_apn_name/>
+						<b2b2c_apn_user/>
+						<b2b2c_apn_pwd/>
+						<ip_version_b2b2c_apn>ipv4only</ip_version_b2b2c_apn>
+					</b2b2c_apn>
+					<volte_apn allowed="true" enabled="true">
+						<use_volte_apn_from_SIM enabled="true"/>
+						<volte_apn_name/>
+						<volte_apn_user/>
+						<volte_apn_pwd/>
+						<ip_version_volte_apn>dual_stack</ip_version_volte_apn>
+						<sms_over_ims_allowed enabled="true"/>
+					</volte_apn>
+					<Vonr_DNN_apn allowed="false" enabled="false">
+						<use_vonr_dnn_from_SIM enabled="true"/>
+						<vonr_dnn_name/>
+						<vonr_dnn_user/>
+						<vonr_dnn_pwd/>
+						<ip_version_vonr_dnn>dual_stack</ip_version_vonr_dnn>
+						<sms_over_dnn_allowed enabled="false"/>
+					</Vonr_DNN_apn>
+					<NW_slice1_apn/>
+					<NW_slice2_apn/>
+					<NW_slice3_apn/>
+					<NW_slice4_apn/>
+				</apn>
+				<gnss>
+					<min_cno>20</min_cno>
+					<min_elev>5</min_elev>
+					<gal enabled="true"/>
+					<glo enabled="true"/>
+					<bds enabled="true"/>
+					<qzss enabled="true"/>
+					<navic enabled="true"/>
+					<multifrequency enabled="true"/>
+					<gps_l5 enabled="true"/>
+					<gal_e5a enabled="true"/>
+					<bds_b2a enabled="true"/>
+					<qzss_l5 enabled="true"/>
+					<V2X_extPos enabled="false"/>
+				</gnss>
+				<iptrigger>
+					<port>31337</port>
+					<ip_v6_fix_IID>0001:a9aa:6963:6f6e</ip_v6_fix_IID>
+					<nad_pnr_timeout>60</nad_pnr_timeout>
+				</iptrigger>
+				<data-collection>
+					<gps_for_mobile_app enabled="false"/>
+					<vehicle_status_for_mobile_app enabled="false"/>
+					<charging_status_for_mobile_app enabled="false"/>
+					<bpt_for_mobile_app enabled="false"/>
+				</data-collection>
+				<perso>
+					<connected_drive enabled="true"/>
+					<welcome_screen_digital_premium enabled="false"/>
+					<motivated_login>true</motivated_login>
+					<valet_mode_feature_enabled>false</valet_mode_feature_enabled>
+					<local_user_enabled>false</local_user_enabled>
+					<one_login_page_client_parameter>incar</one_login_page_client_parameter>
+					<oauth_grant_type>urn:ietf:params:oauth:grant-type:device_code</oauth_grant_type>
+					<vehicle_trigger_partitions>personalization/update</vehicle_trigger_partitions>
+					<vehicle_trigger_url>rcc.perseus</vehicle_trigger_url>
+					<gcdm_oauth_device_code_url>https://gcdm.e2e.cd-emea.bmw:6655/gcdm/oauth/device/code</gcdm_oauth_device_code_url>
+					<gcdm_oauth_token_url>https://gcdm.e2e.cd-emea.bmw:6655/gcdm/oauth/token</gcdm_oauth_token_url>
+					<oauthtokens_url>https://gcdm.e2e.cd-emea.bmw:6655/cac/token/v1</oauthtokens_url>
+					<perseus_url>https://perseus.e2e.cd-emea.bmw:6600/service/api/vehicle/v1/</perseus_url>
+					<multimapping_endpoint_report_status>https://dpm.e2e.cd-emea.bmw:6340/dpm/vehicle/v2/report-status</multimapping_endpoint_report_status>
+					<multimapping_endpoint_sync_accounts_on_vehicle_list>https://dpm.e2e.cd-emea.bmw:6340/dpm/vehicle/v2/sync-accounts-on-vehicle-list</multimapping_endpoint_sync_accounts_on_vehicle_list>
+					<multimapping_endpoint_create_pre_association>https://perseus.e2e.cd-emea.bmw:6600/service/api/vehicle/v1</multimapping_endpoint_create_pre_association>
+					<multimapping_endpoint_get_frosted_picture>https://perseus.e2e.cd-emea.bmw:6600/service/api/vehicle/v1</multimapping_endpoint_get_frosted_picture>
+					<multimapping_sync_accounts_on_vehicle_list_threshold_days>7</multimapping_sync_accounts_on_vehicle_list_threshold_days>
+					<multimapping_endpoint_handover_primary_user>https://dpm.e2e.cd-emea.bmw:6340/dpm/vehicle/v2/handover-primary-user-role</multimapping_endpoint_handover_primary_user>
+					<multimapping_endpoint_get_roles>https://dpm.e2e.cd-emea.bmw:6340/dpm/vehicle/v2/get-roles</multimapping_endpoint_get_roles>
+					<countly_key>d54d8de922e03fd585adcf6292b1ca1528c7b0ac</countly_key>
+					<countly_salt>TeamCobraIsAwesome</countly_salt>
+					<gcdm_client_id>5a9d07e4-dc52-4d93-ad77-926e3778320c</gcdm_client_id>
+					<gcdm_client_secret>a60dc134-6bd7-4553-9c07-3d9d7708b770</gcdm_client_secret>
+					<multimapping_business_conflict_app_deep_link_qrcode>https://opendev.bmwgroup.com/bmw/vehicle/mapping-business-conflict</multimapping_business_conflict_app_deep_link_qrcode>
+					<nudging_url>https://opendev.bmwgroup.com/bmw</nudging_url>
+				</perso>
+				<plug_and_charge allowed="true" enabled="true">
+					<certificateDownloadUrl>https://pnc.e2e.cvs-emea.bmw.cloud:6695/stableint/</certificateDownloadUrl>
+				</plug_and_charge>
+				<cd_account>
+					<homecountry>DE</homecountry>
+					<env>E2E</env>
+					<hub>EMEA</hub>
+				</cd_account>
+				<rs_play_protection enabled="false">
+					<max_rs_exec>5</max_rs_exec>
+					<rs_exec_refresh>60</rs_exec_refresh>
+				</rs_play_protection>
+				<sfa_ota allowed="false" enabled="true"/>
+				<ssr_request allowed="false" enabled="true">
+					<ssr_debug_session>true</ssr_debug_session>
+					<ssr_debug_vehicle>true</ssr_debug_vehicle>
+					<ssr_url>https://gnss.e2e.cvs-emea.bmw.cloud:6310/api/gnss</ssr_url>
+					<ssr_request_interval>25</ssr_request_interval>
+					<ssr_geohash_length>11</ssr_geohash_length>
+					<ssr_hysteresis>900</ssr_hysteresis>
+				</ssr_request>
+				<trust_cache allowed="false" enabled="true">
+					<trust_cache_session>true</trust_cache_session>
+					<trust_cache_vehicle>true</trust_cache_vehicle>
+					<trust_cache_url>https://tc.e2e.cvs-emea.bmw.cloud:6360/api/certificates</trust_cache_url>
+				</trust_cache>
+				<hwnat_qos_shaping>
+					<hwnat_scheduler_0 type_of_scheduler="sp"/>
+					<hwnat_scheduler_1 type_of_scheduler="wrr">
+						<weighted_queue qid="31" weight="33"/>
+						<weighted_queue qid="30" weight="25"/>
+						<weighted_queue qid="29" weight="18"/>
+						<weighted_queue qid="28" weight="14"/>
+						<weighted_queue qid="27" weight="14"/>
+						<weighted_queue qid="26" weight="14"/>
+						<weighted_queue qid="25" weight="7"/>
+						<weighted_queue qid="24" weight="7"/>
+						<weighted_queue qid="23" weight="7"/>
+					</hwnat_scheduler_1>
+					<hwnat_queue>
+						<queue max_bandwidth="1000Mbps" min_bandwidth="10Mbps" qid="15"/>
+						<queue max_bandwidth="1000Mbps" min_bandwidth="10Mbps" qid="14"/>
+						<queue max_bandwidth="1000Mbps" min_bandwidth="10Mbps" qid="13"/>
+						<queue max_bandwidth="1000Mbps" min_bandwidth="10Mbps" qid="12"/>
+						<queue max_bandwidth="1000Mbps" min_bandwidth="10Mbps" qid="11"/>
+						<queue max_bandwidth="900Mbps" min_bandwidth="50Mbps" qid="31"/>
+						<queue max_bandwidth="900Mbps" min_bandwidth="50Mbps" qid="30"/>
+						<queue max_bandwidth="900Mbps" min_bandwidth="50Mbps" qid="29"/>
+						<queue max_bandwidth="100Mbps" min_bandwidth="5Mbps" qid="28"/>
+						<queue max_bandwidth="100Mbps" min_bandwidth="5Mbps" qid="27"/>
+						<queue max_bandwidth="900Mbps" min_bandwidth="50Mbps" qid="26"/>
+						<queue max_bandwidth="100Mbps" min_bandwidth="5Mbps" qid="25"/>
+						<queue max_bandwidth="100Mbps" min_bandwidth="5Mbps" qid="24"/>
+						<queue max_bandwidth="900Mbps" min_bandwidth="50Mbps" qid="23"/>
+					</hwnat_queue>
+					<hwnat_qos_rule>
+						<rule dport="53,6520,5520,8884,8883,8123,6302,6300,5302,5300" ip_version="ip4" outIf="ccmni1" qid="15"/>
+						<rule dport="6365,5365,6455,5455,6755,5755,11120,10120,11140,10140,11150,10150,11110,10110,11100,10100,11160,10160,6445,5445,6310,5310,6310,5310,6120,5120" ip_version="ip4" outIf="ccmni1" qid="14"/>
+						<rule dport="6865,5865,6500,5500,6601,6600,5600,6785" ip_version="ip4" outIf="ccmni1" qid="13"/>
+						<rule inIf="eth0.77" ip_version="ip4" outIf="ccmni1" qid="12"/>
+						<rule inIf="eth0.97" ip_version="ip4" outIf="ccmni1" qid="11"/>
+						<rule inIf="eth0.107" ip_version="ip4" outIf="ccmni1" qid="11"/>
+						<rule inIf="ccmni1" ip_version="ip4" qid="31" sport="53,6520,5520,8884,8883,8123,6302,6300,5302,5300"/>
+						<rule inIf="ccmni1" ip_version="ip4" qid="30" sport="6365,5365,6455,5455,6755,5755,11120,10120,11140,10140,11150,10150,11110,10110,11100,10100,11160,10160,6445,5445,6310,5310,6310,5310,6120,5120"/>
+						<rule inIf="ccmni1" ip_version="ip4" qid="29" sport="6865,5865,6500,5500,6601,6600,5600,6785"/>
+						<rule dIP="160.48.199.228" inIf="ccmni1" ip_version="ip4" outIf="eth0.77" qid="28"/>
+						<rule dIP="160.48.199.229" inIf="ccmni1" ip_version="ip4" outIf="eth0.77" qid="28"/>
+						<rule dIP="160.48.199.236" inIf="ccmni1" ip_version="ip4" outIf="eth0.77" qid="27"/>
+						<rule dIP="160.48.199.237" inIf="ccmni1" ip_version="ip4" outIf="eth0.77" qid="27"/>
+						<rule inIf="ccmni1" ip_version="ip4" outIf="eth0.77" qid="26"/>
+						<rule dIP="160.48.249.174" inIf="ccmni1" ip_version="ip4" qid="25"/>
+						<rule dIP="160.48.199.151" inIf="ccmni1" ip_version="ip4" qid="25"/>
+						<rule dIP="160.48.249.173" inIf="ccmni1" ip_version="ip4" qid="24"/>
+						<rule dIP="160.48.199.149" inIf="ccmni1" ip_version="ip4" qid="24"/>
+						<rule inIf="ccmni1" ip_version="ip4" outIf="eth0.97" qid="23"/>
+						<rule inIf="ccmni1" ip_version="ip4" outIf="eth0.107" qid="23"/>
+						<rule dport="53,6520,5520,8884,8883,8123,6302,6300,5302,5300" ip_version="ip4" outIf="ccmni2" qid="15"/>
+						<rule dport="6365,5365,6455,5455,6755,5755,11120,10120,11140,10140,11150,10150,11110,10110,11100,10100,11160,10160,6445,5445,6310,5310,6310,5310,6120,5120" ip_version="ip4" outIf="ccmni2" qid="14"/>
+						<rule dport="6865,5865,6500,5500,6601,6600,5600,6785" ip_version="ip4" outIf="ccmni2" qid="13"/>
+						<rule inIf="eth0.77" ip_version="ip4" outIf="ccmni2" qid="12"/>
+						<rule inIf="eth0.97" ip_version="ip4" outIf="ccmni2" qid="11"/>
+						<rule inIf="eth0.107" ip_version="ip4" outIf="ccmni2" qid="11"/>
+						<rule inIf="ccmni2" ip_version="ip4" qid="31" sport="53,6520,5520,8884,8883,8123,6302,6300,5302,5300"/>
+						<rule inIf="ccmni2" ip_version="ip4" qid="30" sport="6365,5365,6455,5455,6755,5755,11120,10120,11140,10140,11150,10150,11110,10110,11100,10100,11160,10160,6445,5445,6310,5310,6310,5310,6120,5120"/>
+						<rule inIf="ccmni2" ip_version="ip4" qid="29" sport="6865,5865,6500,5500,6601,6600,5600,6785"/>
+						<rule dIP="160.48.199.228" inIf="ccmni2" ip_version="ip4" outIf="eth0.77" qid="28"/>
+						<rule dIP="160.48.199.229" inIf="ccmni2" ip_version="ip4" outIf="eth0.77" qid="28"/>
+						<rule dIP="160.48.199.236" inIf="ccmni2" ip_version="ip4" outIf="eth0.77" qid="27"/>
+						<rule dIP="160.48.199.237" inIf="ccmni2" ip_version="ip4" outIf="eth0.77" qid="27"/>
+						<rule inIf="ccmni2" ip_version="ip4" outIf="eth0.77" qid="26"/>
+						<rule dIP="160.48.249.174" inIf="ccmni2" ip_version="ip4" qid="25"/>
+						<rule dIP="160.48.199.151" inIf="ccmni2" ip_version="ip4" qid="25"/>
+						<rule dIP="160.48.249.173" inIf="ccmni2" ip_version="ip4" qid="24"/>
+						<rule dIP="160.48.199.149" inIf="ccmni2" ip_version="ip4" qid="24"/>
+						<rule inIf="ccmni2" ip_version="ip4" outIf="eth0.97" qid="23"/>
+						<rule inIf="ccmni2" ip_version="ip4" outIf="eth0.107" qid="23"/>
+					</hwnat_qos_rule>
+				</hwnat_qos_shaping>
+				<thermal_mitigation_tcu>
+					<bam_enter_th_m1>115000</bam_enter_th_m1>
+					<bam_exit_th_m1>110000</bam_exit_th_m1>
+					<bam_enter_th_m2>115000</bam_enter_th_m2>
+					<bam_exit_th_m2>110000</bam_exit_th_m2>
+					<bam_enter_th_off>120000</bam_enter_th_off>
+					<nad_enter_th_m1>105000</nad_enter_th_m1>
+					<nad_exit_th_m1>100000</nad_exit_th_m1>
+					<nad_enter_th_m2>110000</nad_enter_th_m2>
+					<nad_exit_th_m2>105000</nad_exit_th_m2>
+					<nad_enter_th_off>118000</nad_enter_th_off>
+					<ambient_enter_th_d1>65000</ambient_enter_th_d1>
+					<ambient_exit_th_d1>63000</ambient_exit_th_d1>
+					<ambient_enter_th_d2>68000</ambient_enter_th_d2>
+					<ambient_exit_th_d2>66000</ambient_exit_th_d2>
+					<ambient_exit_th_off>95000</ambient_exit_th_off>
+					<nad_junction_read_interval>2000</nad_junction_read_interval>
+					<bam_junction_read_interval>5000</bam_junction_read_interval>
+					<wuc_ambient_active_read_interval>10000</wuc_ambient_active_read_interval>
+					<wuc_ambient_idle_read_interval>3600</wuc_ambient_idle_read_interval>
+				</thermal_mitigation_tcu>
+				<NGeCallManual enabled="false">
+					<voiceNum>+4922828609515</voiceNum>
+					<serviceURN enabled="false"/>
+					<maxVoiceConnectionTime>60</maxVoiceConnectionTime>
+					<maxVoiceRetries>1</maxVoiceRetries>
+					<abortAllowed enabled="true"/>
+					<autoCallAcceptTimer>3600</autoCallAcceptTimer>
+					<HMIcountdownTimerEcall>7</HMIcountdownTimerEcall>
+					<maxActiveVoiceCallDuration>3600</maxActiveVoiceCallDuration>
+				</NGeCallManual>
+				<NGeCallAutomatic enabled="false">
+					<voiceNum>+4953123623550</voiceNum>
+					<serviceURN enabled="false"/>
+					<maxVoiceConnectionTime>60</maxVoiceConnectionTime>
+					<maxVoiceRetries>1</maxVoiceRetries>
+					<abortAllowed enabled="true"/>
+					<autoCallAcceptTimer>3600</autoCallAcceptTimer>
+					<maxActiveVoiceCallDuration>3600</maxActiveVoiceCallDuration>
+				</NGeCallAutomatic>
+				<telediagnostics>
+					<mcp_env/>
+					<cc_debug>2</cc_debug>
+					<event_tracker enabled="true"/>
+				</telediagnostics>
+				<rudi>
+					<mcp_env/>
+				</rudi>
+				<rs_pre_wakeup enabled="true">
+					<pwf_state>parken,wohnen,fahren</pwf_state>
+					<play_protection enabled="false"/>
+					<rs_pre_wakeup_degr_thresh>3</rs_pre_wakeup_degr_thresh>
+					<rs_pre_wakeup_max_awake_duration>360</rs_pre_wakeup_max_awake_duration>
+				</rs_pre_wakeup>
+				<keep_alive enabled="true">
+					<pwf_state>parken,wohnen,fahren</pwf_state>
+					<play_protection enabled="false"/>
+					<keep_alive_degr_thresh>4</keep_alive_degr_thresh>
+					<keep_alive_max_awake_duration>1200</keep_alive_max_awake_duration>
+				</keep_alive>
+				<ews enabled="false"/>
+				<prov_nad>
+					<Dormant/>
+					<ERAeCallAutomatic/>
+					<ERAeCallManual/>
+					<ERAeCallTestSettings/>
+					<EUeCallAutomatic/>
+					<EUeCallManual/>
+					<NAOMode/>
+					<NGeCallAutomatic/>
+					<NGeCallManual/>
+					<PSAPeCallAutomatic/>
+					<PSAPeCallManual/>
+					<apn/>
+					<assistECallAutomatic/>
+					<assistECallManual/>
+					<cd_account/>
+					<dns/>
+					<dns_mobile_b2b2c/>
+					<dns_mobile_b2b/>
+					<eCallAudio/>
+					<eCallGenericSettings/>
+					<eCallLEDDual/>
+					<eCallLEDSingle/>
+					<gnss/>
+					<iptrigger/>
+					<m2mSIM/>
+					<mcp-gateway/>
+					<mobile_data_vlan_routing/>
+					<modem/>
+					<sms/>
+					<subscription_settings/>
+					<thermal_mitigation_tcu/>
+					<v2x_basic_connectivity/>
+					<ews/>
+					<firewall_nad/>
+				</prov_nad>
+				<prov_wuc>
+					<NAOMode/>
+					<wifi/>
+					<eCallGenericSettings/>
+					<thermal_mitigation_tcu/>
+				</prov_wuc>
+				<remote_window_control enabled="true">
+					<pwf_state>parken,wohnen</pwf_state>
+					<play_protection enabled="true"/>
+					<movable_side_windows>4</movable_side_windows>
+					<alarm_system installed="true"/>
+				</remote_window_control>
+				<http>
+					<bmw_backend>
+						<url>https://.*\.e2e\.cvs-emea\.bmw\.cloud(:[0-9]{1,5})?/.*</url>
+						<url>https://.*\.e2e\.cvs-emea\.bmw\.cloud(:[0-9]{1,5})?</url>
+					</bmw_backend>
+					<acls enforcement="warn">
+						<acl>http://netstatus.e2e\.cvs-emea\.bmw\.cloud/generate204.*</acl>
+						<acl>http://netstatus.prod\.cvs-emea\.bmw\.cloud/generate204.*</acl>
+						<acl>https://.*\.e2e\.cvs-emea\.bmw\.cloud(:[0-9]{1,5})?/.*</acl>
+						<acl>https://.*\.e2e\.cvs-emea\.bmw\.cloud(:[0-9]{1,5})?</acl>
+						<acl application_id="lpaapp">https://.*</acl>
+						<acl application_id="sas_rsu">http://10(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}(:[0-9]{1,5})?/.*</acl>
+						<acl application_id="sas_rsu">http://192\.168(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){2}(:[0-9]{1,5})?/.*</acl>
+						<acl application_id="sas_rsu">http://169\.254(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){2}(:[0-9]{1,5})?/.*</acl>
+						<acl application_id="sas_rsu">http://172\.(1[6-9]|2[0-9]|3[0-1])(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){2}(:[0-9]{1,5})?/.*</acl>
+					</acls>
+					<http_proxy enabled="false"/>
+				</http>
+				<ca-manager>
+					<certificates>
+						<certificate>
+							<subject>O=GSM Association,CN=GSM Association - RSP2 Root CI1</subject>
+							<fingerprint>D7:3F:0C:22:27:3F:A4:C7:17:A3:A7:35:F7:E9:92:F3:11:90:F0:10</fingerprint>
+						</certificate>
+						<certificate>
+							<subject>C=US, O=Amazon, CN=Amazon Root CA 1</subject>
+							<fingerprint>8D:A7:F9:65:EC:5E:FC:37:91:0F:1C:6E:59:FD:C1:CC:6A:6E:DE:16</fingerprint>
+						</certificate>
+						<certificate>
+							<subject>C=US, O=Amazon, CN=Amazon Root CA 2</subject>
+							<fingerprint>5A:8C:EF:45:D7:A6:98:59:76:7A:8C:8B:44:96:B5:78:CF:47:4B:1A</fingerprint>
+						</certificate>
+						<certificate>
+							<subject>C=US, O=Amazon, CN=Amazon Root CA 3</subject>
+							<fingerprint>0D:44:DD:8C:3C:8C:1A:1A:58:75:64:81:E9:0F:2E:2A:FF:B3:D2:6E</fingerprint>
+						</certificate>
+						<certificate>
+							<subject>C=US, O=Amazon, CN=Amazon Root CA 4</subject>
+							<fingerprint>F6:10:84:07:D6:F8:BB:67:98:0C:C2:E2:44:C2:EB:AE:1C:EF:63:BE</fingerprint>
+						</certificate>
+						<certificate>
+							<subject>C=US, O=Internet Security Research Group, CN=ISRG Root X1</subject>
+							<fingerprint>CA:BD:2A:79:A1:07:6A:31:F2:1D:25:36:35:CB:03:9D:43:29:A5:E8</fingerprint>
+						</certificate>
+						<certificate>
+							<subject>C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Global Root CA</subject>
+							<fingerprint>A8:98:5D:3A:65:E5:E5:C4:B2:D7:D6:6D:40:C6:DD:2F:B1:9C:54:36</fingerprint>
+						</certificate>
+					</certificates>
+				</ca-manager>
+				<persoplatform>
+					<foundation>
+						<connected_drive enabled="true"/>
+					</foundation>
+					<perso_master>
+						<user_management>
+							<gcdm_oauth_grant_type>urn:ietf:params:oauth:grant-type:device_code</gcdm_oauth_grant_type>
+							<gcdm_oauth_device_code_url>https://gcdm.e2e.cvs-emea.bmw.cloud:6655/gcdm/oauth/device/code</gcdm_oauth_device_code_url>
+							<gcdm_oauth_token_url>https://gcdm.e2e.cvs-emea.bmw.cloud:6655/gcdm/oauth/token</gcdm_oauth_token_url>
+							<dpm_createAoV_endpoint_v3>https://dpm.e2e.cvs-emea.bmw.cloud:6340/dpm/vehicle/v3/create-account-on-vehicle</dpm_createAoV_endpoint_v3>
+							<mm_report_status_endpoint_v3>https://dpm.e2e.cvs-emea.bmw.cloud:6340/dpm/vehicle/v3/report-status</mm_report_status_endpoint_v3>
+							<mm_sync_accounts_on_vehicle_list_endpoint_v3>https://dpm.e2e.cvs-emea.bmw.cloud:6340/dpm/vehicle/v3/sync-accounts-on-vehicle-list</mm_sync_accounts_on_vehicle_list_endpoint_v3>
+							<mm_sync_accounts_on_vehicle_list_threshold_hours>24</mm_sync_accounts_on_vehicle_list_threshold_hours>
+							<gcdm_client_id>5a9d07e4-dc52-4d93-ad77-926e3778320c</gcdm_client_id>
+							<gcdm_client_secret>a60dc134-6bd7-4553-9c07-3d9d7708b770</gcdm_client_secret>
+							<one_login_page_client_parameter>incar</one_login_page_client_parameter>
+						</user_management>
+						<personalization_services>
+							<profile_data_url>https://perseus.e2e.cvs-emea.bmw.cloud:6600/service/api/vehicle/v3/pds</profile_data_url>
+							<frosted_profile_picture_url>https://perseus.e2e.cvs-emea.bmw.cloud:6600/service/api/vehicle/v3/frosted-profile/picture</frosted_profile_picture_url>
+						</personalization_services>
+					</perso_master>
+					<perso_client>
+						<user_management>
+							<motivated_login enabled="true"/>
+							<onboarding_max_lifecycles>30</onboarding_max_lifecycles>
+							<one_login_page_client_parameter>incar</one_login_page_client_parameter>
+							<mm_business_conflict_app_deep_link_qrcode>https://opendev.bmwgroup.com/bmw/vehicle/mapping-business-conflict</mm_business_conflict_app_deep_link_qrcode>
+						</user_management>
+						<personalization_services/>
+					</perso_client>
+				</persoplatform>
+				<cdc_event_router_uploader>
+					<pipelines>
+						<pipeline>
+							<name>Upload_FAST</name>
+							<method>Batch_HTTPv2</method>
+							<endpoint>https://erdfcd.e2e.cvs-emea.bmw.cloud:6405/v2/cdc2event?schema-id=83b8407f-5d0d-4027-8ad9-16fec39e9b15</endpoint>
+							<order>LATEST_VALUE_FIRST</order>
+							<batchMinSizeBytes>10240</batchMinSizeBytes>
+							<batchMaxSizeBytes>32768</batchMaxSizeBytes>
+							<flushIntervalMilliseconds>3600000</flushIntervalMilliseconds>
+							<ttlLimitMilliseconds>120000</ttlLimitMilliseconds>
+							<immediateSendPrio>127</immediateSendPrio>
+						</pipeline>
+						<pipeline>
+							<name>Upload_FAST_InSequence</name>
+							<method>Batch_HTTPv2</method>
+							<endpoint>https://erdfcd.e2e.cvs-emea.bmw.cloud:6405/v2/cdc2event?schema-id=83b8407f-5d0d-4027-8ad9-16fec39e9b15</endpoint>
+							<order>IN_SEQUENCE</order>
+							<batchMinSizeBytes>10240</batchMinSizeBytes>
+							<batchMaxSizeBytes>32768</batchMaxSizeBytes>
+							<flushIntervalMilliseconds>3600000</flushIntervalMilliseconds>
+							<ttlLimitMilliseconds>120000</ttlLimitMilliseconds>
+							<immediateSendPrio>127</immediateSendPrio>
+						</pipeline>
+						<pipeline>
+							<name>Upload_BULK</name>
+							<method>Batch_HTTPv2</method>
+							<endpoint>https://erdfcd.e2e.cvs-emea.bmw.cloud:6405/v2/cdc2event?schema-id=83b8407f-5d0d-4027-8ad9-16fec39e9b15</endpoint>
+							<order>IN_SEQUENCE</order>
+							<batchMinSizeBytes>524288</batchMinSizeBytes>
+							<batchMaxSizeBytes>2097152</batchMaxSizeBytes>
+							<flushIntervalMilliseconds>3600000</flushIntervalMilliseconds>
+							<ttlLimitMilliseconds>120000</ttlLimitMilliseconds>
+							<immediateSendPrio>255</immediateSendPrio>
+						</pipeline>
+					</pipelines>
+					<routing>
+						<targetRoute>
+							<targetId>0x01</targetId>
+							<targetName>Job_Manager</targetName>
+							<SomeIpRoutingTarget>CdcEventReceiver25_03</SomeIpRoutingTarget>
+						</targetRoute>
+						<targetRoute>
+							<targetId>0x03</targetId>
+							<targetName>Backend_Fast</targetName>
+							<PipelineRoutingTarget>Upload_FAST</PipelineRoutingTarget>
+						</targetRoute>
+						<targetRoute>
+							<targetId>0x07</targetId>
+							<targetName>Backend</targetName>
+							<PipelineRoutingTarget>Upload_BULK</PipelineRoutingTarget>
+						</targetRoute>
+						<targetRoute>
+							<targetId>0x2E</targetId>
+							<targetName>Backend_Bulk</targetName>
+							<PipelineRoutingTarget>Upload_BULK</PipelineRoutingTarget>
+						</targetRoute>
+						<targetRoute>
+							<targetId>0x49</targetId>
+							<targetName>Platform_ICON</targetName>
+							<SomeIpRoutingTarget>CdcEventReceiver25_04</SomeIpRoutingTarget>
+						</targetRoute>
+						<targetRoute>
+							<targetId>0x4D</targetId>
+							<targetName>Backend_Bulk_TSP</targetName>
+							<PipelineRoutingTarget>Upload_BULK</PipelineRoutingTarget>
+						</targetRoute>
+						<targetRoute>
+							<targetId>0x52</targetId>
+							<targetName>Backend_Bulk_TLP</targetName>
+							<PipelineRoutingTarget>Upload_BULK</PipelineRoutingTarget>
+						</targetRoute>
+						<targetRoute>
+							<targetId>0x5A</targetId>
+							<targetName>Backend_Fast_In_Sequence</targetName>
+							<PipelineRoutingTarget>Upload_FAST_InSequence</PipelineRoutingTarget>
+						</targetRoute>
+						<targetRoute>
+							<targetId>0x64</targetId>
+							<targetName>Platform_IPNext</targetName>
+							<SomeIpRoutingTarget>CdcEventReceiver25_06</SomeIpRoutingTarget>
+						</targetRoute>
+						<targetRoute>
+							<targetId>0x65</targetId>
+							<targetName>Platform_IPFahren</targetName>
+							<SomeIpRoutingTarget>CdcEventReceiver25_03</SomeIpRoutingTarget>
+						</targetRoute>
+						<targetRoute>
+							<targetId>0x66</targetId>
+							<targetName>Platform_IDCevo</targetName>
+							<SomeIpRoutingTarget>CdcEventReceiver25_05</SomeIpRoutingTarget>
+						</targetRoute>
+						<targetRoute>
+							<targetId>0x9F</targetId>
+							<targetName>Platform_MDR</targetName>
+							<SomeIpRoutingTarget>CdcEventReceiver25_08</SomeIpRoutingTarget>
+						</targetRoute>
+						<targetRoute>
+							<targetId>0x100</targetId>
+							<targetName>Platform_Job_Manager_ICON</targetName>
+							<SomeIpRoutingTarget>CdcEventReceiver25_03</SomeIpRoutingTarget>
+						</targetRoute>
+					</routing>
+				</cdc_event_router_uploader>
+				<Malibu>
+					<MalibuParameterization>
+						<RefValues>
+							<refHeightBlue>
+								<refHeightBlue1>107000</refHeightBlue1>
+								<refHeightBlue2>107000</refHeightBlue2>
+								<refHeightBlue3>107000</refHeightBlue3>
+							</refHeightBlue>
+							<refHeightGreen>
+								<refHeightGreen1>45000</refHeightGreen1>
+								<refHeightGreen2>428000</refHeightGreen2>
+								<refHeightGreen3>1196875</refHeightGreen3>
+							</refHeightGreen>
+							<refHeightYellow>
+								<refHeightYellow1>45000</refHeightYellow1>
+								<refHeightYellow2>214000</refHeightYellow2>
+								<refHeightYellow3>528125</refHeightYellow3>
+							</refHeightYellow>
+							<refHeightOrange>
+								<refHeightOrange1>45000</refHeightOrange1>
+								<refHeightOrange2>214000</refHeightOrange2>
+								<refHeightOrange3>528125</refHeightOrange3>
+							</refHeightOrange>
+							<refHeightRed>
+								<refHeightRed1>107000</refHeightRed1>
+								<refHeightRed2>107000</refHeightRed2>
+								<refHeightRed3>107000</refHeightRed3>
+							</refHeightRed>
+							<refYears>
+								<refYears1>0</refYears1>
+								<refYears2>8</refYears2>
+								<refYears3>25</refYears3>
+							</refYears>
+							<refMileage>
+								<refMileage1>0</refMileage1>
+								<refMileage2>160000</refMileage2>
+								<refMileage3>500000</refMileage3>
+							</refMileage>
+						</RefValues>
+						<FunctionValues>
+							<paraMalibuBdlPossible>11100</paraMalibuBdlPossible>
+							<paraMalibuBdlMaxPrioPool>
+								<PrioBlue>0</PrioBlue>
+								<PrioGreen>1</PrioGreen>
+								<PrioYellow>2</PrioYellow>
+								<PrioOrange>3</PrioOrange>
+								<PrioRed>-1</PrioRed>
+							</paraMalibuBdlMaxPrioPool>
+							<paraMalibuPecRecommendation>11000</paraMalibuPecRecommendation>
+							<paraMalibuBdlOrderPossible>11100</paraMalibuBdlOrderPossible>
+							<paraRequiredFreeBudgetDcBoost>
+								<RequiredFreeBudgetDeltaSoCBlue>-100</RequiredFreeBudgetDeltaSoCBlue>
+								<RequiredFreeBudgetDeltaSoCGreen>0</RequiredFreeBudgetDeltaSoCGreen>
+								<RequiredFreeBudgetDeltaSoCYellow>100</RequiredFreeBudgetDeltaSoCYellow>
+								<RequiredFreeBudgetDeltaSoCOrange>INVALID</RequiredFreeBudgetDeltaSoCOrange>
+								<RequiredFreeBudgetDeltaSoCRed>INVALID</RequiredFreeBudgetDeltaSoCRed>
+							</paraRequiredFreeBudgetDcBoost>
+							<ParaTriggerEfficientRecommendation>00111</ParaTriggerEfficientRecommendation>
+						</FunctionValues>
+						<RefBudget>
+							<refBudgetBDLNoBDL>0</refBudgetBDLNoBDL>
+							<refBudgetBDLBDL>4.32</refBudgetBDLBDL>
+							<refBudgetHighParkingSoCNoBDL>4.22</refBudgetHighParkingSoCNoBDL>
+							<refBudgetMediumParkingSoCNoBDL>5.09</refBudgetMediumParkingSoCNoBDL>
+							<refBudgetLowParkingSoCNoBDL>12.21</refBudgetLowParkingSoCNoBDL>
+							<refBudgetHighParkingSoCBDL>2.07</refBudgetHighParkingSoCBDL>
+							<refBudgetMediumParkingSoCBDL>0.63</refBudgetMediumParkingSoCBDL>
+							<refBudgetLowParkingSoCBDL>16.33</refBudgetLowParkingSoCBDL>
+						</RefBudget>
+						<RefTrigger>
+							<refTriggerDeviationChargingNoBDL>0.8927</refTriggerDeviationChargingNoBDL>
+							<refTriggerDeviationChargingBDL>0.5200</refTriggerDeviationChargingBDL>
+							<refTriggerDeviationBDL>0.3748</refTriggerDeviationBDL>
+							<refTriggerDeviationParkingNoBDL>0.1771</refTriggerDeviationParkingNoBDL>
+							<refTriggerDeviationParkingBDL>0.1878</refTriggerDeviationParkingBDL>
+						</RefTrigger>
+					</MalibuParameterization>
+				</Malibu>
+				<onboardtrafficlogger>
+					<traffic_collection enabled="true"/>
+				</onboardtrafficlogger>
+				<dns_csim_bam>
+					<default>
+						<secure_dns>no</secure_dns>
+						<dns_server_list>172.16.222.99,2a03:1e80:a00:4301::63</dns_server_list>
+					</default>
+				</dns_csim_bam>
+				<eCallGenericSettings>
+					<networkRegistrationTimerECall>25</networkRegistrationTimerECall>
+					<eCallLoggingTimer>12</eCallLoggingTimer>
+					<deactivateEcallLogging enabled="true"/>
+					<wakeup_via_sos_button enabled="false"/>
+					<useMCP enabled="true"/>
+					<useSMS enabled="true"/>
+					<MCPresponseTimer>5000</MCPresponseTimer>
+					<selftestCycleTime>300</selftestCycleTime>
+					<eCallCCM enabled="true"/>
+				</eCallGenericSettings>
+				<assistECallManual enabled="false">
+					<CRQMTimer>15</CRQMTimer>
+					<maxVoiceConnectionTime>60</maxVoiceConnectionTime>
+					<maxVoiceRetries>2</maxVoiceRetries>
+					<maxDataPacketRetries>3</maxDataPacketRetries>
+					<abortAllowed enabled="true"/>
+					<autoCallAcceptTimer>180</autoCallAcceptTimer>
+					<HMIcountdownTimerEcall>7</HMIcountdownTimerEcall>
+					<primaryVoiceNum>+4989451518252</primaryVoiceNum>
+				</assistECallManual>
+				<assistECallAutomatic enabled="false">
+					<CRQMTimer>15</CRQMTimer>
+					<maxVoiceConnectionTime>60</maxVoiceConnectionTime>
+					<maxVoiceRetries>2</maxVoiceRetries>
+					<maxDataPacketRetries>3</maxDataPacketRetries>
+					<abortAllowed enabled="true"/>
+					<autoCallAcceptTimer>180</autoCallAcceptTimer>
+					<primaryVoiceNum>+4989451518253</primaryVoiceNum>
+				</assistECallAutomatic>
+				<ERAeCallTestSettings>
+					<timeTestModeInputSequence>5</timeTestModeInputSequence>
+					<timeTestModeButtonActivation>5</timeTestModeButtonActivation>
+					<ecallTestNumber>+4953123623550</ecallTestNumber>
+					<postTestRegistrationTime>120</postTestRegistrationTime>
+					<testModeEndDistance>300</testModeEndDistance>
+				</ERAeCallTestSettings>
+				<ERAeCallManual enabled="false">
+					<voiceNum>+4953123623550</voiceNum>
+					<ecallSmsFallbackNumber>+14022607922</ecallSmsFallbackNumber>
+					<HMIcountdownTimerEcall>7</HMIcountdownTimerEcall>
+					<autoCallAcceptTimer>1200</autoCallAcceptTimer>
+					<intMemTransmitInterval>3600</intMemTransmitInterval>
+					<maxDataPacketRetries>10</maxDataPacketRetries>
+					<msdMaxTransmissionTime>20</msdMaxTransmissionTime>
+					<nadDeregistrationTimer>7200</nadDeregistrationTimer>
+					<maxVoiceConnectionTime>300</maxVoiceConnectionTime>
+					<maxActiveVoiceCallDuration>3600</maxActiveVoiceCallDuration>
+					<maxVoiceRetries>10</maxVoiceRetries>
+					<abortAllowed enabled="true"/>
+				</ERAeCallManual>
+				<ERAeCallAutomatic enabled="false">
+					<voiceNum>+4953123623550</voiceNum>
+					<ecallSmsFallbackNumber>+14022607922</ecallSmsFallbackNumber>
+					<autoCallAcceptTimer>1200</autoCallAcceptTimer>
+					<intMemTransmitInterval>3600</intMemTransmitInterval>
+					<maxDataPacketRetries>10</maxDataPacketRetries>
+					<msdMaxTransmissionTime>20</msdMaxTransmissionTime>
+					<nadDeregistrationTimer>7200</nadDeregistrationTimer>
+					<maxVoiceConnectionTime>300</maxVoiceConnectionTime>
+					<maxActiveVoiceCallDuration>3600</maxActiveVoiceCallDuration>
+					<maxVoiceRetries>10</maxVoiceRetries>
+				</ERAeCallAutomatic>
+				<EUeCallManual enabled="true">
+					<voiceNum>+14022607922</voiceNum>
+					<TS12serviceCategory enabled="false"/>
+					<maxVoiceConnectionTime>20</maxVoiceConnectionTime>
+					<maxVoiceRetries>2</maxVoiceRetries>
+					<abortAllowed enabled="true"/>
+					<autoCallAcceptTimer>90</autoCallAcceptTimer>
+					<HMIcountdownTimerEcall>7</HMIcountdownTimerEcall>
+					<maxActiveVoiceCallDuration>3600</maxActiveVoiceCallDuration>
+				</EUeCallManual>
+				<EUeCallAutomatic enabled="true">
+					<voiceNum>+14022607922</voiceNum>
+					<TS12serviceCategory enabled="false"/>
+					<maxVoiceConnectionTime>20</maxVoiceConnectionTime>
+					<maxVoiceRetries>2</maxVoiceRetries>
+					<abortAllowed enabled="true"/>
+					<autoCallAcceptTimer>90</autoCallAcceptTimer>
+					<maxActiveVoiceCallDuration>3600</maxActiveVoiceCallDuration>
+				</EUeCallAutomatic>
+				<PSAPeCallManual enabled="false">
+					<voiceNum>+84976475292</voiceNum>
+					<TS12serviceCategory enabled="false">00000000</TS12serviceCategory>
+					<maxVoiceConnectionTime>60</maxVoiceConnectionTime>
+					<maxVoiceRetries>1</maxVoiceRetries>
+					<abortAllowed enabled="true"/>
+					<autoCallAcceptTimer>180</autoCallAcceptTimer>
+					<HMIcountdownTimerEcall>7</HMIcountdownTimerEcall>
+				</PSAPeCallManual>
+				<PSAPeCallAutomatic enabled="false">
+					<voiceNum>+84976475292</voiceNum>
+					<TS12serviceCategory enabled="false">00000000</TS12serviceCategory>
+					<maxVoiceConnectionTime>60</maxVoiceConnectionTime>
+					<maxVoiceRetries>1</maxVoiceRetries>
+					<abortAllowed enabled="true"/>
+					<autoCallAcceptTimer>180</autoCallAcceptTimer>
+				</PSAPeCallAutomatic>
+				<dns_mobile_b2b>
+					<default>
+						<secure_dns>no</secure_dns>
+						<dns_server_list>$PRIMARYIPv6,$PRIMARYIPv4,$SECONDARYIPv6,$SECONDARYIPv4</dns_server_list>
+					</default>
+				</dns_mobile_b2b>
+				<dns_mobile_b2b2c>
+					<default>
+						<secure_dns>no</secure_dns>
+						<dns_server_list>$PRIMARYIPv6,$PRIMARYIPv4,$SECONDARYIPv6,$SECONDARYIPv4</dns_server_list>
+					</default>
+				</dns_mobile_b2b2c>
+				<dns_wifi_bam>
+					<default>
+						<secure_dns>no</secure_dns>
+						<dns_server_list>1.1.1.1,8.8.8.8,2606:4700:4700::1111,2001:4860:4860::8888</dns_server_list>
+					</default>
+				</dns_wifi_bam>
+				<dns_mobile_bam>
+					<default>
+						<secure_dns>no</secure_dns>
+						<dns_server_list>160.48.199.226,2a03:1e80:a00:4d01::e2</dns_server_list>
+					</default>
+				</dns_mobile_bam>
+				<NAOMode>
+					<NAOModeEnabled enabled="true"/>
+					<NAOModeMaxDuration mode="W">3</NAOModeMaxDuration>
+					<NAOModeUnregisteredMaxDuration mode="M">6</NAOModeUnregisteredMaxDuration>
+					<NAOModeDegradationThreshold>4</NAOModeDegradationThreshold>
+					<NAODebugModeEnabled enabled="false"/>
+					<NAOAllowedDuringTramo enabled="true"/>
+					<NAOModeMaxRecoveryTimeAfterReset mode="M">3</NAOModeMaxRecoveryTimeAfterReset>
+					<NAOModeMaxResets>3</NAOModeMaxResets>
+					<EthernetSwitchOn enabled="false"/>
+				</NAOMode>
+				<Dormant>
+					<DormantModeEnabled enabled="false"/>
+					<DormantSimWakeupTimer mode="D">14</DormantSimWakeupTimer>
+					<DormantSimWakeupDuration mode="M">15</DormantSimWakeupDuration>
+				</Dormant>
+			</data>
+		</set>
+		<set>
+			<filter type="or">
+				<nmcc>262</nmcc>
+				<nmcc>232</nmcc>
+				<nmcc>228</nmcc>
+				<nmcc>208</nmcc>
+				<nmcc>204</nmcc>
+				<nmcc>206</nmcc>
+				<nmcc>214</nmcc>
+				<nmcc>268</nmcc>
+				<nmcc>222</nmcc>
+				<nmcc>234</nmcc>
+				<nmcc>235</nmcc>
+				<nmcc>272</nmcc>
+				<nmcc>295</nmcc>
+				<nmcc>212</nmcc>
+				<nmcc>270</nmcc>
+				<nmcc>240</nmcc>
+				<nmcc>238</nmcc>
+				<nmcc>242</nmcc>
+				<nmcc>244</nmcc>
+				<nmcc>284</nmcc>
+				<nmcc>202</nmcc>
+				<nmcc>260</nmcc>
+				<nmcc>226</nmcc>
+				<nmcc>231</nmcc>
+				<nmcc>230</nmcc>
+				<nmcc>216</nmcc>
+				<nmcc>219</nmcc>
+				<nmcc>293</nmcc>
+				<nmcc>440</nmcc>
+				<nmcc>441</nmcc>
+				<nmcc>450</nmcc>
+				<nmcc>278</nmcc>
+				<nmcc>280</nmcc>
+				<nmcc>247</nmcc>
+				<nmcc>248</nmcc>
+				<nmcc>246</nmcc>
+				<nmcc>213</nmcc>
+				<nmcc>266</nmcc>
+			</filter>
+			<data>
+				<ssr_request allowed="true" enabled="true"/>
+				<trust_cache allowed="true" enabled="true"/>
+			</data>
+		</set>
+		<set>
+			<filter type="or">
+				<nmcc>232</nmcc>
+				<nmcc>206</nmcc>
+				<nmcc>228</nmcc>
+				<nmcc>228</nmcc>
+				<nmcc>230</nmcc>
+				<nmcc>262</nmcc>
+				<nmcc>214</nmcc>
+				<nmcc>213</nmcc>
+				<nmcc>244</nmcc>
+				<nmcc>295</nmcc>
+				<nmcc>208</nmcc>
+				<nmcc>212</nmcc>
+				<nmcc>234</nmcc>
+				<nmcc>235</nmcc>
+				<nmcc>272</nmcc>
+				<nmcc>222</nmcc>
+				<nmcc>292</nmcc>
+				<nmcc>225</nmcc>
+				<nmcc>270</nmcc>
+				<nmcc>204</nmcc>
+				<nmcc>242</nmcc>
+				<nmcc>260</nmcc>
+				<nmcc>268</nmcc>
+				<nmcc>268</nmcc>
+				<nmcc>240</nmcc>
+				<nmcc>216</nmcc>
+			</filter>
+			<data>
+				<assistECallManual enabled="true"/>
+			</data>
+		</set>
+		<set>
+			<filter type="or">
+				<nmcc>232</nmcc>
+				<nmcc>206</nmcc>
+				<nmcc>228</nmcc>
+				<nmcc>230</nmcc>
+				<nmcc>262</nmcc>
+				<nmcc>214</nmcc>
+				<nmcc>213</nmcc>
+				<nmcc>244</nmcc>
+				<nmcc>295</nmcc>
+				<nmcc>208</nmcc>
+				<nmcc>212</nmcc>
+				<nmcc>234</nmcc>
+				<nmcc>235</nmcc>
+				<nmcc>272</nmcc>
+				<nmcc>222</nmcc>
+				<nmcc>292</nmcc>
+				<nmcc>225</nmcc>
+				<nmcc>270</nmcc>
+				<nmcc>204</nmcc>
+				<nmcc>242</nmcc>
+				<nmcc>260</nmcc>
+				<nmcc>268</nmcc>
+				<nmcc>240</nmcc>
+				<nmcc>216</nmcc>
+			</filter>
+			<data>
+				<assistECallAutomatic enabled="true"/>
+			</data>
+		</set>
+	</bmwprov>
+	<Signature>MGUCMCKcdpo6Hn14yiAK5WzfxOP/POmJieTzVVAPBXzKXK+J72FDLyQBuhlfunOVhdCPmAIxANckUL7DEGe9HAnfQ1vWrvz/sLjxim76SGxPg4kDS2VX4GvGlQ1ggiiA4/gDYNb77g==</Signature>
+	<SignerCertificate>-----BEGIN CERTIFICATE-----MIICizCCAhGgAwIBAgIBCDAKBggqhkjOPQQDBDBpMRkwFwYDVQQDDBBTaWduaW5nLUNBMi0yMDIxMRMwEQYDVQQIDApQcm9kdWN0aW9uMRYwFAYDVQQLDA1WZWhpY2xlUEtJLUNBMRIwEAYDVQQKDAlCTVcgR3JvdXAxCzAJBgNVBAYTAkRFMCAXDTcwMDEwMTAwMDEwMFoYDzk5OTkxMjMxMjM1OTAwWjCBoTEyMDAGA1UEAwwpUHJvdmlzaW9uaW5nQ2xpZW50LUUyRS1FTUVBX1JvVy1TaVNlLTIwMjExETAPBgNVBAcMCEVNRUFfUm9XMRMwEQYDVQQIDApQcm9kdWN0aW9uMSIwIAYDVQQLDBlWZWhpY2xlUEtJLVNpZ25pbmdTZXJ2aWNlMRIwEAYDVQQKDAlCTVcgR3JvdXAxCzAJBgNVBAYTAkRFMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEkX/0Fo0Q0JfUNTsLFmz+ZT9SNEyo79vciCZFGQfB1dklDp0hQvAekJBHYyMm7FTjjTMR+sjdx6wPuBZGVn4RuVxxUZo0Bp2GFBzz7bQxztsfcYqdsq97sQqUkvcLCUqgo1IwUDAfBgNVHSMEGDAWgBTi0WnVxXcOFvjHL0jcKdPj735ZPDAdBgNVHQ4EFgQUDV3vvMePYDjNtaAEHQ1aK5xN/mAwDgYDVR0PAQH/BAQDAgeAMAoGCCqGSM49BAMEA2gAMGUCMQCv6BbC2ZfwHo7kUuwoM2X2bRznuAH+vHu9tOrgWYm3jJWTxZ+N9DfIm3olag/reTECMEL34PTeQDOMNy0LFhN33FjSgnnIoKpGsL46NRELxi5fIphhgiygxrdGkWSss9e4ig==-----END CERTIFICATE-----</SignerCertificate>
+</bmwprovsigned>

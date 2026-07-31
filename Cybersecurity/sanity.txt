@@ -1,0 +1,284 @@
+Diagnostics
+-----------
+sldd Diag readDid 43a0                                 43 a0 00 01
+sldd Diag writeDid 43A0 00                          Result : 0
+sldd Diag readDid 43A0                                 43 a0 00 00
+sldd Diag writeDid 43A0 01                          Result : 0
+sldd Diag readDid 43A0                                 43 a0 00 01
+
+sldd v2xmgr readDiag RDBI_V2X_SECURITY
+sldd v2xmgr readDiag RDBI_V2X_RADIO
+sldd v2xmgr readDiag RDBI_V2X_STACK_CONFIGURATION
+sldd v2xmgr readDiag RDBI_V2X_HSM 
+sldd v2xmgr readDiag RDBI_V2X_COMPENSATOR_LNA
+
+ 
+  "logging":{    
+    "logLevel": "Debug",
+    "debugComponents": ["SEC"]
+  },
+
+
+V2X
+----
+sldd power requestset 2004 7
+sldd power requestset 2004 2
+sldd power requestset 2004 5
+
+pgrep -f its
+ps -fC its
+ps -fC its
+
+killall its
+
+sldd power requestset 2002 1
+
+Coding Provisioning
+-------------------
+adb1 push "D:\Cybersecurity\Snake Oil CN\CN_Prov_File\prov.xml" /data/config-service
+
+sldd cfg reload 0 0 /data/config-service/coding.txt
+sldd cfg reload 2 0 /data/config-service/prov.xml
+
+
+
+file://SI-DEEPANSHUS/esys-data
+python
+
+
+
+Certificate Download
+--------------------
+sldd telephony factorysetimei 354028100010134 in Nad
+ 
+Check UTC in bam side date -s "YYYY-MM-DD HH:MM:SS"
+
+if not working then
+sldd telephony setprefnettype 11
+sldd telephony getavailnets
+sldd telephony setNetSelModeManual 405861
+
+
+Command to change region for sop image
+--------------------------------------
+http://collab.lge.com/main/display/ICONICC/SLDD-Config+Manager
+sldd cfg write -b '<v2x_basic_connectivity><stackRegion>eu</stackRegion></v2x_basic_connectivity>' true
+
+
+vi /var/data/telematics/provisioningd/provisioning-eng/config.ini and copy info below into the file and close file.
+-------------------------------------------------------------------------------------------------------------------
+useLocallyInjectedOta=true
+enableVinVerification=false
+enableTimestampVerification=false
+enableSecurityVerification=false
+http://collab.lge.com/main/pages/viewpage.action?pageId=2313349110
+For all newly received ICON-25 boards to activate the e-sim
+------------------------------------------------------------
+we have to check all these id's are there if IMEI is not there we can set but all other id's need to be there
+root@icon25-nad-sa525m:~# sldd telephony geteid
+-----------------------------------------------------------
+    Get EID (eUICC ID)
+-----------------------------------------------------------
+-> EID : 89049032000001000000169937432204
+root@icon25-nad-sa525m:~# sldd telephony geticcid
+-----------------------------------------------------------
+    Get ICCID
+-----------------------------------------------------------
+-> ICCID : 89430301902309320907
+root@icon25-nad-sa525m:~# sldd telephony getimsi
+-----------------------------------------------------------
+    Get IMSI
+-----------------------------------------------------------
+-> IMSI : 232031812048630
+root@icon25-nad-sa525m:~# sldd telephony getimei
+-----------------------------------------------------------
+    Get IMEI
+-----------------------------------------------------------
+-> IMEI : 354028100010134
+
+
+KEYS (file://Si-harsh1/keys)
+
+Logs capture from bam Terminals
+-------------------------------
+IBAM: 160.48.249.98  --> 3490
+IBAM: 160.48.249.97  --> 3491
+IBAM: 160.48.249.97  --> 3493
+
+
+
+change region from EU to CN
+----------------------------
+cd /var/data/telematics/provisioningd/provisioning-eng/
+ls -l
+mv provisioning.xml provisioning-EU.xml
+mv provisioning-CN.xml provisioning.xml
+sync
+sync
+
+change region from CN to EU
+----------------------------
+cd /var/data/telematics/provisioningd/provisioning-eng/
+ls -l
+mv provisioning.xml provisioning-CN.xml
+mv provisioning-EU.xml provisioning.xml
+sync
+sync
+
+
+
+ffptool /usr/lib/libffp_nad_ap_qc.so.1 flash /var/data/NAD_AP_ICON.tar .
+ffptool /usr/lib/libffp_nad_modem_qc.so.1 flash /var/data/NAD_MODEM_ICON.tar .
+ffptool /usr/lib/libffp_nad_euecall_qc.so.1 flash /var/data/NAD_EUECALL_ICON.tar .
+ffptool /usr/lib/libffp_nad_eraecall_qc.so.1 flash /var/data/NAD_ERAECALL_ICON.tar .
+ffptool /usr/lib/libffp_nad_ngecall_qc.so.1 flash /var/data/NAD_NGECALL_ICON.tar .
+ffptool /usr/lib/libffp_v2x_qc.so.1 flash /var/data/NAD_V2X_ICON.tar .
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////
+coding_provisioning.py
+
+import subprocess
+import os
+import paramiko
+import time
+ 
+# Paths to the provisioning files
+prov_CN = "D:\\CodingScript\\CN_PROV\\prov.xml"
+prov_EU = "D:\\CodingScript\\EU_PROV\\prov.xml"
+ 
+# Print the current date (similar to echo %DATE%)
+print(f"Date: {os.popen('date').read().strip()}")
+ 
+# SSH Connection details
+hostname = "160.48.249.97"
+username = "root"
+private_key_path = r"C:\Users\ranjan08.kumar\.ssh\id_nad"  # Use raw string for the private key path
+ 
+# Establish SSH connection
+def ssh_command(command):
+    """Runs an SSH command and returns the output."""
+    try:
+        # Create SSH client
+        client = paramiko.SSHClient()
+        client.set_missing_host_key_policy(paramiko.AutoAddPolicy())  # Automatically add host key
+       
+        # Load the private key for authentication
+        private_key = paramiko.RSAKey.from_private_key_file(private_key_path)
+       
+        # Connect to the server using the private key
+        client.connect(hostname, username=username, pkey=private_key, look_for_keys=False, allow_agent=False, banner_timeout=200, timeout=30)
+       
+        # Execute the command
+        stdin, stdout, stderr = client.exec_command(command)
+       
+        # Automatically send "Enter" after the command if needed
+        stdin.write("\n")
+        stdin.flush()
+       
+        output = stdout.read().decode().strip()
+       
+        # Close SSH connection
+        client.close()
+       
+        return output
+    except Exception as e:
+        print(f"Error running command over SSH: {e}")
+        return None
+ 
+# Establish SFTP connection to transfer files
+# New function to push file content via SSH using 'cat >'
+def sftp_transfer(local_file, remote_path):
+    """Transfers files using SFTP."""
+    try:
+        # Create SFTP client
+        transport = paramiko.Transport((hostname, 22))
+        transport.connect(username=username, pkey=paramiko.RSAKey.from_private_key_file(private_key_path))
+       
+        sftp = paramiko.SFTPClient.from_transport(transport)
+       
+        # Transfer the file
+        sftp.put(local_file, remote_path)
+       
+        # Close SFTP session
+        sftp.close()
+        transport.close()
+       
+        print(f"Successfully transferred {local_file} to {remote_path}")
+    except Exception as e:
+        print(f"Error during SFTP transfer: {e}")
+ 
+ 
+# Print NAD version
+print("NAD version:")
+print(ssh_command("cat /etc/version"))
+ 
+# Ask user for region choice
+print("To CN '1' EU '2'")
+region = input("Enter: ")
+ 
+# For CN Region (Region 1)
+if region == '1':
+    # 1. Execute the command for smackfs
+    print("Executing command for smackfs...")
+    ssh_command("smack_admin -c 'echo - | tee /sys/fs/smackfs/onlycap'")
+    ssh_command("exit")
+   
+    # 2. Remount filesystem as read-write
+    print("Remounting filesystem as read-write...")
+    ssh_command("mount -o remount,rw /data")
+ 
+    # 3. Push the CN provisioning file to the device using SFTP
+    print("Pushing CN provisioning file to the device...")
+    sftp_transfer(prov_CN, "/data/config-service/prov.xml")
+   
+ 
+    # 4. Reload the configuration using sldd
+    print("Reloading configuration with sldd...")
+    ssh_command("sldd cfg reload 2 0 /data/config-service/prov.xml")
+    ssh_command("sldd cfg reload 2 0 /data/config-service/prov.xml")
+ 
+    # 5. Display the 'its.json' configuration
+    print("its.json config:")
+    print(ssh_command("cat /etc/its.json"))
+ 
+# For EU Region (Region 2)
+elif region == '2':
+    # 1. Execute the command for smackfs
+    print("Executing command for smackfs...")
+    ssh_command("bash -c 'echo - | tee /sys/fs/smackfs/onlycap'")
+   
+    # 2. Remount filesystem as read-write
+    print("Remounting filesystem as read-write...")
+    ssh_command("mount -o remount,rw /data")
+ 
+    # 3. Push the EU provisioning file to the device using SFTP
+    print("Pushing EU provisioning file to the device...")
+    sftp_transfer(prov_EU, "/data/config-service/prov.xml")
+ 
+    # 4. Reload the configuration using sldd
+    print("Reloading configuration with sldd...")
+    ssh_command("sldd cfg reload 2 0 /data/config-service/prov.xml")
+    ssh_command("sldd cfg reload 2 0 /data/config-service/prov.xml")
+ 
+    # 5. Display the 'its.json' configuration
+    print("its.json config:")
+    print(ssh_command("cat /etc/its.json"))
+ 
+else:
+    print("Invalid selection. Please enter 1 for CN or 2 for EU.")
+
+
+
+"hsm":{
+    "type":"Hardware",
+    "hwType":"atEhsm",
+    "atEhsm":{
+      "blobFile":"/data/v2xmgr/etc/hsm-blob.dat"
+    }
+  },

@@ -1,0 +1,10 @@
+map matching
+------------
+
+"logging": {                   
+    "logLevel": "Debug",                 
+    "loggers": [                      
+            {"logger" : "M-BSI", "logLevel":"Debug"},
+            {"logger" : "F-FOR", "logLevel":"Debug"}
+    ]                                   
+  },

@@ -1,0 +1,4 @@
+# ECU Serial Communication Interface Requirements
+# Install with: pip install -r requirements.txt
+
+pyserial==3.5               # Serial port communication library

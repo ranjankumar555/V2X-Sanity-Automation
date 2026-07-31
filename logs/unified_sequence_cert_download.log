@@ -1,0 +1,108 @@
+19:42:48 - INFO - ============================================================
+19:42:48 - INFO - ECU Interface Initialized
+19:42:48 - INFO - Port: COM43, Baudrate: 1000000
+19:42:48 - INFO - Console Output: Disabled
+19:42:48 - INFO - ============================================================
+[2026-05-16 19:42:48] === Starting ADB Shell ===
+[2026-05-16 19:42:48] [2026-05-16 19:42:48]
+[2026-05-16 19:42:49] 
+============================================================
+[2026-05-16 19:42:49] Test: Certificate Download (Unified Sequence)
+[2026-05-16 19:42:49] Log File: ..\logs\unified_sequence_cert_download.log
+[2026-05-16 19:42:49] ============================================================
+
+[2026-05-16 19:42:57] 
+[DNS PREREQUISITES] Setting up necessary prerequisites for DNS verification
+[2026-05-16 19:42:57] 
+[STEP 1] Set IMEI (via ADB - NAD side)
+[2026-05-16 19:42:57] sh-3.2# sldd telephony factorysetimei 354028100010134
+[2026-05-16 19:42:57] sh: sldd: command not found
+[2026-05-16 19:42:57] [COMMAND COMPLETED]
+[2026-05-16 19:42:57]   [OK] IMEI set successfully
+[2026-05-16 19:42:58] 
+[STEP 2] Devcoding Setup (via Serial Interface - BAM side)
+19:42:58 - INFO - Connecting to COM43... (Attempt 1/5)
+19:42:58 - INFO - [OK] ECU Connected Successfully
+19:42:58 - INFO - Monitor thread started
+[2026-05-16 19:42:58]   Executing (serial): devcoding write PROVISIONING/DAS_INDEX 1
+[2026-05-16 19:43:00]   [OK] Response received
+[2026-05-16 19:43:00]   Executing (serial): devcoding write ECALL/SIM_CARD 1
+[2026-05-16 19:43:02]   [OK] Response received
+[2026-05-16 19:43:02]   Executing (serial): devcoding write ECALL/TELEMATIC 1
+[2026-05-16 19:43:04]   [OK] Response received
+[2026-05-16 19:43:04]   Checking provisioning daemon...
+[2026-05-16 19:43:06]   [OK] Provisioning daemon is running
+[2026-05-16 19:43:06] === ADB Shell Closed ===
+[2026-05-16 19:43:06] [2026-05-16 19:43:06]
+19:45:47 - INFO - ============================================================
+19:45:47 - INFO - ECU Interface Initialized
+19:45:47 - INFO - Port: COM43, Baudrate: 1000000
+19:45:47 - INFO - Console Output: Disabled
+19:45:47 - INFO - ============================================================
+[2026-05-16 19:45:47] === Starting ADB Shell ===
+[2026-05-16 19:45:47] [2026-05-16 19:45:47]
+[2026-05-16 19:45:48] 
+============================================================
+[2026-05-16 19:45:48] Test: Certificate Download (Unified Sequence)
+[2026-05-16 19:45:48] Log File: ..\logs\unified_sequence_cert_download.log
+[2026-05-16 19:45:48] ============================================================
+
+[2026-05-16 19:46:10] 
+[DNS PREREQUISITES] Setting up necessary prerequisites for DNS verification
+[2026-05-16 19:46:10] 
+[STEP 1] Set IMEI (via ADB - NAD side)
+[2026-05-16 19:46:10] sh-3.2# sldd telephony factorysetimei 354028100010134
+[2026-05-16 19:46:10] sh: sldd: command not found
+[2026-05-16 19:46:10] [COMMAND COMPLETED]
+[2026-05-16 19:46:10]   [OK] IMEI set successfully
+[2026-05-16 19:46:11] 
+[STEP 2] Devcoding Setup (via Serial Interface - BAM side)
+19:46:11 - INFO - Connecting to COM43... (Attempt 1/5)
+19:46:11 - INFO - [OK] ECU Connected Successfully
+19:46:11 - INFO - Monitor thread started
+[2026-05-16 19:46:11]   Executing (serial): devcoding write PROVISIONING/DAS_INDEX 1
+[2026-05-16 19:46:13]   [OK] Response received
+[2026-05-16 19:46:13]   Executing (serial): devcoding write ECALL/SIM_CARD 1
+[2026-05-16 19:46:15]   [OK] Response received
+[2026-05-16 19:46:15]   Executing (serial): devcoding write ECALL/TELEMATIC 1
+[2026-05-16 19:46:17]   [OK] Response received
+[2026-05-16 19:46:18]   Checking provisioning daemon...
+[2026-05-16 19:46:19]   [OK] Provisioning daemon is running
+[2026-05-16 19:46:19] === ADB Shell Closed ===
+[2026-05-16 19:46:19] [2026-05-16 19:46:19]
+19:49:24 - INFO - ============================================================
+19:49:24 - INFO - ECU Interface Initialized
+19:49:24 - INFO - Port: COM43, Baudrate: 1000000
+19:49:24 - INFO - Console Output: Disabled
+19:49:24 - INFO - ============================================================
+[2026-05-16 19:49:24] === Starting ADB Shell ===
+[2026-05-16 19:49:24] [2026-05-16 19:49:24]
+[2026-05-16 19:49:25] 
+============================================================
+[2026-05-16 19:49:25] Test: Certificate Download (Unified Sequence)
+[2026-05-16 19:49:25] Log File: ..\logs\unified_sequence_cert_download.log
+[2026-05-16 19:49:25] ============================================================
+
+[2026-05-16 19:49:30] 
+[DNS PREREQUISITES] Setting up necessary prerequisites for DNS verification
+[2026-05-16 19:49:30] 
+[STEP 1] Set IMEI (via ADB - NAD side)
+[2026-05-16 19:49:30] sh-3.2# sldd telephony factorysetimei 354028100010134
+[2026-05-16 19:49:30] sh: sldd: command not found
+[2026-05-16 19:49:30] [COMMAND COMPLETED]
+[2026-05-16 19:49:30]   [OK] IMEI set successfully
+[2026-05-16 19:49:31] 
+[STEP 2] Devcoding Setup (via Serial Interface - BAM side)
+19:49:31 - INFO - Connecting to COM43... (Attempt 1/5)
+19:49:31 - INFO - [OK] ECU Connected Successfully
+19:49:31 - INFO - Monitor thread started
+[2026-05-16 19:49:31]   Executing (serial): devcoding write PROVISIONING/DAS_INDEX 1
+[2026-05-16 19:49:33]   [OK] Response received
+[2026-05-16 19:49:34]   Executing (serial): devcoding write ECALL/SIM_CARD 1
+[2026-05-16 19:49:35]   [OK] Response received
+[2026-05-16 19:49:36]   Executing (serial): devcoding write ECALL/TELEMATIC 1
+[2026-05-16 19:49:38]   [OK] Response received
+[2026-05-16 19:49:38]   Checking provisioning daemon...
+[2026-05-16 19:49:39]   [OK] Provisioning daemon is running
+[2026-05-16 20:09:24] === ADB Shell Closed ===
+[2026-05-16 20:09:24] [2026-05-16 20:09:24]
