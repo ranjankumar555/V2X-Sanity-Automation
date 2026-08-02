@@ -3,8 +3,8 @@
 from test_base import TestBase
 from typing import List, Union, Tuple
 import time
-from framework.adbshell import ADBShell, ADBLogger, ADBFileManager, Helper
-
+from framework.adbshell import ADBShell, ADBLogger, ADBFileManager
+from framework.helper import Helper
 class V2XTest(TestBase):
     """V2X test that works in both Master and SOP modes."""
     

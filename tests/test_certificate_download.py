@@ -14,8 +14,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from test_base import TestBase
 from framework.serial_com.bam import ECUSerialCom
-from framework.adbshell import ADBShell, ADBLogger, Helper
-
+from framework.helper import Helper
 
 class TestCertificateDownload(TestBase):
     """Certificate download test combining serial interface and ADB shell"""

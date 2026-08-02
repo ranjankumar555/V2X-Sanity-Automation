@@ -37,7 +37,8 @@ PARENT_DIR = Path(__file__).parent.parent
 if str(PARENT_DIR) not in sys.path:
     sys.path.insert(0, str(PARENT_DIR))
 
-from framework.adbshell import ADBShell, ADBLogger, ADBFileManager, Helper
+from framework.adbshell import ADBShell, ADBLogger, ADBFileManager
+from framework.helper import Helper
 
 class TestConfig:
     """Configuration for a single test case."""
@@ -183,22 +184,22 @@ class TestBase(ABC):
             self.config.is_sop_mode = True
             self.logger.log("Mode: SOP (binary running from /log/)")
         else:
-            is_sop_fallback = False
+            # is_sop_fallback = False
             
-            if not self.config.version_output or len(self.config.version_output.strip()) < 3:
-                self.logger.log("[INFO] Version file empty; attempting runtime detection...")
-                diag = Helper.detect_device_type(self.shell, self.logger)
+            # if not self.config.version_output or len(self.config.version_output.strip()) < 3:
+            #     self.logger.log("[INFO] Version file empty; attempting runtime detection...")
+            #     diag = Helper.detect_device_type(self.shell, self.logger)
                 
-                if diag.get("is_sop") is True:
-                    is_sop_fallback = True
-                    self.logger.log("[INFO] Fallback detection: SOP mode confirmed")
+            #     if diag.get("is_sop") is True:
+            #         is_sop_fallback = True
+            #         self.logger.log("[INFO] Fallback detection: SOP mode confirmed")
             
-            if is_sop_fallback:
-                self.config.is_sop_mode = True
-                self.logger.log("Mode: SOP (binary running from /log/)")
-            else:
-                self.config.is_sop_mode = False
-                self.logger.log("Mode: MASTER (native binary)")
+            # if is_sop_fallback:
+            #     self.config.is_sop_mode = True
+            #     self.logger.log("Mode: SOP (binary running from /log/)")
+            # else:
+            self.config.is_sop_mode = False
+            self.logger.log("Mode: MASTER (native binary)")
     
     def run(self) -> bool:
         """

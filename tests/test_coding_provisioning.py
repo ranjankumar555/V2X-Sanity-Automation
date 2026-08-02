@@ -3,7 +3,7 @@
 from test_base import TestBase
 from typing import List, Union, Tuple
 import time
-from framework.adbshell import Helper, ADBFileManager
+from framework.helper import Helper
 
 
 class CodingProvisioningTest(TestBase):

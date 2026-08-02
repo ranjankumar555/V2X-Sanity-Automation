@@ -17,7 +17,7 @@ import time
 from test_base import TestBase
 from dlt.testbase_integration import DLTVerificationMixin
 from dlt.dlt_verifiy import verify_dlt_file
-from framework.adbshell import Helper
+from framework.helper import Helper
 from test_certificate_download import TestCertificateDownload
 
 class BasicSanityTest(DLTVerificationMixin, TestBase):
