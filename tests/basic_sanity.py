@@ -35,8 +35,8 @@ class BasicSanityTest(DLTVerificationMixin, TestBase):
     EU_PROV_XML = r"..\Cybersecurity\Snake Oil EU\EU_Prov_File\prov.xml"
     CN_PROV_XML = r"..\Cybersecurity\Snake Oil CN\CN_Prov_File\prov.xml"
 
-    def __init__(self, test_name: str, log_file: str, adb_cmd: str = "adb1"):
-        super().__init__(test_name=test_name, log_file=log_file, adb_cmd=adb_cmd)
+    def __init__(self, test_name: str, log_file: str, adb_cmd: str = "adb1", use_adb: bool = True, **kwargs):
+        super().__init__(test_name=test_name, log_file=log_file, adb_cmd=adb_cmd, use_adb=use_adb, **kwargs)
         self.timeline_file = str(Path(log_file).parent / "basic_sanity_timeline.log")
         self.timing_file = str(Path(log_file).parent / "basic_sanity_timing.log")
         
@@ -54,9 +54,8 @@ class BasicSanityTest(DLTVerificationMixin, TestBase):
         self.devcoding_imei.logger = self.logger
         
         # Initialize Helper instance with the necessary attributes for instance methods
-        self.helper = Helper()
+        self.helper = Helper(self.logger)
         self.helper.shell = self.shell
-        self.helper.logger = self.logger
         self.helper.config = self.config
         self.helper._wrap_command = self._wrap_command
 

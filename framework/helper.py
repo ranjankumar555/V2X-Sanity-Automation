@@ -15,6 +15,9 @@ from collections import OrderedDict
 # Helper Function
 # ------------------------------
 class Helper:
+    def __init__(self, logger=None):
+        self.logger = logger
+
     @staticmethod
     def ask(prompt):
         """Prompt user with Y/N question and treat ENTER as 'Y'."""

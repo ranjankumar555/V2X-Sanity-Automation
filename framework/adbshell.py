@@ -12,13 +12,6 @@ import uuid
 import re
 from collections import OrderedDict
 
-# ------------------------------
-# Logger
-# ------------------------------
-
-
-
-
 # =====================================================
 # Colors for Console Output
 # =====================================================
@@ -31,8 +24,7 @@ class Colors:
     RESET = '\033[0m'
     BOLD = '\033[1m'
 
-
-# =====================================================
+ # =====================================================
 # Logger
 # =====================================================
 class ADBLogger:
@@ -225,14 +217,6 @@ def load_json_with_fallback(file_path, logger=None, use_ordered_dict=True):
 # ------------------------------
 # Shell (persistent session)
 # ------------------------------
-import subprocess
-import threading
-import queue
-import time
-import datetime
-import uuid
-import re
-
 class ADBShell:
     def __init__(self, adb_cmd="adb", logger=None, reconnect_attempts=3, reconnect_delay=5):
         self.adb_cmd = adb_cmd
