@@ -1,6 +1,9 @@
 """Cybersecurity Test - Unified Master/SOP mode with region support"""
 
-from test_base import TestBase
+try:
+    from tests.test_base import TestBase
+except ImportError:  # pragma: no cover - fallback for direct script execution
+    from test_base import TestBase
 from typing import List, Union, Tuple
 import time
 from framework.helper import Helper

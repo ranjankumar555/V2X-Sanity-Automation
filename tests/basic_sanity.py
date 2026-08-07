@@ -14,7 +14,10 @@ import os
 import sys
 import time
 
-from test_base import TestBase
+try:
+    from tests.test_base import TestBase
+except ImportError:  # pragma: no cover - fallback for direct script execution
+    from test_base import TestBase
 from dlt.testbase_integration import DLTVerificationMixin
 from dlt.dlt_verifiy import verify_dlt_file
 from framework.helper import Helper

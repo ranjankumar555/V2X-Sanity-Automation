@@ -1,6 +1,9 @@
 """V2X Test - Unified Master/SOP mode"""
 
-from test_base import TestBase
+try:
+    from tests.test_base import TestBase
+except ImportError:  # pragma: no cover - fallback for direct script execution
+    from test_base import TestBase
 from typing import List, Union, Tuple
 import time
 from framework.adbshell import ADBShell, ADBLogger, ADBFileManager
