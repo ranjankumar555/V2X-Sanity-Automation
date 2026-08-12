@@ -13,7 +13,7 @@ from typing import List, Union, Tuple
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from test_base import TestBase
-from framework.serial_com.bam import ECUSerialCom
+from framework.serial_bam.bam import ECUSerialCom
 from framework.helper import Helper
 
 class TestCertificateDownload(TestBase):

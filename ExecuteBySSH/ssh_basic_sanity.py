@@ -18,7 +18,7 @@ from tests.test_base import SSHTestBase
 from dlt.testbase_integration import DLTVerificationMixin
 from dlt.dlt_verifiy import verify_dlt_file
 from framework.helper import Helper
-from test_certificate_download import TestCertificateDownload
+from tests.test_certificate_download import TestCertificateDownload
 
 
 class SSHBasicSanityTest(DLTVerificationMixin, SSHTestBase):
