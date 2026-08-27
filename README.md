@@ -1,269 +1,703 @@
 # V2X Test Execution Automation Framework
 
-A Python-based automation framework designed to **execute, monitor, validate, and report V2X test cases on Linux-based automotive ECUs**.
+A Python-based automation framework designed to automate the execution, monitoring, validation, logging, and reporting of V2X test cases on Linux-based automotive ECUs.
 
-The framework automates the complete test execution workflow — from ECU connection and environment preparation to test execution, DLT log collection, verification, and final test reporting.
+The framework was developed to replace repetitive manual test activities with a reusable and extensible automation architecture.
 
----
-
-## 📌 Overview
-
-Testing V2X functionality on automotive ECUs typically involves several manual activities:
-
-* Connecting to multiple ECU terminals
-* Preparing the test environment
-* Pushing required binaries/configuration files
-* Identifying the ECU software version
-* Determining Master/SOP execution mode
-* Starting required services
-* Executing V2X commands
-* Capturing console and DLT logs
-* Converting logs for analysis
-* Verifying expected results
-* Preparing the final test report
-
-This framework was developed to **automate and standardize these activities**, reducing manual effort and improving test execution consistency.
-
-### Key Objective
-
-> Automate the complete V2X test lifecycle while providing a reusable architecture for adding new test cases with minimal code duplication.
+It provides automated ECU communication, environment preparation, test execution, DLT log collection, result verification, and test report generation.
 
 ---
 
-# 🚀 Key Features
+## 📌 Project Overview
 
-* Automated ECU connection and communication
-* ADB-based communication with Linux 64-bit ECUs
-* SSH-based ECU communication
-* UART/serial terminal support
-* Persistent shell command execution
-* Batch command execution with configurable delays
-* Automatic Master/SOP software-version detection
-* Automatic SOP environment preparation
-* Automated file and folder transfer
-* ECU binary permission and mount configuration
-* Automatic DLT log capture
-* Console log capture
-* Multi-ECU test execution
-* V2X test automation
-* Cybersecurity test automation
-* Diagnostics test automation
-* Certificate download testing
-* Geofencing testing
-* Map-matching testing
-* Object-forwarding testing
-* Coding/provisioning testing
-* Basic sanity test execution
-* Post-test verification
-* Automated DLT-to-CSV conversion
-* Automated Excel test reporting
-* Pass/Fail result generation
-* Centralized test logging
-* Reusable test-base architecture
+V2X testing on automotive ECUs typically involves several repetitive activities:
+
+- Connecting to the ECU
+- Preparing the test environment
+- Transferring required files
+- Checking ECU software versions
+- Determining the ECU execution mode
+- Starting required services
+- Executing V2X commands
+- Monitoring console output
+- Capturing DLT logs
+- Performing post-test verification
+- Generating test reports
+
+Performing these activities manually for every test case is time-consuming and error-prone.
+
+This framework automates the complete test execution workflow and provides a common infrastructure that can be reused across different test modules.
+
+### Key Result
+
+The automation reduced a typical manual test execution workflow from approximately **3 hours to less than 90 minutes**.
+
+---
+
+# 🎯 Objectives
+
+The main objectives of the framework are:
+
+- Reduce manual test execution effort
+- Standardize ECU test execution
+- Provide reusable test infrastructure
+- Automate ECU environment preparation
+- Support multiple ECU execution modes
+- Automate log collection and analysis
+- Improve test execution consistency
+- Simplify development of new test cases
+- Provide automated Pass/Fail reporting
+- Support CI-oriented execution
 
 ---
 
 # 🏗️ High-Level Architecture
 
 ```text
-                    +----------------------+
-                    |     Test Runner      |
-                    |   test_runner.py     |
-                    +----------+-----------+
+                         +----------------------+
+                         |      Test Runner     |
+                         |    test_runner.py    |
+                         +----------+-----------+
+                                    |
+                                    v
+                         +----------------------+
+                         |       TestBase       |
+                         | Test Lifecycle Mgmt  |
+                         +----------+-----------+
+                                    |
+              +---------------------+---------------------+
+              |                     |                     |
+              v                     v                     v
+       +-------------+       +-------------+       +-------------+
+       |  ADBShell   |       | FileManager |       |  ADBLogger  |
+       +------+------+       +------+------+       +------+------+
+              |                     |                     |
+              +---------------------+---------------------+
+                                    |
+                                    v
+                         +----------------------+
+                         |    Linux ECU / DUT   |
+                         |                      |
+                         | V2X Stack            |
+                         | Services             |
+                         | Applications         |
+                         | Configuration        |
+                         +----------+-----------+
+                                    |
+                                    v
+                         +----------------------+
+                         |      DLT Logs        |
+                         +----------+-----------+
+                                    |
+                                    v
+                         +----------------------+
+                         | Verification &       |
+                         | Result Processing    |
+                         +----------+-----------+
+                                    |
+                                    v
+                         +----------------------+
+                         | Excel Test Report    |
+                         +----------------------+
+````
+
+---
+
+# ✨ Key Features
+
+* Python-based modular automation framework
+* Linux ECU automation
+* Persistent ADB shell execution
+* Automatic shell reconnection
+* ECU reboot recovery
+* ADB file and folder transfer
+* Batch command execution
+* Command execution timeout protection
+* Sentinel-based command completion detection
+* Real-time command output processing
+* Master/SOP execution-mode detection
+* Automatic SOP environment preparation
+* ECU binary permission and mount configuration
+* DLT log capture
+* Console log collection
+* Automated DLT-to-CSV conversion
+* Automated test verification
+* Excel test reporting
+* Multiple V2X test modules
+* Cybersecurity test automation
+* Diagnostics test automation
+* Certificate-related testing
+* Geofencing testing
+* Map-matching testing
+* Object-forwarding testing
+* Coding/provisioning testing
+* Basic sanity testing
+* Jenkins/CI integration support
+* Reusable test-base architecture
+
+---
+
+# 🔌 ECU Communication
+
+The framework communicates with Linux-based automotive ECUs through ADB.
+
+The communication layer provides:
+
+```text
+                    Python Automation
+                           |
+                           v
+                       ADBShell
+                           |
+                  +--------+--------+
+                  |                 |
+                stdin             stdout
+                  |                 |
+                  v                 v
+             adb shell        Reader Thread
+                  |                 |
+                  v                 v
+              Linux ECU       Output Queue
+```
+
+The communication layer is abstracted from individual test cases so that test developers can focus on test logic rather than low-level process management.
+
+---
+
+# ⚡ Persistent ADB Shell
+
+One of the core components of the framework is the `ADBShell` class.
+
+Instead of starting a new `adb shell` process for every command, the framework creates a **persistent shell process** and keeps it alive during test execution.
+
+## Conventional Approach
+
+```text
+Command 1
+   |
+   +--> adb shell
+   +--> Execute
+   +--> Process terminates
+
+Command 2
+   |
+   +--> adb shell
+   +--> Execute
+   +--> Process terminates
+
+Command 3
+   |
+   +--> adb shell
+   +--> Execute
+   +--> Process terminates
+```
+
+Repeated process creation introduces unnecessary overhead.
+
+## Framework Approach
+
+```text
+                 Python Framework
+                        |
+                        v
+                +---------------+
+                | Persistent    |
+                | adb shell     |
+                +-------+-------+
+                        |
+                        v
+                    Linux ECU
+                        |
+          +-------------+-------------+
+          |             |             |
+          v             v             v
+      Command 1     Command 2     Command 3
+```
+
+The same shell session is reused for the complete test execution.
+
+---
+
+# 🧠 ADBShell Design
+
+The `ADBShell` class is responsible for:
+
+* Starting the ADB shell
+* Maintaining the shell process
+* Sending commands through stdin
+* Reading stdout asynchronously
+* Detecting command completion
+* Returning command output
+* Handling command timeouts
+* Detecting shell termination
+* Automatically reconnecting after connection loss
+* Supporting batch command execution
+* Closing the shell gracefully
+
+The primary interface is intentionally simple:
+
+```python
+shell.run(command)
+shell.run_batch(commands)
+shell.close()
+```
+
+---
+
+# 🔄 Persistent Shell Initialization
+
+When `ADBShell` is initialized, the framework first waits for the ECU:
+
+```bash
+adb wait-for-device root
+```
+
+It then creates the persistent shell using `subprocess.Popen()`:
+
+```python
+self.proc = subprocess.Popen(
+    [self.adb_cmd, "shell"],
+    stdin=subprocess.PIPE,
+    stdout=subprocess.PIPE,
+    stderr=subprocess.STDOUT,
+    text=True,
+    bufsize=1,
+)
+```
+
+The process remains alive while commands are sent through its `stdin`.
+
+---
+
+# 🧵 Asynchronous Output Reader
+
+A background reader thread continuously reads the shell's stdout.
+
+Conceptually:
+
+```text
+                  adb shell
+                     |
+                     | stdout
+                     v
+              +--------------+
+              | Reader Thread |
+              +------+-------+
+                     |
+                     v
+              +--------------+
+              | Queue.Queue   |
+              +------+-------+
+                     |
+                     v
+                  run()
+```
+
+The reader thread places every received line into a thread-safe queue.
+
+This separates ECU output collection from command execution.
+
+Example:
+
+```python
+def _enqueue_output(self):
+    for line in self.proc.stdout:
+        self.q.put(line)
+```
+
+The main `run()` method consumes data from this queue.
+
+---
+
+# ▶️ `run()` Function
+
+The `run()` function is the primary command-execution API.
+
+```python
+run(command, timeout=10, use_sentinel=True)
+```
+
+Example:
+
+```python
+output = shell.run(
+    "cmd to execure"
+)
+```
+
+The function performs the following operations:
+
+```text
+run(command)
+     |
+     v
+Check shell status
+     |
+     +---- Shell dead?
+     |         |
+     |         v
+     |      Reconnect
+     |
+     v
+Generate unique sentinel
+     |
+     v
+Append sentinel to command
+     |
+     v
+Send command to persistent shell
+     |
+     v
+Read output from queue
+     |
+     v
+Check for completion sentinel
+     |
+     v
+Clean internal marker
+     |
+     v
+Log output
+     |
+     v
+Return command output
+```
+
+---
+
+# 🚦 Sentinel-Based Command Completion
+
+A major challenge with persistent shells is determining exactly when a command has finished.
+
+Simply waiting for output is not sufficient because:
+
+* Commands can produce multiple lines
+* Some commands may produce no output
+* Output may arrive asynchronously
+* Shell prompts are not always reliable
+* A fixed sleep introduces unnecessary delays
+
+To solve this, the framework uses a unique **sentinel marker**.
+
+For example, the original command:
+
+```bash
+command
+```
+
+is internally transformed into:
+
+```bash
+command to execute ; echo __CMD_DONE_<unique-id>__
+```
+
+The shell produces:
+
+```text
+command output...
+command output...
+command output...
+__CMD_DONE_<unique-id>__
+```
+
+When the framework detects the sentinel, it knows that the command has completed.
+
+---
+
+# 🔐 Unique Sentinel Generation
+
+A UUID is used to create a unique completion marker:
+
+```python
+sentinel = f"__CMD_DONE_{uuid.uuid4().hex}__"
+```
+
+For example:
+
+```text
+__CMD_DONE_91c72d8a1c5c4c3e8f...__
+```
+
+A different marker is generated for every command.
+
+This minimizes the possibility of normal ECU output being mistaken for a completion signal.
+
+---
+
+# ⚡ Why Sentinel Mode?
+
+The sentinel mechanism provides deterministic and fast command-completion detection.
+
+Instead of:
+
+```text
+Execute
+   |
+   v
+Wait fixed amount of time
+   |
+   v
+Assume command completed
+```
+
+the framework uses:
+
+```text
+Execute
+   |
+   v
+Read output
+   |
+   v
+Detect explicit completion marker
+   |
+   v
+Command completed
+```
+
+This avoids unnecessary waiting for commands that finish quickly while still providing a completion mechanism for commands that take longer.
+
+---
+
+# 🧹 Sentinel Output Cleanup
+
+The sentinel is an internal automation mechanism and should not be visible in the actual test output.
+
+The framework therefore removes the marker before logging/returning the final command output.
+
+For example:
+
+### Raw output
+
+```text
+sh-3.2# chmod 777 /data/v2xmgr/etc/ ; echo __CMD_DONE_xyz__
+```
+
+### Cleaned output
+
+```text
+sh-3.2# chmod 777 /data/v2xmgr/etc/
+```
+
+If the line contains only:
+
+```text
+__CMD_DONE_xyz__
+```
+
+the framework discards it.
+
+This keeps the returned output clean for subsequent verification and reporting.
+
+---
+
+# ⏱️ Command Timeout
+
+The `run()` function implements a hard timeout to prevent the complete automation framework from hanging indefinitely.
+
+Default:
+
+```python
+timeout=10
+```
+
+Custom timeout:
+
+```python
+shell.run(
+    "long_running_command",
+    timeout=30
+)
+```
+
+Timeout protection helps handle:
+
+* Hung commands
+* ECU communication problems
+* Missing completion markers
+* Unexpected target behavior
+* Service failures
+
+---
+
+# 🔁 Prompt-Based Fallback
+
+Sentinel mode is enabled by default.
+
+The framework also provides a fallback mechanism based on shell-prompt detection:
+
+```python
+shell.run(
+    "some_command",
+    use_sentinel=False
+)
+```
+
+The implementation checks for shell prompts ending in:
+
+```text
+#
+$
+```
+
+Conceptually:
+
+```text
+                 run()
+                   |
+          +--------+--------+
+          |                 |
+          v                 v
+     Sentinel Mode      Prompt Mode
+          |                 |
+          v                 v
+ Explicit completion    Shell prompt
+      marker              detected
+          |                 |
+          +--------+--------+
+                   |
+                   v
+             Command Done
+```
+
+---
+
+# 🔄 Automatic Reconnection
+
+Embedded ECU testing often includes operations that reboot the target.
+
+A reboot can terminate the active ADB shell.
+
+The framework automatically detects this condition and recreates the shell connection.
+
+```text
+                  Test Running
+                       |
+                       v
+                   ECU Reboot
+                       |
+                       v
+                ADB Shell Lost
+                       |
+                       v
+            Framework Detects Failure
+                       |
+                       v
+             Reconnection Attempt
+                       |
+                       v
+                New adb shell
+                       |
+                       v
+              Continue Execution
+```
+
+Before executing a command, `run()` checks whether the shell process is still alive.
+
+If it has terminated, `_reconnect_if_needed()` attempts to establish a new shell.
+
+---
+
+# 🔁 Reconnection Retry Mechanism
+
+The reconnect behavior is configurable:
+
+```python
+ADBShell(
+    adb_cmd="adb",
+    reconnect_attempts=3,
+    reconnect_delay=5
+)
+```
+
+The default strategy is:
+
+```text
+Shell Lost
+    |
+    v
+Attempt 1
+    |
+    +---- Success ---> Continue
+    |
+    +---- Failure
+             |
+             v
+          Wait 5s
+             |
+             v
+          Attempt 2
+             |
+             +---- Success ---> Continue
+             |
+             +---- Failure
+                      |
+                      v
+                   Wait 5s
+                      |
+                      v
+                   Attempt 3
+                      |
+                      +---- Success ---> Continue
+                      |
+                      +---- Failure
                                |
                                v
-                    +----------------------+
-                    |      TestBase        |
-                    | Test Lifecycle Mgmt  |
-                    +----------+-----------+
-                               |
-             +-----------------+------------------+
-             |                 |                  |
-             v                 v                  v
-      +-------------+   +-------------+    +-------------+
-      |  ADBShell   |   | FileManager |    |  ADBLogger  |
-      +------+------+   +------+------+    +------+------+
-             |                 |                  |
-             v                 v                  v
-      +------------------------------------------------+
-      |              Linux Automotive ECU             |
-      |                                                |
-      |  V2X Stack | Services | Binaries | Logs       |
-      +----------------------+-------------------------+
-                             |
-                             v
-                    +------------------+
-                    |    DLT Logs      |
-                    +--------+---------+
-                             |
-                             v
-                    +------------------+
-                    | Verification /   |
-                    | Result Analysis  |
-                    +--------+---------+
-                             |
-                             v
-                    +------------------+
-                    | Excel Test Report|
-                    +------------------+
+                           Raise Error
 ```
+
+This is especially useful for tests involving:
+
+* ECU reboot
+* Application restart
+* Service restart
+* Software restart
+* ADB disconnection
+* ECU recovery procedures
 
 ---
 
-# 📂 Framework Components
+# 🧪 Reboot-Aware Test Execution
 
-## 1. Test Runner
-
-The test runner provides a single entry point for executing different test groups.
-
-Example:
-
-```bash
-python test_runner.py --list
-```
-
-Run a specific test:
-
-```bash
-python test_runner.py --test v2x
-```
-
-Other supported test groups include:
-
-```text
-v2x
-dtc
-diagnostics
-cybersecurity
-certificate_download
-geofencing
-map_matching
-objforward
-coding_prov
-basic_sanity
-```
-
-The runner maintains a centralized test registry mapping each test name to its corresponding test implementation and log file.
-
----
-
-# 2. TestBase
-
-`TestBase` provides the common lifecycle and infrastructure required by all automated tests.
-
-Instead of implementing ECU communication, logging, mode detection, and cleanup separately in every test case, individual tests inherit from the common base class.
-
-```python
-class MyTest(TestBase):
-
-    def get_commands(self):
-        return [
-            "sldd cmd1",
-            ("sldd cmd2", 3),
-        ]
-```
-
-This provides a consistent test lifecycle:
-
-```text
-Determine ECU Mode
-       ↓
-Prepare Environment
-       ↓
-Custom Test Setup
-       ↓
-Execute Test
-       ↓
-Custom Cleanup
-       ↓
-Post-Test Verification
-       ↓
-SOP Cleanup
-       ↓
-Generate Result
-```
-
----
-
-# 3. Master / SOP Automatic Detection
-
-One of the key features of the framework is automatic detection of the ECU software execution mode.
-
-The framework reads:
-
-```bash
-cat /etc/version
-```
-
-and determines whether the ECU is operating in:
-
-```text
-MASTER
-```
-
-or
-
-```text
-SOP
-```
-
-mode.
-
-If version information is insufficient, the framework can perform additional runtime detection.
-
-### Master Mode
-
-Commands are executed using the native binary:
-
-```bash
-sldd <command>
-```
-
-### SOP Mode
-
-The framework prepares the SOP environment and uses:
-
-```bash
-/log/sldd <command>
-```
-
-It can automatically:
-
-* Push required files
-* Remount `/log/` with execution permission
-* Configure binary permissions
-* Adapt commands to the SOP binary path
-
-This allows the same test implementation to operate across different ECU software variants.
-
----
-
-# 4. ADBShell
-
-`ADBShell` provides command execution on Linux-based 64-bit ECUs.
-
-### Main capabilities
-
-```text
-run()
-run_batch()
-```
-
-### Persistent Shell
-
-`run()` executes commands through a persistent shell session, allowing a sequence of commands to be executed while maintaining the shell context.
+A test can execute commands before and after an ECU reboot without requiring the test developer to manually recreate the shell.
 
 Example:
 
 ```python
-shell.run("cat /etc/version")
-shell.run("cmd2")
-shell.run("cmd3")
+commands = [
+    "prepare_test_environment",
+    "configure_v2x",
+    "reboot",
+    "verify_system_after_reboot",
+    "execute_v2x_test",
+]
 ```
 
-### Batch Execution
+The framework handles the shell lifecycle automatically.
 
-Multiple commands can be executed sequentially:
+```text
+Configure
+   |
+   v
+Reboot ECU
+   |
+   v
+Shell terminates
+   |
+   v
+Automatic reconnect
+   |
+   v
+Continue test
+```
+
+This significantly improves robustness for long-running ECU test sequences.
+
+---
+
+# 📦 Batch Command Execution
+
+The framework provides `run_batch()` for executing multiple commands sequentially.
 
 ```python
 commands = [
@@ -275,15 +709,37 @@ commands = [
 shell.run_batch(commands)
 ```
 
-The tuple format allows a custom delay to be associated with individual commands.
+The tuple format allows an individual delay to be specified.
+
+```text
+command_1
+    |
+    v
+command_2
+    |
+    v
+Wait 3 seconds
+    |
+    v
+command_3
+```
+
+This is useful when ECU services require time to:
+
+* Start
+* Stop
+* Restart
+* Initialize
+* Apply configuration
+* Process V2X operations
 
 ---
 
-# 5. ADBFileManager
+# 📁 File Management
 
-`ADBFileManager` provides automated file transfer between the host machine and ECU.
+The framework provides an `ADBFileManager` abstraction for file transfer between the host and ECU.
 
-### Supported operations
+Supported operations include:
 
 ```text
 push()
@@ -309,138 +765,303 @@ files.push_folder(
 )
 ```
 
-This eliminates repetitive manual file-copy operations during test setup.
+This eliminates repetitive manual file-copy operations during test preparation.
 
 ---
 
-# 6. ADBLogger
+# 📝 Logging
 
-Centralized logging is provided through the `ADBLogger` component.
+The framework provides centralized logging through `ADBLogger`.
 
-### Logging APIs
-
-```text
-log()
-log_warn()
-log_error()
-```
-
-The logger records:
-
-* Test execution steps
-* ECU command execution
-* Setup information
-* Warnings
-* Errors
-* Test completion status
-* Execution logs
-
-Example:
+Example APIs:
 
 ```python
 logger.log("Starting V2X test")
-logger.log_warn("Expected response not received")
-logger.log_error("Test execution failed")
+
+logger.log_warn(
+    "Expected response was not received"
+)
+
+logger.log_error(
+    "Test execution failed"
+)
 ```
+
+Logging is used for:
+
+* Test execution steps
+* ECU commands
+* Command output
+* Setup operations
+* Warnings
+* Errors
+* Test completion
+* Debugging information
 
 ---
 
-# 7. Helper Utilities
+# 🧪 Test Lifecycle
 
-The framework provides reusable helper functions for common ECU operations and environment checks.
-
-Examples include:
+The framework provides a common `TestBase` abstraction so that individual tests follow a consistent execution lifecycle.
 
 ```text
-is_certificate_present()
-is_stack_on()
-activate_stack()
-is_icon_sf25()
-is_binary_sop()
-is_region_eu()
-modify_its_cybersecurity()
-modify_cff_mapmatching()
-disable_map_matching_for_geofencing_in_cff()
-modify_its_geofencing()
-setup_sop_prerequisites()
+                Test Start
+                    |
+                    v
+          Determine ECU Mode
+                    |
+                    v
+          Prepare Environment
+                    |
+                    v
+           Test-Specific Setup
+                    |
+                    v
+             Start Logging
+                    |
+                    v
+            Execute Commands
+                    |
+                    v
+           Capture Test Logs
+                    |
+                    v
+         Post-Test Verification
+                    |
+                    v
+          Generate Test Result
+                    |
+                    v
+            Cleanup Environment
+                    |
+                    v
+                Test End
 ```
 
-These utilities prevent common operations from being duplicated across individual test cases.
+Individual test implementations can override test-specific setup, execution, and cleanup logic while reusing the common infrastructure.
+
+---
+
+# 🖥️ Master / SOP Mode Handling
+
+The framework automatically determines the ECU software execution mode.
+
+The software version is checked using the ECU environment.
+
+Based on the detected configuration, the framework supports different execution paths for:
+
+```text
+MASTER
+SOP
+```
+
+For example, Master execution may use:
+
+```bash
+sldd <command>
+```
+
+while SOP execution may use:
+
+```bash
+/log/sldd <command>
+```
+
+The framework can automatically prepare the SOP environment by:
+
+* Transferring required files
+* Configuring execution permissions
+* Remounting required locations
+* Preparing binaries
+* Adapting command paths
+
+This allows the same test logic to operate across different ECU software configurations.
+
+---
+
+# 🧩 Helper Utilities
+
+Common ECU operations are implemented as reusable helper functions rather than being duplicated inside every test.
+
+Examples include functions for:
+
+```text
+Certificate presence checks
+V2X stack status checks
+Stack activation
+ECU/product identification
+Binary type detection
+Region detection
+Cybersecurity configuration
+Map-matching configuration
+Geofencing configuration
+SOP prerequisite setup
+```
+
+This improves:
+
+* Code reuse
+* Maintainability
+* Test development speed
+* Consistency
+* Readability
 
 ---
 
 # 🧪 Supported Test Areas
 
-The framework is designed around independent test modules.
+The framework is structured around independent test modules.
+
+Examples include:
 
 ```text
-                    Test Runner
-                        |
-        +---------------+----------------+
-        |               |                |
-        v               v                v
-      V2X          Diagnostics      Cybersecurity
-        |               |                |
-        +---------------+----------------+
-                        |
-             +----------+----------+
-             |          |          |
-             v          v          v
+V2X
+Diagnostics
+DTC
+Cybersecurity
+Certificate Download
+Geofencing
+Map Matching
+Object Forwarding
+Coding / Provisioning
+Basic Sanity
+```
+
+The test runner maintains a centralized registry that maps test names to their corresponding implementations.
+
+Conceptually:
+
+```text
+                     Test Runner
+                         |
+        +----------------+----------------+
+        |                |                |
+        v                v                v
+       V2X         Diagnostics      Cybersecurity
+        |                |                |
+        +----------------+----------------+
+                         |
+              +----------+----------+
+              |          |          |
+              v          v          v
         Geofencing  Map Matching  Object Forwarding
-             |
-             +----------+----------+
-                        |
-                        v
-             Coding / Provisioning
-                        |
-                        v
-                Basic Sanity
+              |
+              v
+       Coding / Provisioning
+              |
+              v
+         Basic Sanity
 ```
 
 ---
 
-# 🔐 Cybersecurity Test Automation
+# 🚗 V2X Testing
 
-The framework also supports V2X cybersecurity validation.
+The framework supports automation of V2X-related test scenarios involving V2X message transmission, reception, configuration, and validation.
 
-The cybersecurity test can:
-
-1. Prepare cybersecurity-related files
-2. Transfer certificates/test data to the ECU
-3. Configure the ECU environment
-4. Detect the current region
-5. Execute region-specific tests
-6. Change between supported regions
-7. Restart required services where necessary
-8. Inject valid and invalid V2X messages
-9. Capture logs
-10. Perform verification
-
-Example test data includes valid and invalid signed V2X messages.
+Typical V2X message types include:
 
 ```text
-Invalid Message
+CAM
+DENM
+BSM
+```
+
+Depending on the target configuration, testing can involve:
+
+```text
+DSRC
+C-V2X
+```
+
+The automation framework provides the infrastructure required to execute the corresponding ECU commands and collect evidence from the target system.
+
+---
+
+# 🔐 V2X Cybersecurity Testing
+
+The framework also supports V2X cybersecurity-related test automation.
+
+The cybersecurity test workflow can include:
+
+```text
+Prepare security test environment
+             |
+             v
+Transfer required test files
+             |
+             v
+Configure ECU
+             |
+             v
+Prepare certificates / test data
+             |
+             v
+Execute security scenario
+             |
+             v
+Capture DLT / console logs
+             |
+             v
+Verify expected behavior
+             |
+             v
+Generate test result
+```
+
+The framework can support region-specific configurations where required by the test environment.
+
+---
+
+# 📡 DLT Logging
+
+DLT logs are collected during test execution for ECU-side analysis.
+
+The overall workflow is:
+
+```text
+Test Execution
       |
       v
-Message Injection
+DLT Capture
       |
       v
-V2X Security Processing
+DLT Log File
       |
       v
-DLT / Console Logs
+DLT Processing
+      |
+      v
+CSV / Structured Data
       |
       v
 Verification
 ```
 
-The implementation supports region-specific cybersecurity execution for EU and CN configurations.
+This provides test evidence for validating ECU behavior.
 
 ---
 
-# 🔄 Test Execution Workflow
+# 📊 Automated Reporting
 
-The complete automated workflow can be represented as:
+After test execution and verification, the framework generates a consolidated test report.
+
+A typical report can contain:
+
+| Test Case           | Expected Result              | Actual Result        | Status |
+| ------------------- | ---------------------------- | -------------------- | ------ |
+| V2X Communication   | Message transmitted/received | Message received     | PASS   |
+| Security Validation | Invalid message rejected     | Message rejected     | PASS   |
+| Certificate Test    | Certificate accepted         | Certificate accepted | PASS   |
+| Geofencing          | Event generated              | Event generated      | PASS   |
+
+Automated reporting eliminates the need to manually consolidate test results after execution.
+
+---
+
+# 🔄 End-to-End Automation Flow
+
+The complete framework can be summarized as:
 
 ```text
 +----------------------+
@@ -459,21 +1080,20 @@ The complete automated workflow can be represented as:
            |
            v
 +----------------------+
-| Read Software Version|
+| Detect ECU Version   |
 +----------+-----------+
            |
            v
 +----------------------+
-| Master or SOP ?      |
+| Master / SOP ?       |
 +-----+------------+---+
       |            |
-   MASTER         SOP
+   MASTER          SOP
       |            |
-      |     +------v------+
-      |     | Push Files  |
-      |     | Mount /log  |
-      |     | Set Perms   |
-      |     +------+------+
+      |      +-----v------+
+      |      | Prepare    |
+      |      | SOP Env.   |
+      |      +-----+------+
       |            |
       +------+-----+
              |
@@ -489,12 +1109,12 @@ The complete automated workflow can be represented as:
            |
            v
 +----------------------+
-| Execute Test Group   |
+| Execute Test         |
 +----------+-----------+
            |
            v
 +----------------------+
-| Capture Console Logs |
+| Collect Logs         |
 +----------+-----------+
            |
            v
@@ -504,12 +1124,12 @@ The complete automated workflow can be represented as:
            |
            v
 +----------------------+
-| DLT → CSV Conversion |
+| DLT → CSV Processing |
 +----------+-----------+
            |
            v
 +----------------------+
-| Generate Excel Report|
+| Generate Report      |
 +----------+-----------+
            |
            v
@@ -520,93 +1140,85 @@ The complete automated workflow can be represented as:
 
 ---
 
-# 🖥️ Multi-ECU Execution
+# 🧱 Framework Design
 
-The framework supports test execution involving multiple devices.
-
-The environment can communicate with ECUs through different interfaces:
+The framework follows a modular architecture.
 
 ```text
-                 Test Automation Host
-                         |
-          +--------------+--------------+
-          |              |              |
-          v              v              v
-        ADB            SSH            UART
-          |              |              |
-          v              v              v
-       ECU #1         ECU #2        Terminal /
-                                      Device
+                         TestBase
+                            |
+          +-----------------+-----------------+
+          |                 |                 |
+          v                 v                 v
+       V2X Test       Diagnostics Test   Security Test
+          |                 |                 |
+          +-----------------+-----------------+
+                            |
+                     Common Framework
+                            |
+          +-----------------+-----------------+
+          |                 |                 |
+          v                 v                 v
+      ADBShell         FileManager         Logger
+          |
+          v
+     Linux ECU
 ```
 
-This enables scenarios where one device is controlled through ADB while another device is accessed through SSH.
+The separation between test logic and infrastructure provides:
+
+* Reusability
+* Maintainability
+* Reduced code duplication
+* Consistent execution
+* Easier debugging
+* Faster development of new tests
 
 ---
 
-# 📋 Logging and Verification
+# ➕ Adding a New Test
 
-During execution, the framework captures both:
-
-### Console Logs
-
-Commands and execution output are stored in test-specific log files.
+New tests can inherit from the common `TestBase`.
 
 Example:
 
-```text
-logs/
-├── v2x_test.log
-├── diagnostics_test.log
-├── cybersecurity_test.log
-├── geofencing.log
-└── basic_sanity.log
+```python
+from test_base import TestBase
+
+
+class MyV2XTest(TestBase):
+
+    def get_commands(self):
+        return [
+            "command to execute1",
+            ("command to execute2", 3),
+            "command to execute3",
+        ]
+
+    def setup_custom(self):
+        # Test-specific setup
+        pass
+
+    def teardown_custom(self):
+        # Test-specific cleanup
+        pass
 ```
 
-### DLT Logs
+The test can then be registered with the test runner.
 
-DLT logs are collected for detailed ECU-side analysis.
+Conceptually:
 
-The workflow is:
-
-```text
-Test Execution
-      ↓
-DLT Capture
-      ↓
-DLT Log File
-      ↓
-CSV Conversion
-      ↓
-Result Verification
+```python
+TEST_REGISTRY = {
+    "my_test": {
+        "class": MyV2XTest,
+        "display": "My V2X Test",
+        "log": "../logs/my_v2x_test.log"
+    }
+}
 ```
 
----
-
-# 📊 Automated Test Reporting
-
-After test execution and verification, the framework generates a consolidated Excel report.
-
-The report can be used to communicate:
-
-```text
-Test Case
-Test Group
-Execution Status
-Expected Result
-Actual Result
-Pass / Fail
-```
-
-Example:
-
-| Test Case         | Expected Result      | Actual Result        | Status |
-| ----------------- | -------------------- | -------------------- | ------ |
-| V2X Communication | Message transmitted  | Message received     | PASS   |
-| Invalid Signature | Message rejected     | Message rejected     | PASS   |
-| Certificate Test  | Certificate accepted | Certificate accepted | PASS   |
-| Geofencing        | Event triggered      | Event triggered      | PASS   |
-
-This provides the team with a clear summary of the overall test execution.
+The test can then be executed through the common runner.
 
 ---
 
@@ -616,18 +1228,21 @@ This provides the team with a clear summary of the overall test execution.
 
 ```text
 Python
+Object-Oriented Programming
+Multithreading
+Subprocess / Process Management
 ```
 
-## Automotive / Embedded
+## Embedded / Automotive
 
 ```text
 V2X
-DSRC
-C-V2X
-Linux-based ECU
-ECU diagnostics
+Linux-based Automotive ECU
+ECU Diagnostics
 DLT
 GNSS
+DSRC
+C-V2X
 ```
 
 ## Communication
@@ -663,141 +1278,63 @@ Excel
 
 ---
 
-# ▶️ Usage
+# 🔍 Engineering Concepts Demonstrated
 
-## List Available Tests
+This project demonstrates practical experience with:
 
-```bash
-python test_runner.py --list
-```
+### Python
 
-## Execute V2X Test
+* Object-oriented design
+* Classes and inheritance
+* Exception handling
+* Multithreading
+* Queues
+* UUID generation
+* Regular expressions
+* File handling
+* Subprocess management
 
-```bash
-python test_runner.py --test v2x
-```
+### Linux
 
-## Execute Diagnostics Test
+* Linux shell interaction
+* Process management
+* stdin/stdout communication
+* File permissions
+* Mount configuration
+* Service management
+* SSH-based debugging
+* Embedded Linux environments
 
-```bash
-python test_runner.py --test diagnostics
-```
+### Embedded Systems
 
-## Execute Cybersecurity Test
+* Automotive ECU interaction
+* ECU reboot handling
+* Firmware/software configuration
+* Binary deployment
+* Test environment preparation
+* Runtime debugging
 
-```bash
-python test_runner.py --test cybersecurity
-```
+### Automation
 
-## Execute Basic Sanity Test
-
-```bash
-python test_runner.py --test basic_sanity
-```
-
-The framework automatically determines whether the connected ECU requires Master or SOP execution.
-
----
-
-# ➕ Adding a New Test Case
-
-New test cases can be created by inheriting from `TestBase`.
-
-Example:
-
-```python
-from test_base import TestBase
-
-
-class MyV2XTest(TestBase):
-
-    def get_commands(self):
-        return [
-            "sldd v2xmgr setdataprivacy 1",
-            ("sldd power requestset 2004 7", 3),
-            "sldd v2xmgr setdataprivacy 0",
-        ]
-
-    def setup_custom(self):
-        # Test-specific setup
-        pass
-
-    def teardown_custom(self):
-        # Test-specific cleanup
-        pass
-```
-
-Register the test in the test runner:
-
-```python
-TEST_REGISTRY = {
-    "my_test": {
-        "class": MyV2XTest,
-        "display": "My V2X Test",
-        "log": "../logs/my_v2x_test.log"
-    }
-}
-```
-
-Run:
-
-```bash
-python test_runner.py --test my_test
-```
+* Test orchestration
+* Reusable test infrastructure
+* Automated log collection
+* Automated verification
+* Test reporting
+* CI integration
 
 ---
 
-# 🧩 Extensibility
+# 📈 Before vs After Automation
 
-The framework follows a reusable and modular architecture.
-
-New functionality can be added without modifying the core execution infrastructure.
-
-For example:
-
-```text
-                 TestBase
-                    |
-       +------------+------------+
-       |            |            |
-       v            v            v
-    V2XTest      DTC Test     SecurityTest
-       |            |            |
-       +------------+------------+
-                    |
-                    v
-              Common Framework
-                    |
-       +------------+-------------+
-       |            |             |
-       v            v             v
-    ADBShell    FileManager    Logger
-```
-
-This separation provides:
-
-* Code reuse
-* Easier maintenance
-* Consistent test execution
-* Faster development of new test cases
-* Centralized error handling
-* Consistent logging
-* Reduced code duplication
-
----
-
-# 📈 Automation Benefits
-
-The framework was developed to reduce the amount of manual effort required during repetitive V2X testing.
-
-### Before Automation
+## Manual Workflow
 
 ```text
 Manual ECU Connection
         ↓
 Manual File Transfer
         ↓
-Manual Configuration
+Manual Environment Setup
         ↓
 Manual Version Check
         ↓
@@ -810,92 +1347,219 @@ Manual Verification
 Manual Report Creation
 ```
 
-### After Automation
+## Automated Workflow
 
 ```text
-              Test Runner
-                   ↓
+                Test Runner
+                    ↓
+        Automated ECU Connection
+                    ↓
         Automated Environment Setup
-                   ↓
+                    ↓
           Automated Test Execution
-                   ↓
+                    ↓
           Automated Log Collection
-                   ↓
+                    ↓
           Automated Verification
-                   ↓
+                    ↓
           Automated Test Reporting
 ```
 
-The automation reduced a typical manual execution workflow from approximately **3 hours to less than 90 minutes**.
+### Result
+
+```text
+Manual execution:
+~3 hours
+
+Automated execution:
+<90 minutes
+```
+
+This represents a significant reduction in repetitive test execution effort.
 
 ---
 
-# 🎯 Engineering Highlights
+# 🧪 Example Command Execution
 
-This project demonstrates experience in:
+A test developer does not need to manage the underlying ADB process directly.
 
-* Test automation framework design
-* Python software development
-* Object-oriented programming
-* Linux-based embedded systems
-* Automotive ECU interaction
-* ADB and SSH communication
-* UART/serial communication
-* Persistent shell execution
-* File transfer automation
-* V2X protocol testing
-* V2X cybersecurity testing
-* ECU software-version detection
-* Master/SOP abstraction
-* DLT log analysis
-* Automated verification
-* Test reporting
-* CI-oriented automation using Jenkins
+Instead:
 
----
+```python
+output = shell.run(
+    "command to execute"
+)
+```
 
-# 🔒 Security & Confidentiality
+The framework internally handles:
 
-This project may interact with proprietary automotive ECU software and V2X infrastructure.
+```text
+Shell Health Check
+        ↓
+Automatic Reconnect if Required
+        ↓
+Sentinel Generation
+        ↓
+Command Transmission
+        ↓
+Asynchronous Output Reading
+        ↓
+Completion Detection
+        ↓
+Output Cleanup
+        ↓
+Logging
+        ↓
+Return Output
+```
 
-When publishing this framework externally:
-
-* Remove proprietary binaries
-* Remove certificates and private keys
-* Remove internal IP addresses
-* Remove company-specific paths
-* Remove credentials
-* Remove proprietary configuration files
-* Replace internal command names where required
-* Use synthetic test data for demonstrations
-
-Only the framework architecture and non-confidential examples should be shared publicly.
+This abstraction keeps individual test cases simple and focused on test behavior.
 
 ---
 
-# 📌 Project Summary
+# 🧹 Resource Cleanup
 
-**V2X Test Execution Automation Framework** is a reusable Python-based automation solution for executing and validating automotive V2X test cases on Linux-based ECUs.
+The framework provides a `close()` method for gracefully terminating the persistent shell.
+
+Conceptually:
+
+```python
+shell.close()
+```
+
+The method:
+
+* Sends the shell exit command
+* Terminates the process
+* Handles cleanup exceptions
+* Records shell shutdown in the logger
+
+This prevents unnecessary processes from remaining after test execution.
+
+---
+
+# 🔒 Security and Confidentiality
+
+This repository is intended to demonstrate the automation architecture and engineering concepts.
+
+If the framework is based on proprietary automotive software, the following should **not** be committed to a public repository:
+
+* Private keys
+* Production certificates
+* ECU credentials
+* Internal IP addresses
+* Proprietary binaries
+* Internal source code
+* Company-specific configuration files
+* Customer information
+* Internal infrastructure details
+* Proprietary V2X test data
+
+For public demonstrations, replace proprietary components with mock or synthetic data.
+
+---
+
+# 📌 Project Highlights
+
+The project demonstrates the design and development of an end-to-end automotive test automation framework with:
+
+```text
+             Python Automation
+                    |
+       +------------+------------+
+       |            |            |
+       v            v            v
+   ECU Control   File Mgmt     Logging
+       |            |            |
+       +------------+------------+
+                    |
+                    v
+             Test Execution
+                    |
+                    v
+             DLT Collection
+                    |
+                    v
+              Verification
+                    |
+                    v
+              Test Reporting
+```
+
+The most significant engineering component is the persistent ADB shell abstraction, which combines:
+
+* Persistent subprocess management
+* Asynchronous stdout processing
+* Thread-safe queues
+* Sentinel-based command completion
+* Timeout protection
+* Prompt-based fallback
+* Automatic shell reconnection
+* ECU reboot recovery
+
+This provides a reliable communication foundation for the higher-level V2X test automation framework.
+
+---
+
+# 🚀 Future Improvements
+
+Potential future enhancements include:
+
+* Parallel multi-ECU test execution
+* Pytest integration
+* JUnit XML reporting
+* HTML test reports
+* Test result dashboards
+* More comprehensive CI/CD integration
+* Automatic test retry policies
+* Enhanced log correlation
+* Centralized test configuration
+* YAML/JSON-based test definitions
+* REST/API-based test triggering
+* Containerized execution environment
+* Automated test result publishing
+
+---
+
+# 📄 License
+
+Add the appropriate license here if this repository contains code that you are permitted to distribute.
+
+Example:
+
+```text
+MIT License
+```
+
+If the framework contains proprietary code, do not publish the source without authorization.
+
+---
+
+# 👨‍💻 Project Summary
+
+**V2X Test Execution Automation Framework** is a Python-based embedded automotive test automation framework designed to automate V2X ECU testing from environment preparation through final reporting.
 
 The framework combines:
 
 ```text
 ECU Communication
         +
+Persistent Shell Execution
+        +
 Environment Automation
         +
-Test Execution
+V2X Test Execution
         +
 DLT Logging
         +
-Verification
+Result Verification
         +
 Automated Reporting
 ```
 
-to create an end-to-end automated V2X testing workflow.
+The result is a reusable automation infrastructure that reduces manual effort, improves test consistency, and allows engineers to focus on test scenarios rather than repetitive ECU setup and execution activities.
 
-The architecture is designed to make new test cases easy to add while keeping common ECU communication, logging, file management, environment detection, and execution logic centralized.
+```
 
 
 # How to Use ?
